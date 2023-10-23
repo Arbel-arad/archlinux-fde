@@ -1,8 +1,6 @@
-mkdir -p /mnt/{efi,home,var/tmp,var/log,var/account,usr/share,tmp,.snapshots,dev/shm}
-
+mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@ /dev/mapper/cryptroot /mnt
 mkdir -p /mnt/{efi,home,var/tmp,var/log,var/account,usr/share,tmp,.snapshots,dev/shm}
 mount -o nodev,nosuid,noexec /dev/EFI /mnt/efi
-mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@ /dev/mapper/cryptroot /mnt
 mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@home,nodev,nosuid /dev/mapper/cryptroot /mnt/home
 mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@tmp,nodev,nosuid,noexec /dev/mapper/cryptroot /mnt/tmp
 mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@usr,nodev /dev/mapper/cryptroot /mnt/usr
