@@ -2,6 +2,7 @@
 Type = Path
 Operation = Install
 Operation = Upgrade
+Operation = Remove
 Target = usr/lib/modules/*/pkgbase
 Target = usr/src/*/dkms.conf
 
@@ -9,6 +10,7 @@ Target = usr/src/*/dkms.conf
 Type = Package
 Operation = Install
 Operation = Upgrade
+Operation = Remove
 Target = dracut
 Target = systemd
 Target = amd-ucode
@@ -17,10 +19,6 @@ Target = plymouth
 Target = cryptsetup
 Target = device-mapper
 
-[Trigger]
-Type = Path
-Operation = Remove
-Target = usr/lib/modules/*/pkgbase
 
 [Action]
 Description = Updating linux initcpios (with dracut!)...
