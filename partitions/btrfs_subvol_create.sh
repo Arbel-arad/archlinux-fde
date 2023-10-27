@@ -10,6 +10,5 @@ btrfs sub cr /mnt/@var_tmp
 btrfs sub cr /mnt/@var_log
 btrfs sub cr /mnt/@var_account
 btrfs sub cr /mnt/@.snapshots
-
 btrfs sub list /mnt
 umount /mnt

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@ /dev/mapper/cryptroot /mnt
 mkdir -p /mnt/{efi,home,tmp,usr,dev/shm,var,.snapshots}
 mount -o nodev,nosuid,noexec /dev/disk/by-label/EFI /mnt/efi
