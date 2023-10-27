@@ -1,11 +1,5 @@
 #!/bin/bash
 
-while read -r line; do
-    if [[ $line = usr/lib/modules/+([^/])/pkgbase ]]; then
-        mapfile -O ${#pkgbase[@]} -t pkgbase < "/$line"
-        kver=${line#"usr/lib/modules/"}
-        kver=${kver%"/pkgbase"}
-    fi
-done
-
-dracut --force /efi/EFI/archlinux.efi --kver "${kver[@]}"
+kver=$(ls /lib/modules/ | grep arch)
+echo ${kver}
+dracut --force /efi/EFI/archlinux.efi --kver ${kver}
