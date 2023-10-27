@@ -5,4 +5,4 @@ mkdir -p /home/{${username},${username}.crypt}
 gocryptfs -init --fido2=$fido_dev /home/${user}.crypt
 chown -R ${username}:users /home/{${username},${username}.crypt}
 passwd ${username}
-su ${username} -c 'gocryptfs --fido2=$fido_dev /home/${user}.crypt ~ -nonempty -q'
+su ${username} -c 'username=$(whoami) && gocryptfs --fido2=$fido_dev /home/${username}.crypt ~ -nonempty -q'
