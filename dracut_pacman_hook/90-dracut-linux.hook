@@ -1,8 +1,21 @@
 [Trigger]
-Type = File
+Type = Path
 Operation = Install
 Operation = Upgrade
 Target = usr/lib/modules/*/pkgbase
+Target = usr/src/*/dkms.conf
+
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = dracut
+Target = systemd
+Target = amd-ucode
+Target = intel-ucode
+Target = plymouth
+Target = cryptsetup
+Target = device-mapper
 
 [Action]
 Description = Updating linux initcpios (with dracut!)...
