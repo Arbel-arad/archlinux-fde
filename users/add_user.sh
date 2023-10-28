@@ -7,6 +7,7 @@ sudo gocryptfs -init --fido2=${fido_dev} /home/${username}.crypt
 sudo cp -i -r .config /home/${username}
 sudo chmod +x /home/${username}/.config/hypr/scripts/mount_home.sh
 sudo gocryptfs --fido2=${fido_dev} /home/${username}.crypt /home/${username} -nonempty -q
+sudo cp -i -r .config /home/${username}
 #copy user files now
 sudo umount /home/${username}
 sudo chown -R ${username}:users /home/{${username},${username}.crypt}

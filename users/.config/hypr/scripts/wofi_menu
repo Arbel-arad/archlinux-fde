@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+## launch wofi with alt config
+
+CONFIG="$HOME/.config/hypr/wofi/config"
+STYLE="$HOME/.config/hypr/wofi/style.css"
+
+if [[ ! `pidof wofi` ]]; then
+	wofi --show drun --prompt 'Search...' --conf ${CONFIG} --style ${STYLE}
+else
+	pkill wofi
+fi

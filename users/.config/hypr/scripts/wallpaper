@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+## Set Wallpaper in Hyprland
+
+WALLPAPER="$HOME/.config/hypr/wallpapers/wallpaper.jpg"
+
+swaybg --output '*' --mode fill --image "$WALLPAPER"
