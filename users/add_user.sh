@@ -5,5 +5,8 @@ sudo useradd -m -G wheel -g users -s /bin/zsh ${username}
 sudo mkdir -p /home/{${username},${username}.crypt}
 sudo gocryptfs -init --fido2=${fido_dev} /home/${username}.crypt
 sudo gocryptfs --fido2=${fido_dev} /home/${username}.crypt /home/${username} -nonempty -q
+sudo mkdir -p /home/${username}/.config/hypr/scripts
+sudo chmod +x /home/${username}/.config/hypr/scripts/*.sh
+sudo cp -i -r .config /home/${username}
 sudo chown -R ${username}:users /home/{${username},${username}.crypt}
 sudo passwd ${username}
