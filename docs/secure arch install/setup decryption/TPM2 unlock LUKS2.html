@@ -1,0 +1,71 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>TPM2 unlock LUKS2</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>TPM2 unlock LUKS2</h1>
+
+      <div class="ck-content">
+        <p>check if a TPM is available:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemd-cryptenroll --tpm2-device=list</code></span>
+            </label>
+          </li>
+        </ul>
+        <p>for <a href="https://wiki.archlinux.org/title/Trusted_Platform_Module#Accessing_PCR_registers">TPM</a> unlocking:</p>
+        <p>choose <a href="https://wiki.archlinux.org/title/Trusted_Platform_Module#Accessing_PCR_registers">TPM PCRs</a>:</p>
+        <p>to use a fido2 device for unlocking, add <code>--unlock-fido2-device=auto</code>
+        </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=</code><span style="color:hsl(30,75%,60%);"><code>1+7+9</code></span><code> --tpm2-with-pin=yes /dev/</code>
+              <span
+              style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code>
+                </span>
+                </span>
+            </label>
+          </li>
+        </ul>
+        <p>if you want to remove the setup password, check where it is:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><a href="FIDO2%20%20unlock%20LUKS2.html">add a FIDO2 key as backup</a>.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>cryptsetup -v open --test-passphrase /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span></span>
+            </label>
+          </li>
+        </ul>
+        <p><span style="color:hsl(0,75%,60%);"><strong>warning!</strong></span> this
+          command wipes <strong>all registered passwords!</strong>  <a href="https://www.freedesktop.org/software/systemd/man/latest/systemd-cryptenroll.html">( you can specify a keyslot instead)</a> or
+          <a
+          href="https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html">register another unlock method</a>
+        </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemd-cryptenroll /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> --wipe-slot=password</code>
+              </span>
+            </label>
+          </li>
+        </ul>
+        <p>repeat the TPM setup for <span style="color:hsl(30,75%,60%);"><strong>cryptswap</strong></span>
+        </p>
+      </div>
+    </div>
+  </body>
+
+</html>

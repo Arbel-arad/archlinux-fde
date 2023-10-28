@@ -1,0 +1,44 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>EFI-STUB</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>EFI-STUB</h1>
+
+      <div class="ck-content"><pre><code class="language-text-x-sh">efibootmgr --create --disk /dev/nvme0n1 --part 1 --label "Arch Linux" --loader /vmlinuz-linux --unicode 'rd.luks.name=xxxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx=cryptroot root=/dev/mapper/cryptroot rootflags=subvol=@ rw quiet splash vt.global_cursor_default=0 loglevel=3 initrd=amd-ucode.img initrd=initramfs-linux.img'</code></pre>
+        <p><a href="https://libreddit.lunar.icu/r/archlinux/comments/11aqxnk/install_with_luks_btrfs_efistub_sdencrypt">Install with luks + btrfs + efistub + sd-encrypt - r/archlinux (lunar.icu)</a>
+        </p>
+        <p><a href="https://wiki.archlinux.org/title/EFISTUB">EFISTUB - ArchWiki (archlinux.org)</a>
+        </p>
+        <p><a href="https://wiki.archlinux.org/title/Dracut#Kernel_command_line_options">3.3Kernel command line options (archlinux.org)</a>
+        </p>
+        <p><a href="https://uapi-group.org/specifications/specs/discoverable_partitions_specification/">Discoverable Partitions Specification | UAPI Group Specifications (uapi-group.org)</a>
+        </p>
+        <p>&nbsp;</p>
+        <p><a href="https://wiki.archlinux.org/title/User:Bai-Chiang/Installation_notes">User:Bai-Chiang/Installation notes - ArchWiki (archlinux.org)</a>
+        </p>
+        <p><a href="https://man.archlinux.org/man/dracut.8">dracut(8) — Arch manual pages (archlinux.org)</a>
+        </p>
+        <p>initramfs unified-kernel-image contains the kernel parameters, therefore
+          making them immutable when used in combination with the TPM and secure-boot
+          to validate the signed image.</p>
+        <p>the kernel parameters can be provided from an encrypted directory as they
+          are only read by the initramfs generator, while the system is booted.</p>
+        <p>the unencrypted ESP should only contain signed verified initrd files.
+          (no configs that can be edited externally).</p>
+        <figure class="image image_resized image-style-block-align-left"
+        style="width:53.18%;">
+          <img src="EFI-STUB_image.png">
+        </figure>
+      </div>
+    </div>
+  </body>
+
+</html>

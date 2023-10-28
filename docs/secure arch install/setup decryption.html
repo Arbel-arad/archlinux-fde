@@ -1,0 +1,74 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <base target="_parent">
+    <title data-trilium-title>setup decryption</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>setup decryption</h1>
+
+      <div class="ck-content">
+        <p>select an unlock method:</p>
+        <p><a class="reference-link" href="setup%20decryption/TPM2%20unlock%20LUKS2.html">TPM2 unlock LUKS2</a>
+        </p>
+        <p><a class="reference-link" href="setup%20decryption/FIDO2%20%20unlock%20LUKS2.html">FIDO2 &nbsp;unlock LUKS2</a>
+        </p>
+        <p><a href="https://wiki.archlinux.org/title/Clevis">Clevis</a>
+        </p>
+        <p>&nbsp;</p>
+        <p><a href="https://github.com/tpm2-software/tpm2-totp">tpm2-software/tpm2-totp: Attest the trustworthiness of a device against a human using time-based one-time passwords (github.com)</a>
+        </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S tpm2-totp-git</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2-totp init -p 0,1,2,3,4,5,7,9,11,12,13 -P </code><span style="color:hsl(30,75%,60%);"><code><strong>PASSWORD</strong></code></span></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2_pcrread</code> save these values for reference</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>dracut /efi/EFI/Linux/archlinux.efi --force</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>reboot</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2_pcrread</code> compare to previous results</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2-totp show</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2-totp reseal</code> a reseal may be required after booting a new UKI.</span>
+            </label>
+          </li>
+        </ul>
+        <p>after verifying your selected decryption methods, proceed to&nbsp;<a class="reference-link"
+          href="post-install.html">post-install</a>.</p>
+      </div>
+    </div>
+  </body>
+
+</html>

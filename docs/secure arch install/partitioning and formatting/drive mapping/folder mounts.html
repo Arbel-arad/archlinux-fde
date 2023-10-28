@@ -1,0 +1,71 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>folder mounts</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>folder mounts</h1>
+
+      <div class="ck-content">
+        <blockquote>
+          <p>/dev/sda6 &nbsp; /usr &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ext3 &nbsp; &nbsp;defaults,ro,nodev
+            &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; 2
+            <br>/dev/sda12 &nbsp;/usr/share &nbsp; &nbsp;ext3 &nbsp; &nbsp;defaults,ro,nodev,nosuid
+            &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; 2
+            <br>/dev/sda7 &nbsp; /var &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ext3 &nbsp; &nbsp;defaults,nodev,usrquota,grpquota
+            0 &nbsp; &nbsp; &nbsp;2
+            <br>/dev/sda8 &nbsp; /tmp &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ext3 &nbsp; &nbsp;defaults,nodev,nosuid,noexec,usrquota,grpquota
+            &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; 2
+            <br>/dev/sda9 &nbsp; /var/tmp &nbsp; &nbsp; &nbsp;ext3 &nbsp; &nbsp;defaults,nodev,nosuid,noexec,usrquota,grpquota
+            &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; 2
+            <br>/dev/sda10 &nbsp;/var/log &nbsp; &nbsp; &nbsp;ext3 &nbsp; &nbsp;defaults,nodev,nosuid,noexec
+            &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; 2
+            <br>/dev/sda11 &nbsp;/var/account &nbsp;ext3 &nbsp; &nbsp;defaults,nodev,nosuid,noexec
+            &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; 2
+            <br>/dev/sda13 &nbsp;/home &nbsp; &nbsp; &nbsp; &nbsp; ext3 &nbsp; &nbsp;rw,nosuid,nodev,exec,auto,nouser,async,usrquota,grpquota
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp;
+            &nbsp; 2</p>
+        </blockquote>
+        <p><a href="https://www.debian.org/doc/manuals/securing-debian-manual/ch04s10.en.html">4.10. Mounting partitions the right way - Debian www.debian.org › doc › manuals › securing-debian-manual</a>
+        </p>
+        <ul>
+          <li>rw = read write</li>
+          <li>auto = mount automatically</li>
+          <li>nouser = do not allow a user to mount the file system</li>
+          <li>async = asynchronous saving of data, to improve performance</li>
+        </ul>
+        <blockquote>
+          <p><span class="text-big"><strong>nodev</strong></span>
+            <br>This option describes that device files are not allowed, like block or
+            character devices. Normally these are only found under /dev and not seen
+            on other mount points. Most mount points will work correctly when these
+            are disabled, with the root file system as an exception.</p>
+          <p>Useful for: /boot /dev/shm /home /tmp /var and data partitions</p>
+          <p>Not suitable for: root (/)</p>
+          <p><span class="text-big"><strong>noexec</strong></span>
+            <br>With this option set, binaries can’t be directly executed.</p>
+          <p>Useful for: /boot /dev/shm /var and data partitions.</p>
+          <p>Not suitable for: root (/), /home (when using steam, wine or development)
+            and /tmp (e.g. compiling applications might break)</p>
+          <p><span class="text-big"><strong>nosuid</strong></span>
+            <br>Do not use set-user-identifier (SETUID) or set-group-identifier (SETGID)
+            bits to take effect. These bits are set with chmod (u+s, g+s) or unset
+            (u-s, g-s) to allow a binary running under a specific user, which is not
+            the active user itself. For example, to allow a normal user to run the
+            ping command with root privileges. This is needed to allow opening a socket.</p>
+          <p>Useful for: /boot /dev/shm /home /tmp /var and data partitions</p>
+          <p>Not suitable for: root (/)</p>
+        </blockquote>
+        <p><a href="https://linux-audit.com/securing-mount-points-on-linux/">Securing mount points on Linux - Linux Audit (linux-audit.com)</a>
+        </p>
+      </div>
+    </div>
+  </body>
+
+</html>

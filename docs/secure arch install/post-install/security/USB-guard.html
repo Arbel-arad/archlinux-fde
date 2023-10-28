@@ -1,0 +1,37 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>USB-guard</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>USB-guard</h1>
+
+      <div class="ck-content">
+        <p>install <a href="https://wiki.archlinux.org/title/USBGuard">USBGuard</a> and
+          <a
+          href="https://aur.archlinux.org/packages/usbguard-notifier/">usbguard-notifier</a>
+        </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S usbguard-git usbguard-notifier</code></span>
+            </label>
+          </li>
+        </ul>
+        <p><span class="text-big" style="color:hsl(0, 75%, 60%);"><strong>Warning</strong></span>
+          <span
+          class="text-big">:</span>Make sure to actually configure the daemon before starting/enabling
+            it or all USB devices, including keyboard and mouse, will immediately be
+            blocked!</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </body>
+
+</html>

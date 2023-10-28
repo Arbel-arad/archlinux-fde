@@ -1,0 +1,955 @@
+{
+	"formatVersion": 2,
+	"appVersion": "0.61.9-beta",
+	"files": [
+		{
+			"noteId": "5D4uHPE2eFxf",
+			"notePath": [
+				"5D4uHPE2eFxf"
+			],
+			"isClone": false,
+			"title": "secure arch install",
+			"notePosition": 0,
+			"prefix": null,
+			"isExpanded": false,
+			"type": "text",
+			"mime": "text/html",
+			"format": "html",
+			"dataFileName": "secure arch install.html",
+			"dirFileName": "secure arch install",
+			"noImport": false,
+			"attributes": [
+				{
+					"type": "label",
+					"name": "mapType",
+					"value": "tree",
+					"isInheritable": false,
+					"position": 10
+				},
+				{
+					"type": "relation",
+					"name": "internalLink",
+					"value": "IMAt1ENOntQP",
+					"isInheritable": false,
+					"position": 20
+				},
+				{
+					"type": "relation",
+					"name": "internalLink",
+					"value": "5jewK57HvHlE",
+					"isInheritable": false,
+					"position": 30
+				}
+			],
+			"attachments": [],
+			"children": [
+				{
+					"noteId": "TWwaSVE8IWdD",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"TWwaSVE8IWdD"
+					],
+					"isClone": false,
+					"title": "partitioning and formatting",
+					"notePosition": 10,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dataFileName": "partitioning and formatting.html",
+					"dirFileName": "partitioning and formatting",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "G48FCktGT9Fq",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "DuXPeYdNNPH1",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "ek3PHMFWuJaK",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "aIcDsQtmDUQE",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "5jewK57HvHlE",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "5jewK57HvHlE",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"TWwaSVE8IWdD",
+								"5jewK57HvHlE"
+							],
+							"isClone": false,
+							"title": "drive mapping",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "mermaid",
+							"mime": "text/plain",
+							"dataFileName": "drive mapping.txt",
+							"dirFileName": "drive mapping",
+							"noImport": false,
+							"attributes": [],
+							"attachments": [],
+							"children": [
+								{
+									"noteId": "aIcDsQtmDUQE",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"TWwaSVE8IWdD",
+										"5jewK57HvHlE",
+										"aIcDsQtmDUQE"
+									],
+									"isClone": false,
+									"title": "folder mounts",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "folder mounts.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "DuXPeYdNNPH1",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"TWwaSVE8IWdD",
+										"5jewK57HvHlE",
+										"DuXPeYdNNPH1"
+									],
+									"isClone": false,
+									"title": "btrfs_subvol_create.sh",
+									"notePosition": 0,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/x-sh",
+									"dataFileName": "btrfs_subvol_create.sh",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "ek3PHMFWuJaK",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"TWwaSVE8IWdD",
+										"5jewK57HvHlE",
+										"ek3PHMFWuJaK"
+									],
+									"isClone": false,
+									"title": "btrfs_subvol_mount.sh",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/x-sh",
+									"dataFileName": "btrfs_subvol_mount.sh",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"noteId": "G48FCktGT9Fq",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"G48FCktGT9Fq"
+					],
+					"isClone": false,
+					"title": "install the base system",
+					"notePosition": 20,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dataFileName": "install the base system.html",
+					"dirFileName": "install the base system",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "jFkoEKSMPbWY",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "mapType",
+							"value": "link",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "IMAt1ENOntQP",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "ZipqSkFdlbAQ",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "IMAt1ENOntQP",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"G48FCktGT9Fq",
+								"IMAt1ENOntQP"
+							],
+							"isClone": false,
+							"title": "EFI-STUB",
+							"notePosition": 0,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "EFI-STUB.html",
+							"noImport": false,
+							"attributes": [],
+							"attachments": [
+								{
+									"attachmentId": "0mTHmBwjkguw",
+									"title": "image.png",
+									"role": "image",
+									"mime": "image/png",
+									"position": 10,
+									"dataFileName": "EFI-STUB_image.png"
+								}
+							]
+						},
+						{
+							"noteId": "jFkoEKSMPbWY",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"G48FCktGT9Fq",
+								"jFkoEKSMPbWY"
+							],
+							"isClone": false,
+							"title": "dracut auto-generate",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "dracut auto-generate.html",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "mapType",
+									"value": "link",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						}
+					]
+				},
+				{
+					"noteId": "ZipqSkFdlbAQ",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"ZipqSkFdlbAQ"
+					],
+					"isClone": false,
+					"title": "setup decryption",
+					"notePosition": 30,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dataFileName": "setup decryption.html",
+					"dirFileName": "setup decryption",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "w89etuofWYAW",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "vyna4IVnMjbz",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "dn2OdOGkOGm4",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "vyna4IVnMjbz",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"ZipqSkFdlbAQ",
+								"vyna4IVnMjbz"
+							],
+							"isClone": false,
+							"title": "FIDO2  unlock LUKS2",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "FIDO2  unlock LUKS2.html",
+							"noImport": false,
+							"attributes": [],
+							"attachments": []
+						},
+						{
+							"noteId": "w89etuofWYAW",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"ZipqSkFdlbAQ",
+								"w89etuofWYAW"
+							],
+							"isClone": false,
+							"title": "TPM2 unlock LUKS2",
+							"notePosition": 20,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "TPM2 unlock LUKS2.html",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "vyna4IVnMjbz",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						}
+					]
+				},
+				{
+					"noteId": "dn2OdOGkOGm4",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"dn2OdOGkOGm4"
+					],
+					"isClone": false,
+					"title": "post-install",
+					"notePosition": 40,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dataFileName": "post-install.html",
+					"dirFileName": "post-install",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "label",
+							"name": "mapType",
+							"value": "tree",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "9w42wQtZXusm",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "J8KjRDKQ6eNh",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "JNHwGg3wrniL",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "a0hjz6Zr8Ajk",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "9w42wQtZXusm",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"dn2OdOGkOGm4",
+								"9w42wQtZXusm"
+							],
+							"isClone": false,
+							"title": "add user",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "add user.html",
+							"dirFileName": "add user",
+							"noImport": false,
+							"attributes": [],
+							"attachments": [],
+							"children": [
+								{
+									"noteId": "0Zf1N9WoJ7v5",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"9w42wQtZXusm",
+										"0Zf1N9WoJ7v5"
+									],
+									"isClone": false,
+									"title": "mount_home.sh",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/x-sh",
+									"dataFileName": "mount_home.sh",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "2xPeDXOdkMI4",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"9w42wQtZXusm",
+										"2xPeDXOdkMI4"
+									],
+									"isClone": false,
+									"title": "add_user.sh",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/x-sh",
+									"dataFileName": "add_user.sh",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								}
+							]
+						},
+						{
+							"noteId": "JNHwGg3wrniL",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"dn2OdOGkOGm4",
+								"JNHwGg3wrniL"
+							],
+							"isClone": false,
+							"title": "customization",
+							"notePosition": 20,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "customization.html",
+							"dirFileName": "customization",
+							"noImport": false,
+							"attributes": [],
+							"attachments": [],
+							"children": [
+								{
+									"noteId": "J8KjRDKQ6eNh",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"JNHwGg3wrniL",
+										"J8KjRDKQ6eNh"
+									],
+									"isClone": false,
+									"title": "desktop",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dirFileName": "desktop",
+									"noImport": false,
+									"attributes": [],
+									"attachments": [],
+									"children": [
+										{
+											"noteId": "ABCOVCcLFYSP",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"J8KjRDKQ6eNh",
+												"ABCOVCcLFYSP"
+											],
+											"isClone": false,
+											"title": "hyprland",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "hyprland.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										},
+										{
+											"noteId": "LjgKGzBEuYhK",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"J8KjRDKQ6eNh",
+												"LjgKGzBEuYhK"
+											],
+											"isClone": false,
+											"title": "widgets",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "widgets.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										},
+										{
+											"noteId": "mhGEKiXIa1JP",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"J8KjRDKQ6eNh",
+												"mhGEKiXIa1JP"
+											],
+											"isClone": false,
+											"title": "notifier",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "notifier.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										},
+										{
+											"noteId": "xM8NGCDArZiO",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"J8KjRDKQ6eNh",
+												"xM8NGCDArZiO"
+											],
+											"isClone": false,
+											"title": "polkit",
+											"notePosition": 40,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "polkit.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										},
+										{
+											"noteId": "OYKeZyW9J3UH",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"J8KjRDKQ6eNh",
+												"OYKeZyW9J3UH"
+											],
+											"isClone": false,
+											"title": "browsers",
+											"notePosition": 50,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "browsers.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										},
+										{
+											"noteId": "pBNxhM7Dr3AN",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"J8KjRDKQ6eNh",
+												"pBNxhM7Dr3AN"
+											],
+											"isClone": false,
+											"title": "login manager",
+											"notePosition": 60,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "login manager.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										},
+										{
+											"noteId": "XKPJyKj34nxn",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"J8KjRDKQ6eNh",
+												"XKPJyKj34nxn"
+											],
+											"isClone": false,
+											"title": "process managers",
+											"notePosition": 70,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "process managers.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										}
+									]
+								},
+								{
+									"noteId": "xg27fqCONOKT",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"JNHwGg3wrniL",
+										"xg27fqCONOKT"
+									],
+									"isClone": false,
+									"title": "plymouth",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "plymouth.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "1sqAJzKY66TP",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"JNHwGg3wrniL",
+										"1sqAJzKY66TP"
+									],
+									"isClone": false,
+									"title": "fonts",
+									"notePosition": 30,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "fonts.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "DD5zMl9RIDL9",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"JNHwGg3wrniL",
+										"DD5zMl9RIDL9"
+									],
+									"isClone": false,
+									"title": "tocopy",
+									"notePosition": 40,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/plain",
+									"dataFileName": "tocopy.txt",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "qdvIAFI8bye7",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"JNHwGg3wrniL",
+										"qdvIAFI8bye7"
+									],
+									"isClone": false,
+									"title": "nix",
+									"notePosition": 50,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "nix.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								}
+							]
+						},
+						{
+							"noteId": "a0hjz6Zr8Ajk",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"dn2OdOGkOGm4",
+								"a0hjz6Zr8Ajk"
+							],
+							"isClone": false,
+							"title": "security",
+							"notePosition": 0,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "security.html",
+							"dirFileName": "security",
+							"noImport": false,
+							"attributes": [],
+							"attachments": [],
+							"children": [
+								{
+									"noteId": "Ei0oHFAthVGx",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"a0hjz6Zr8Ajk",
+										"Ei0oHFAthVGx"
+									],
+									"isClone": false,
+									"title": "USB-guard",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "USB-guard.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "J9pEzYVnWtz7",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"a0hjz6Zr8Ajk",
+										"J9pEzYVnWtz7"
+									],
+									"isClone": false,
+									"title": "apparmor",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "apparmor.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "fYICI8qo94sn",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"a0hjz6Zr8Ajk",
+										"fYICI8qo94sn"
+									],
+									"isClone": false,
+									"title": "firewall",
+									"notePosition": 30,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "firewall.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "VvBk7pOisADn",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"a0hjz6Zr8Ajk",
+										"VvBk7pOisADn"
+									],
+									"isClone": false,
+									"title": "sandboxing and VMs",
+									"notePosition": 40,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "sandboxing and VMs.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "JGbGliE2hbhd",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"a0hjz6Zr8Ajk",
+										"JGbGliE2hbhd"
+									],
+									"isClone": false,
+									"title": "shell timeout",
+									"notePosition": 50,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "shell timeout.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "zpqUUvDnLQZE",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"a0hjz6Zr8Ajk",
+										"zpqUUvDnLQZE"
+									],
+									"isClone": false,
+									"title": "securing SSH",
+									"notePosition": 60,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "securing SSH.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"noImport": true,
+			"dataFileName": "navigation.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "index.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "style.css"
+		}
+	]
+}

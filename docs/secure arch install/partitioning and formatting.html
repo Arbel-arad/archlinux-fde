@@ -1,0 +1,275 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <base target="_parent">
+    <title data-trilium-title>partitioning and formatting</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>partitioning and formatting</h1>
+
+      <div class="ck-content">
+        <p>using your partitioning tool of choice:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">create a new GPT</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">make a <span style="color:hsl(30,75%,60%);"><strong>EFI</strong> </span>(type
+              1) partition with 0.5G of space</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">make a <span style="color:hsl(30,75%,60%);"><strong>crypt-swap</strong> </span>partition,
+              the size should be at least 5% over your RAM capacity (encryption overhead)
+              if you intend to use hibernation.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">make a <span style="color:hsl(30,75%,60%);"><strong>crypt-btrfs</strong></span> partition
+              with the remaining space</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">run <code>cryptsetup benchmark</code> to test performance</span>
+            </label>
+          </li>
+        </ul>
+        <p>we are going to use LUKS2 with argon2id:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>cryptsetup luksFormat --type luks2 --cipher aes-xts-plain64 --key-size 512 --use-random --pbkdf argon2id --hash sha512 /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>crypt-btrfs</strong></code></span></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>cryptsetup luksFormat --type luks2 --cipher aes-xts-plain64 --key-size 512 --use-random --pbkdf argon2id --hash sha512 /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>crypt-swap</strong></code></span></span>
+            </label>
+          </li>
+        </ul>
+        <p>open the new encrypted partition:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>cryptsetup open --perf-no_read_workqueue --perf-no_write_workqueue --persistent /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>crypt-btrfs cryptroot</strong></code></span></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>cryptsetup open --perf-no_read_workqueue --perf-no_write_workqueue --persistent /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>crypt-swap cryptswap</strong></code></span></span>
+            </label>
+          </li>
+        </ul>
+        <p>format the EFI partition:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mkfs.vfat -F 32 -n EFI /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI</strong></code></span></span>
+            </label>
+          </li>
+        </ul>
+        <p>format and enable swap:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mkswap /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptswap</strong></code></span></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>swapon /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptswap</strong></code></span></span>
+            </label>
+          </li>
+        </ul>
+        <p>create the filesystem on [cryptroot]</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mkfs.btrfs -L ROOT /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span></span>
+            </label>
+          </li>
+        </ul>
+        <p>mount the <span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span>:</p>
+        <ul
+        class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt</code>
+              </span>
+            </label>
+          </li>
+          </ul>
+          <p>this setup uses <a href="partitioning%20and%20formatting/drive%20mapping.txt">subvolumes</a> mounted
+            with the most restrictive options for enhanced security.</p>
+          <p>you can read more about the specific options and reasoning <a href="partitioning%20and%20formatting/drive%20mapping/folder%20mounts.html">here</a>.</p>
+          <p>make btrfs subvolumes or <a href="partitioning%20and%20formatting/drive%20mapping/btrfs_subvol_create.sh">use the script.</a>
+          </p>
+          <ul class="todo-list">
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@home</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@tmp</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@usr</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@usr_share</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@dev_shm</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@var</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@var_tmp</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@var_log</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@var_account</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub cr /mnt/@.snapshots</code></span>
+              </label>
+            </li>
+          </ul>
+          <p>verify subvolumes:</p>
+          <ul class="todo-list">
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>btrfs sub list /mnt</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>umount /mnt</code></span>
+              </label>
+            </li>
+          </ul>
+          <p>mount the partitions again or <a href="partitioning%20and%20formatting/drive%20mapping/btrfs_subvol_mount.sh">use the script</a>:</p>
+          <ul
+          class="todo-list">
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@ /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mkdir -p /mnt/{efi,home,tmp,usr/share,dev/shm,var/tmp,var/log,var/account,.snapshots}</code></span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o nodev,nosuid,noexec /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI</strong></code></span><code> /mnt/efi</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@home,nodev,nosuid /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/home</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@tmp,nodev,nosuid,noexec /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/tmp</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@usr,nodev /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/usr</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@usr_share,nodev,nosuid /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/usr/share</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@dev_shm,nodev,nosuid,noexec /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/dev/shm</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@var,nodev /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/var</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@var_tmp,nodev,nosuid,noexec /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/var/tmp</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@var_log,nodev,nosuid,noexec /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/var/log</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@var_account,nodev,nosuid,noexec /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/var/account</code>
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@.snapshots,nodev,nosuid,noexec /dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span><code> /mnt/.snapshots</code>
+                </span>
+              </label>
+            </li>
+            </ul>
+            <p>proceed to&nbsp;<a class="reference-link" href="install%20the%20base%20system.html">install the base system</a>
+            </p>
+      </div>
+    </div>
+  </body>
+
+</html>

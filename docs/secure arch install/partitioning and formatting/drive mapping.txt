@@ -1,0 +1,18 @@
+graph TD
+    EFI["/dev/EFI"] -->|nodev\nnosuid\nnoexec| boot["/efi"];
+    swap_dev["/dev/swap"] -->|decrypt on boot\n TPM2 / FIDO2| swap_map("/dev/mapper/cryptswap") --> swap[swap];
+    swap_map --> hibernate-resume;
+    btrfs_dev["/dev/crypt-btrfs"] -->|decrypt on boot\n TPM2 / FIDO2| cryptroot_map("/dev/mapper/cryptroot");
+    cryptroot_map --> root_svol["@"] --> /;
+    cryptroot_map --> home_svol["@home"] -->|nodev\nnosuid| /home;
+    cryptroot_map --> tmp_svol["@tmp"] -->|nodev\nnosuid\nnoexec| /tmp;
+    cryptroot_map --> usr_svol["@usr"] -->|nodev| /usr;
+    cryptroot_map --> usr_share_svol["@usr_share"] -->|nodev\nnosuid| /usr/share;
+    cryptroot_map --> dev_shm_svol["@dev_shm"] -->|nodev\nnosuid\nnoexec| /dev/shm;
+    cryptroot_map --> var_svol["@var"] -->|nodev| /var;
+    cryptroot_map --> var_tmp_svol["@var_tmp"] -->|nodev\nnosuid\nnoexec| /var/tmp;
+    cryptroot_map --> var_log_svol["@var_log"] -->|nodev\nnosuid\nnoexec| /var/log;
+    cryptroot_map --> var_account_svol["@var_account"] -->|nodev\nnosuid\nnoexec| /var/account;
+    cryptroot_map --> .snapshots -->|nodev\nnosuid\nnoexec| /.snapshots;
+    /home -->|FS path| user -->|shadowed\n after\n fuse-mount| user-home;
+    /home -->|fuse-FS| user.crypto -->|decrypted\n mount on\n  login| user-home;

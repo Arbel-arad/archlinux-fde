@@ -1,0 +1,87 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>add user</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>add user</h1>
+
+      <div class="ck-content">
+        <p>enable SUDO for users:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">&nbsp;<code>visudo</code> and edit the config to your liking (to save in VI press :wp)</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>useradd -m -G wheel -g users -s /bin/zsh </code><span style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code></span></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>passwd </code><span style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code></span></span>
+            </label>
+          </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>enabling <a href="https://github.com/rfjakob/gocryptfs">gocryptfs</a>:</p>
+        <p><a href="https://nuetzlich.net/gocryptfs/comparison/">Comparison with Other Projects - gocryptfs (nuetzlich.net)</a>
+        </p>
+        <p><a href="https://nuetzlich.net/gocryptfs/forward_mode_crypto/">Cryptography - gocryptfs (nuetzlich.net)</a>
+        </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">switch to the user.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sudo mkdir -p /home/</code><span style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code></span><code>.crypt</code>
+              </span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemd-cryptenroll --fido2-device=list</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>gocryptfs -speed</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>gocryptfs -init --fido2=/dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>FIDOKEY</strong></code></span><code> /home/</code>
+              <span
+              style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code>
+                </span><code>.crypt</code>
+                </span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>gocryptfs --fido2=/dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>FIDOKEY</strong></code></span><code> /home/</code>
+              <span
+              style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code>
+                </span><code>.crypt /home/</code><span style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code></span><code> -nonempty</code>
+                </span>
+            </label>
+          </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>script to mount / unmount a folder with gocryptfs + FIDO2</p>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,5 @@
+/usr/share/fonts
+/usr/share/fontconfig
+/home/$user/.*
+/etc/plymouth
+/usr/share/plymouth
