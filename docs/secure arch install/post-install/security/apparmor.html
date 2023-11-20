@@ -20,7 +20,123 @@
             </label>
           </li>
         </ul>
-        <p>&nbsp;</p>
+        <p><a href="https://wiki.archlinux.org/title/AppArmor">AppArmor - ArchWiki (archlinux.org)</a>
+        </p>
+        <p><a href="https://wiki.apparmor.net/">wiki.apparmor.net</a>
+        </p>
+        <p>check apparmor status:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>aa-status</code></span>
+            </label>
+          </li>
+        </ul>
+        <p>edit <code>/etc/dracut.conf.d/flags.conf</code>:</p>
+        <p>in the <code>kernel_cmdline</code> add the following:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>lsm=landlock,lockdown,yama,integrity,apparmor,bpf</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">regenerate the EFI image.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">reboot.</span>
+            </label>
+          </li>
+        </ul>
+        <p>check if apparmor is enabled:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>aa-enabled</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemctl enable --now apparmor</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>aa-status</code> (this should now output a list of enabled profiles)</span>
+            </label>
+          </li>
+        </ul>
+        <p>install and enable <a href="https://wiki.archlinux.org/title/Audit_framework">audit:</a>
+        </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S audit</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemctl enable --now auditd</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>groupadd -r audit</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>gpasswd -a user audit</code></span>
+            </label>
+          </li>
+        </ul>
+        <p>Add audit group to <code>/etc/audit/auditd.conf</code>:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>log_group = audit</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>reboot</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">add <code>aa-notify -p -s 1 -w 60 -f /var/log/audit/audit.log</code> to your <code>exec-once</code> list.</span>
+            </label>
+          </li>
+        </ul>
+        <p>check apparmor boot time:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemd-analyze blame | grep apparmor</code></span>
+            </label>
+          </li>
+        </ul>
+        <p>enable cache:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">edit <code>/etc/apparmor/parser.conf</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">uncomment <code>write-cache</code> and <code>Optimize=compress-fast</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">reboot</span>
+            </label>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

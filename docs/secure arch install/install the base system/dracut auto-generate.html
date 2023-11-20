@@ -15,76 +15,51 @@
       <div class="ck-content">
         <p><a href="https://bbs.archlinux.org/viewtopic.php?id=247015">[Solved] Dracut - Rebuild Initramfs on Linux Update / Newbie Corner / Arch Linux Forums</a>
         </p>
+        <p><code>mkdir /etc/pacman.d/hooks</code>
+        </p>
+        <p><code>mkdir /usr/share/dracut</code>
+        </p>
         <p><span class="text-big"><code><i>/usr/share/dracut/90-dracut-linux.script</i></code></span>
         </p><pre><code class="language-text-x-sh">#!/bin/bash
 
-
-
 kver=$(ls /lib/modules/ | grep arch)
-
 echo ${kver}
-
-dracut --force /efi/EFI/archlinux.efi --kver ${kver}</code></pre>
-        <ul class="todo-list">
+dracut --force /efi/EFI/BOOT/BOOTx64.EFI --kver ${kver}</code></pre>
+        <ul
+        class="todo-list">
           <li>
             <label class="todo-list__label">
               <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>chmod +x /usr/share/dracut/90-dracut-linux.script</code></span>
             </label>
           </li>
-        </ul>
-        <p><span class="text-big"><code><i>/etc/pacman.d/hooks/90-dracut-linux.hook</i></code></span>
-        </p><pre><code class="language-text-plain">[Trigger]
-
+          </ul>
+          <p><span class="text-big"><code><i>/etc/pacman.d/hooks/90-dracut-linux.hook</i></code></span>
+          </p><pre><code class="language-text-plain">[Trigger]
 Type = Path
-
 Operation = Install
-
 Operation = Upgrade
-
 Operation = Remove
-
 Target = usr/lib/modules/*/pkgbase
-
 Target = usr/src/*/dkms.conf
 
-
-
 [Trigger]
-
 Type = Package
-
 Operation = Install
-
 Operation = Upgrade
-
 Operation = Remove
-
 Target = dracut
-
 Target = systemd
-
 Target = amd-ucode
-
 Target = intel-ucode
-
 Target = plymouth
-
 Target = cryptsetup
-
 Target = device-mapper
 
 
-
-
-
 [Action]
-
 Description = Updating linux initcpios (with dracut!)...
-
 When = PostTransaction
-
 Exec = /usr/share/dracut/90-dracut-linux.script
-
 NeedsTargets</code></pre>
       </div>
     </div>

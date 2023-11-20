@@ -1,0 +1,82 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>firejail</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>firejail</h1>
+
+      <div class="ck-content">
+        <p><a href="https://wiki.archlinux.org/title/Firejail">Firejail - ArchWiki (archlinux.org)</a>
+        </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S firejail-git firetools-git</code></span>
+            </label>
+          </li>
+        </ul>
+        <p><span class="text-big" style="color:hsl(0,75%,60%);"><strong>warning!&nbsp;</strong></span>firejail
+          has <a href="https://github.com/netblue30/firejail/issues/3798">some problems</a> working
+          in FUSE mount paths.</p>
+        <p>fixes for firejail on FUSE / gocryptfs:</p>
+        <ol>
+          <li>the simplest solution is to <a href="firejail/FUSE%20%2B%20gocryptfs%20allow_other.html">enable the <code>allow_other</code> mount option</a>,
+            this will completely fix the issue but also reduce security as it allows
+            the root user to directly access files in your home directory.</li>
+          <li>the better option is to trick firejail out of scanning your home, so it
+            won't panic. this is my chosen solution, but consider your own threat model
+            before picking as it <a href="https://github.com/netblue30/firejail/issues/5908">may cause issues</a>,
+            especially with default profiles.</li>
+        </ol>
+        <p><a class="reference-link" href="firejail/firejail%20fixes%20for%20gocryptfs.html">firejail fixes for gocryptfs</a>
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p><a href="https://man.archlinux.org/man/firejail.1#APPARMOR">configure firejail</a> to
+          work with&nbsp;<a class="reference-link" href="../apparmor.html">apparmor</a>:</p>
+        <p><a href="https://wiki.archlinux.org/title/Firejail#Enable_AppArmor_support">3.3Enable AppArmor support (archlinux.org)</a>
+        </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>apparmor_parser -r /etc/apparmor.d/firejail-default</code></span>
+            </label>
+          </li>
+        </ul>
+        <p>to enable&nbsp;<a class="reference-link" href="../apparmor.html">apparmor</a>&nbsp;globally
+          (for firejail):</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">add <code>apparmor</code> to a new line in <code>/etc/firejail/globals.local</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">to disable for incompatible programs add <code>ignore apparmor</code> in <code>/etc/firejail/ProgramName.local</code></span>
+            </label>
+          </li>
+        </ul>
+        <p>to use apparmor on a per-app basis either use the <code>--apparmor</code> argument
+          or add <code>apparmor</code> to the <code>/etc/firejail/ProgramName.local</code> file.</p>
+        <p>&nbsp;</p>
+        <p>to check for apps running with firejail:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>firejail --tree</code></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+</html>

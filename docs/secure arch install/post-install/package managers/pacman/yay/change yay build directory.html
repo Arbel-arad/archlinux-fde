@@ -1,0 +1,44 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>change yay build directory</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>change yay build directory</h1>
+
+      <div class="ck-content">
+        <p><a href="https://nixdaily.com/linux/how-to-change-yay-build-directory-abs-directory/">How to Change YAY Build Directory &amp; ABS Directory – NIX Daily</a>
+        </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mkdir -p /home/build/{builddir,cachedir}</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>chown -R $(whoami):users /home/build</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay --builddir /path/to/the-new-build-dir --save</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay --cachedir /path/to/the-new-abs-dir --save</code></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+</html>

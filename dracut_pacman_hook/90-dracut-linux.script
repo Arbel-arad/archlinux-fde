@@ -1,5 +1,4 @@
 #!/bin/bash
 
 kver=$(ls /lib/modules/ | grep arch)
-echo ${kver}
-dracut --force /efi/EFI/Linux/archlinux.efi --kver ${kver}
+dracut --force /efi/EFI/BOOT/BOOTx64.EFI --kver ${kver}

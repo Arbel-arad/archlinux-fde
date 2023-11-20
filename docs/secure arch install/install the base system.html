@@ -25,7 +25,7 @@
         <ul class="todo-list">
           <li>
             <label class="todo-list__label">
-              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>pacstrap -K /mnt nano wget man-db gocryptfs yay networkmanager git htop vi zsh dig</code></span>
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>pacstrap -K /mnt nano wget man-db yay networkmanager git htop vi zsh</code></span>
             </label>
           </li>
         </ul>
@@ -48,7 +48,7 @@
             </li>
             <li>
               <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">check and verify all <code>fstab</code> entries, especially those containing UUIDs</span>
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">check and verify all <code>fstab</code> entries.</span>
               </label>
             </li>
           </ul>
@@ -98,7 +98,7 @@
           <ul class="todo-list">
             <li>
               <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>pacman -S dracut plymouth tpm2-tools tpm2-totp libfido2 sbctl sbsigntools efitools efibootmgr</code></span>
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>pacman -S dracut plymouth tpm2-tools tpm2-totp libfido2 pam-u2f sbctl sbsigntools efitools efibootmgr</code></span>
               </label>
             </li>
             <li>
@@ -107,29 +107,9 @@
               </label>
             </li>
           </ul>
-          <p>check secure-boot status:</p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl status</code></span>
-              </label>
-            </li>
-          </ul>
-          <p>back up secure-boot keys:</p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>for var in PK KEK db dbx&nbsp;; do efi-readvar -v $var -o old_${var}.esl&nbsp;; done</code></span>
-              </label>
-            </li>
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">go into BIOS and enable “setup mode” for secure boot.</span>
-              </label>
-            </li>
-          </ul>
-          <p>check secure-boot status (setup mode should be enabled now):</p>
-          <ul class="todo-list">
+          <p>check <a href="https://github.com/Foxboron/sbctl/wiki/FAQ">secure-boot</a> status:</p>
+          <ul
+          class="todo-list">
             <li>
               <label class="todo-list__label">
                 <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl status</code></span>
@@ -140,28 +120,38 @@
                 <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl create-keys</code></span>
               </label>
             </li>
-          </ul>
-          <p>create and edit <a href="https://wiki.archlinux.org/title/Dracut#Advanced_configuration"><code>/etc/dracut.conf.d/flags.conf</code></a>:</p>
-          <p>use <code>blkid /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span> to
-            find the partition UUID</p>
-          <p>the <code>kernel_cmdline</code> should look like this:</p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>kernel_cmdline=" rd.luks.name=</code><span style="color:hsl(30,75%,60%);"><code><strong>crypt-btrfs-UUID</strong></code></span><code>=</code>
-                <span
-                style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code>
-                  </span><code> rd.luks.name=</code><span style="color:hsl(30,75%,60%);"><code><strong>crypt-swap-UUID</strong></code></span><code>=</code>
+            </ul>
+            <p>back up secure-boot keys:</p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>for var in PK KEK db dbx&nbsp;; do efi-readvar -v $var -o old_${var}.esl&nbsp;; done</code></span>
+                </label>
+              </li>
+            </ul>
+            <p>create and edit <a href="https://wiki.archlinux.org/title/Dracut#Advanced_configuration"><code>/etc/dracut.conf.d/flags.conf</code></a>:</p>
+            <p>use <code>blkid /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span> to
+              find the partition UUID</p>
+            <p>the <code>kernel_cmdline</code> should look like this:</p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>kernel_cmdline=" rd.luks.name=</code><span style="color:hsl(30,75%,60%);"><code><strong>crypt-btrfs-UUID</strong></code></span><code>=</code>
                   <span
-                  style="color:hsl(30,75%,60%);"><code><strong>cryptswap </strong></code>
-                    </span><code>rootflags=compress=zstd:1,subvol=@ root=/dev/mapper/</code>
+                  style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code>
+                    </span><code> rd.luks.name=</code><span style="color:hsl(30,75%,60%);"><code><strong>crypt-swap-UUID</strong></code></span><code>=</code>
                     <span
-                    style="color:hsl(30,75%,60%);"><code><strong>cryptroot </strong></code>
-                      </span><code>resume=/dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptswap</strong></code></span><code> loglevel=0 rd.lvm=0 rd.md=0 rd.dm=0 rw quiet splash "</code>
-                      </span>
-              </label>
-            </li>
-          </ul><pre><code class="language-text-plain">hostonly="yes"
+                    style="color:hsl(30,75%,60%);"><code><strong>cryptswap </strong></code>
+                      </span><code>rootflags=compress=zstd:1,subvol=@ root=/dev/mapper/</code>
+                      <span
+                      style="color:hsl(30,75%,60%);"><code><strong>cryptroot </strong></code>
+                        </span><code>resume=/dev/mapper/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptswap</strong></code></span><code> loglevel=0 rd.lvm=0 rd.md=0 rd.dm=0 intel_iommu=on iommu=pt efi=disable_early_pci_dma rw quiet splash "</code>
+                        </span>
+                </label>
+              </li>
+            </ul>
+            <p><a href="https://www.linux.org/docs/man7/kernel-command-line.html">kernel-command-line - Kernel command line parameters at Linux.org</a>
+            </p><pre><code class="language-text-plain">hostonly="yes"
 hostonly_mode="sloppy"
 add_dracutmodules+=" plymouth resume tpm2-tss fido2 tpm2-totp "
 do_strip="yes"
@@ -173,125 +163,144 @@ uefi="yes"
 uefi_splash_image=""
 uefi_secureboot_cert="/usr/share/secureboot/keys/db/db.pem"
 uefi_secureboot_key="/usr/share/secureboot/keys/db/db.key"</code></pre>
-          <p><a href="https://man.archlinux.org/man/dracut.conf.5.en">dracut.conf(5) — Arch manual pages (archlinux.org)</a>
-          </p>
-          <p><a href="https://man.archlinux.org/man/dracut.8#OPTIONS">dracut(8) — Arch manual pages (archlinux.org)</a>
-          </p>
-          <p><a href="https://gist.github.com/Neurognostic/259f1ba1e568b31f0732a4a18f399f9e">Dracut UEFI Unified Kernel Image with Secure Boot Signing (github.com)</a>
-          </p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">run <code>dracut /efi/EFI/Linux/archlinux.efi --force</code> to regenerate the images.</span>
-              </label>
-            </li>
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">&nbsp;also consider&nbsp;<a class="reference-link" href="install%20the%20base%20system/dracut%20auto-generate.html">dracut auto-generate</a>&nbsp;for updates.</span>
-              </label>
-            </li>
-          </ul>
-          <p>add UEFI entries:</p>
-          <p><code>/dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span> is
-            the path to the drive containing the <span style="color:hsl(30,75%,60%);"><code><strong>EFI</strong></code></span> partition.
-            the partition is specified separately with <code>--part </code><span style="color:hsl(30,75%,60%);"><code><strong>X</strong></code></span>
-          </p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr --create --disk /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span><code> --part 1 --label "ArchLinux" --loader /EFI/Linux/archlinux.efi</code>
-                </span>
-              </label>
-            </li>
-          </ul>
-          <p>inspecting the image:</p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>lsinitrd | less</code></span>
-              </label>
-            </li>
-          </ul>
-          <p><a href="install%20the%20base%20system/EFI-STUB.html">more information about the EFI-stub</a>.</p>
-          <p>show and set boot order:</p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr</code></span>
-              </label>
-            </li>
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr --bootorder 0003,0004,0005</code></span>
-              </label>
-            </li>
-          </ul>
-          <p>reboot into the new install.</p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl enroll-keys</code> (add <code>-m</code> to include microsoft keys)</span>
-              </label>
-            </li>
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl verify</code> (all files should be green and say “signed”)</span>
-              </label>
-            </li>
-          </ul>
-          <p>reboot and enable secure boot.</p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl status</code> should now be fully green.</span>
-              </label>
-            </li>
-          </ul>
-          <p>enable <code>networkmanager</code>:</p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemctl enable --now NetworkManager</code></span>
-              </label>
-            </li>
-          </ul>
-          <p>set timezone:</p>
-          <ul class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>curl </code><a href="https://ipapi.co/timezone"><code>https://ipapi.co/timezone</code></a> this will return your <span style="color:hsl(30,75%,60%);"><strong>timezone</strong></span></span>
-              </label>
-            </li>
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>timedatectl set-timezone </code><span style="color:hsl(30,75%,60%);"><code><strong>timezone</strong></code></span>&nbsp;</span>
-              </label>
-            </li>
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>timedatectl set-ntp 1</code></span>
-              </label>
-            </li>
-          </ul>
-          <p><a href="https://wiki.archlinux.org/title/NetworkManager#Usage">connect to a network</a>:</p>
-          <ul
-          class="todo-list">
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>nmcli device wifi list</code></span>
-              </label>
-            </li>
-            <li>
-              <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>nmcli device wifi connect </code><span style="color:hsl(30,75%,60%);"><code><i><strong>SSID_or_BSSID</strong></i></code></span><code> password </code>
-                <span
-                style="color:hsl(30,75%,60%);"><code><i><strong>password</strong></i></code>
-                  </span>
-                  </span>
-              </label>
-            </li>
+            <p><a href="https://man.archlinux.org/man/dracut.conf.5.en">dracut.conf(5) — Arch manual pages (archlinux.org)</a>
+            </p>
+            <p><a href="https://man.archlinux.org/man/dracut.8#OPTIONS">dracut(8) — Arch manual pages (archlinux.org)</a>
+            </p>
+            <p><a href="https://gist.github.com/Neurognostic/259f1ba1e568b31f0732a4a18f399f9e">Dracut UEFI Unified Kernel Image with Secure Boot Signing (github.com)</a>
+            </p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mkdir -p /efi/EFI/BOOT</code></span>
+                </label>
+              </li>
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">run <code>dracut /efi/EFI/BOOT/BOOTx64.EFI --force</code> to regenerate the images.</span>
+                </label>
+              </li>
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">&nbsp;also consider&nbsp;<a class="reference-link" href="install%20the%20base%20system/dracut%20auto-generate.html">dracut auto-generate</a>&nbsp;for updates.</span>
+                </label>
+              </li>
             </ul>
-            <p>proceed to <a href="setup%20decryption.html">setup decryption</a>.</p>
+            <p>inspecting the image:</p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>lsinitrd | less</code></span>
+                </label>
+              </li>
+            </ul>
+            <p>add UEFI entries:</p>
+            <p>the default UEFI boot paths are:</p><pre><code class="language-text-plain">esp/EFI/BOOT/BOOTx64.EFI
+esp/EFI/BOOT/BOOTIA.EFI</code></pre>
+            <p>the files on those paths should be automatically detected and listed in
+              the UEFI menu.</p>
+            <p>if your images are missing, or you want custom names in the menu, it is
+              possible to add them manually as described:</p>
+            <p><code>/dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span> is
+              the path to the drive containing the <span style="color:hsl(30,75%,60%);"><code><strong>EFI</strong></code></span> partition.
+              the partition is specified separately with <code>--part </code><span style="color:hsl(30,75%,60%);"><code><strong>X</strong></code></span>
+            </p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr --create --disk /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span><code> --part 1 --label "ArchLinux" --loader /efi/EFI/BOOT/BOOTx64.EFI</code>
+                  </span>
+                </label>
+              </li>
+            </ul>
+            <p><a href="install%20the%20base%20system/EFI-STUB.html">more information about the EFI-stub</a>.</p>
+            <p>show and set boot order:</p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr</code></span>
+                </label>
+              </li>
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr --bootorder 0003,0004,0005</code></span>
+                </label>
+              </li>
+            </ul>
+            <p>reboot into the new install.</p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">go into BIOS and enable “setup mode” for secure boot.</span>
+                </label>
+              </li>
+            </ul>
+            <p>check secure-boot status (setup mode should be enabled now):</p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl status</code></span>
+                </label>
+              </li>
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl enroll-keys</code> (add <code>-m</code> to include microsoft keys)</span>
+                </label>
+              </li>
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl verify</code> (all files should be green and say “signed”)</span>
+                </label>
+              </li>
+            </ul>
+            <p>reboot and enable secure boot.</p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl status</code> should now be fully green.</span>
+                </label>
+              </li>
+            </ul>
+            <p>enable <code>networkmanager</code>:</p>
+            <ul class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemctl enable --now NetworkManager</code></span>
+                </label>
+              </li>
+            </ul>
+            <p><a href="https://wiki.archlinux.org/title/NetworkManager#Usage">connect to a network</a>:</p>
+            <ul
+            class="todo-list">
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>nmcli device wifi list</code></span>
+                </label>
+              </li>
+              <li>
+                <label class="todo-list__label">
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>nmcli device wifi connect </code><span style="color:hsl(30,75%,60%);"><code><i><strong>SSID_or_BSSID</strong></i></code></span><code> password </code>
+                  <span
+                  style="color:hsl(30,75%,60%);"><code><i><strong>password</strong></i></code>
+                    </span>
+                    </span>
+                </label>
+              </li>
+              </ul>
+              <p>set timezone:</p>
+              <ul class="todo-list">
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>timedatectl set-timezone $(curl </code><a href="https://ipapi.co/timezone"><code>https://ipapi.co/timezone</code></a><code>)</code></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>timedatectl set-ntp 1</code></span>
+                  </label>
+                </li>
+              </ul>
+              <p>proceed to <a href="setup%20decryption.html">setup decryption</a>.</p>
       </div>
     </div>
   </body>

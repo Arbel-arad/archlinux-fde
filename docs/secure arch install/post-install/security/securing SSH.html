@@ -31,17 +31,62 @@
         <p>adding <code>-resident</code> to the command will write the handle to the
           hardware, allowing for easier use on multiple computers</p>
         <p>&nbsp;</p>
+        <p><a href="https://man.freebsd.org/cgi/man.cgi?sshd_config(5)">sshd_config(5) (freebsd.org)</a>
+        </p>
         <p>limit SSH to only accept hardware-based keys:</p>
         <p>in <code>/etc/ssh/sshd_config</code>:</p>
         <ul class="todo-list">
           <li>
             <label class="todo-list__label">
-              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>PubkeyAcceptedKeyTypes sk-ssh-ed25519@openssh.com</code></span>
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>Port 22</code> select a port for SSH (remember to set this in the firewall as well)</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>ListenAddress IPv4_address:port [rdomain domain]</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>AuthenticationMethods publickey,keyboard-interactive</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>PubkeyAcceptedKeyTypes </code><a href="mailto:sk-ssh-ed25519@openssh.com"><code>sk-ssh-ed25519@openssh.com</code></a> append <code>, ssh-ed25519</code> to also allow non-HSM keys.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>CASignatureAlgorithms </code><a href="mailto:sk-ssh-ed25519@openssh.com"><code>sk-ssh-ed25519@openssh.com</code></a> same as above.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>KbdInteractiveAuthentication yes</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>PubkeyAuthentication yes</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>PermitRootLogin no</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>AllowGroups users</code> or <code>AllowUsers </code><span style="color:hsl(30,75%,60%);"><code><strong>username</strong></code></span></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>X11Forwarding no</code> if you want GUI forwarding look at&nbsp;<a class="reference-link" href="../customization/desktop/remote%20desktop/waypipe.html">waypipe</a>&nbsp;instead.</span>
             </label>
           </li>
         </ul>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
       </div>
     </div>
   </body>

@@ -12,7 +12,20 @@
     <div class="content">
        <h1 data-trilium-h1>shell timeout</h1>
 
-      <div class="ck-content"></div>
+      <div class="ck-content">
+        <p><a href="https://wiki.archlinux.org/title/Security#Automatic_logout">12.6Automatic logout (archlinux.org)</a>
+        </p>
+        <p><code>/etc/profile.d/shell-timeout.sh</code>
+        </p><pre><code class="language-text-plain">TMOUT="$(( 60*10 ))";
+
+[ -z "$DISPLAY" ] &amp;&amp; export TMOUT;
+
+case $( /usr/bin/tty ) in
+
+	/dev/tty[0-9]*) export TMOUT;;
+
+esac</code></pre>
+      </div>
     </div>
   </body>
 

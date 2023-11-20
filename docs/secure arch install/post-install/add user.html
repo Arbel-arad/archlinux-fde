@@ -20,6 +20,11 @@
               <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">&nbsp;<code>visudo</code> and edit the config to your liking (to save in VI press :wp)</span>
             </label>
           </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>use the <code>add_user.sh</code>  <a href="add%20user/add_user.sh">script</a> or
+          manually:</p>
+        <ul class="todo-list">
           <li>
             <label class="todo-list__label">
               <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>useradd -m -G wheel -g users -s /bin/zsh </code><span style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code></span></span>
@@ -31,8 +36,15 @@
             </label>
           </li>
         </ul>
-        <p>&nbsp;</p>
         <p>enabling <a href="https://github.com/rfjakob/gocryptfs">gocryptfs</a>:</p>
+        <p><span class="text-big" style="color:hsl(0,75%,60%);"><strong>warning!</strong></span> &nbsp;using
+          gocryptfs blocks other users <strong>(including root)</strong> from accessing
+          the directory, even while it's unlocked.</p>
+        <p>this may cause issues with some programs like&nbsp;<a class="reference-link"
+          href="package%20managers/pacman/yay">yay</a>&nbsp;which attempt to read
+          data from the user's home with the root account.</p>
+        <p>consider <a href="package%20managers/pacman/yay/change%20yay%20build%20directory.html">making a separate folder</a> for
+          building&nbsp;<a class="reference-link" href="package%20managers/AUR.html">AUR</a>&nbsp;packages.</p>
         <p><a href="https://nuetzlich.net/gocryptfs/comparison/">Comparison with Other Projects - gocryptfs (nuetzlich.net)</a>
         </p>
         <p><a href="https://nuetzlich.net/gocryptfs/forward_mode_crypto/">Cryptography - gocryptfs (nuetzlich.net)</a>
@@ -78,8 +90,20 @@
             </label>
           </li>
         </ul>
-        <p>&nbsp;</p>
-        <p>script to mount / unmount a folder with gocryptfs + FIDO2</p>
+        <p>enroll a FIDO2 key for PAM authentication (if a key already exists for
+          this user, replace the <code>&gt;</code> with <code>-n &gt;&gt;</code>:</p>
+        <ul
+        class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>pamu2fcfg -o pam://$(hostnamectl hostname) -i pam://$(hostnamectl hostname) &gt; ~/.config/Yubico/u2f_keys</code></span>
+            </label>
+          </li>
+          </ul>
+          <p>(the folder name has to be <code>~/.config/</code><span style="color:hsl(0,0%,100%);"><code><strong>Yubico</strong></code></span> because
+            it's hardcoded in the module)</p>
+          <p>&nbsp;</p>
+          <p>script to mount / unmount a folder with gocryptfs + FIDO2</p>
       </div>
     </div>
   </body>

@@ -20,9 +20,20 @@
         </p>
         <p><a href="https://wiki.archlinux.org/title/Clevis">Clevis</a>
         </p>
-        <p>&nbsp;</p>
-        <p><a href="https://github.com/tpm2-software/tpm2-totp">tpm2-software/tpm2-totp: Attest the trustworthiness of a device against a human using time-based one-time passwords (github.com)</a>
-        </p>
+        <p>if you don't have access to two hardware keys (FIDO2 + TPM2) you should
+          enroll a recovery key:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemd-cryptenroll --recovery-key /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>cryptroot</strong></code></span></span>
+            </label>
+          </li>
+        </ul>
+        <p>you can also use <a href="https://github.com/tpm2-software/tpm2-totp">tpm2-totp</a> to
+          validate the system state when booting, to avoid inputting sensitive data
+          to a compromised system.</p>
+        <p>a better alternative is <a href="https://gitlab.com/cryptographic_id/cryptographic-id-rs">Cryptographic ID</a> but
+          has a more involved setup.</p>
         <ul class="todo-list">
           <li>
             <label class="todo-list__label">
@@ -36,12 +47,17 @@
           </li>
           <li>
             <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">enroll the provided token in your TOTP app.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
               <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2_pcrread</code> save these values for reference</span>
             </label>
           </li>
           <li>
             <label class="todo-list__label">
-              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>dracut /efi/EFI/Linux/archlinux.efi --force</code></span>
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>dracut /efi/EFI/BOOT/BOOTx64.EFI --force</code></span>
             </label>
           </li>
           <li>
@@ -65,8 +81,26 @@
             </label>
           </li>
         </ul>
-        <p>after verifying your selected decryption methods, proceed to&nbsp;<a class="reference-link"
-          href="post-install.html">post-install</a>.</p>
+        <p>if you intend to use <code>gocryptfs</code> home encryption:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S gocryptfs sddm</code></span>
+            </label>
+          </li>
+        </ul>
+        <p>edit the <code>/usr/share/sddm/scripts/wayland-session</code> file.</p>
+        <ul
+        class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">add the following lines after the <code>case | esac</code> statement.</span>
+            </label>
+          </li>
+          </ul><pre><code class="language-text-x-sh">gocryptfs --fido2=$(systemd-cryptenroll --fido2-device=list | grep ‘^/dev/hidraw[0-9]\+’ -o) /home/$(whoami).crypt /home/$(whoami) -i=1h -nonempty -q
+cd ~</code></pre>
+          <p>after verifying your selected decryption methods, proceed to&nbsp;<a class="reference-link"
+            href="post-install.html">post-install</a>.</p>
       </div>
     </div>
   </body>

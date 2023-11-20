@@ -1,0 +1,40 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>firejail fixes for gocryptfs</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>firejail fixes for gocryptfs</h1>
+
+      <div class="ck-content">
+        <p>by default firejail will try to scan the home directory for <code>profile.local</code> files.</p>
+        <p>i'm not sure why it's done, but it feels like a risk and won't work anyway
+          in our case.</p>
+        <p>the better option is to put your <code>profile.local</code> files in <code>/etc/firejail/</code> as
+          if a profile is found there no search will be required in the home directory.</p>
+        <p>to do this you can either manually <code>touch</code> all of the required
+          files for your use, or run this command to add a <code>.local</code> for
+          every file found:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>for file in $(ls /etc/firejail); do touch /etc/firejail/$(echo $file | cut -d"." -f1).local; done</code> <span style="color:hsl(0, 75%, 60%);"><strong>(requires filtering additions)</strong></span></span>
+            </label>
+          </li>
+        </ul>
+        <p>do <span style="color:hsl(0, 75%, 60%);"><strong>NOT</strong></span> run <code>firecfg</code> without
+          verifying all profiles work correctly or some apps might not open.</p>
+        <p>you can test it, and then disable the profiles with <code>firecfg --clean</code>
+        </p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </body>
+
+</html>
