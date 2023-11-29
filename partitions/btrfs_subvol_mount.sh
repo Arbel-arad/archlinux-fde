@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@ /dev/mapper/cryptroot /mnt
 mkdir -p /mnt/{efi,home,tmp,usr,dev/shm,var,.snapshots}
-mount -o nodev,nosuid,noexec /dev/disk/by-label/EFI /mnt/efi
+mount -o nodev,nosuid,noexec /dev/disk/by-label/ESP /mnt/efi
 mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@home,nodev,nosuid /dev/mapper/cryptroot /mnt/home
 mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@tmp,nodev,nosuid,noexec /dev/mapper/cryptroot /mnt/tmp
 mount -o defaults,compress=zstd:1,discard=async,ssd,subvol=@usr,nodev /dev/mapper/cryptroot /mnt/usr
