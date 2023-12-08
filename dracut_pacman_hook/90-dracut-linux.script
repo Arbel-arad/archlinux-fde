@@ -1,4 +1,8 @@
 #!/bin/bash
 
+rm /efi/EFI/BOOT/BOOTIA.EFI
+cp /efi/EFI/BOOT/BOOTx64.EFI /efi/EFI/BOOT/BOOTIA.EFI
+
 kver=$(ls /lib/modules/ | grep arch)
+echo ${kver}
 dracut --force /efi/EFI/BOOT/BOOTx64.EFI --kver ${kver}

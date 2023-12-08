@@ -12,7 +12,16 @@
     <div class="content">
        <h1 data-trilium-h1>EFI-STUB</h1>
 
-      <div class="ck-content"><pre><code class="language-text-x-sh">efibootmgr --create --disk /dev/nvme0n1 --part 1 --label "Arch Linux" --loader /vmlinuz-linux --unicode 'rd.luks.name=xxxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx=cryptroot root=/dev/mapper/cryptroot rootflags=subvol=@ rw quiet splash vt.global_cursor_default=0 loglevel=3 initrd=amd-ucode.img initrd=initramfs-linux.img'</code></pre>
+      <div class="ck-content"><pre><code class="language-text-x-sh">efibootmgr --create --disk /dev/nvme0n1 --part 1 --label "Arch Linux" --loader /EFI/BOOT/</code></pre>
+        <p>limitations of&nbsp;<a class="reference-link" href="EFI-STUB.html">EFI-STUB</a>:</p>
+        <ul>
+          <li><code>/dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span> has
+            to be a hardware drive (no <code>/dev/mapper</code>)</li>
+          <li><code>--part</code> is the GPT partition number, they start from 1, not
+            0. use <code>fdisk /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span> to
+            list the partitions.</li>
+        </ul>
+        <p>&nbsp;</p>
         <p><a href="https://libreddit.lunar.icu/r/archlinux/comments/11aqxnk/install_with_luks_btrfs_efistub_sdencrypt">Install with luks + btrfs + efistub + sd-encrypt - r/archlinux (lunar.icu)</a>
         </p>
         <p><a href="https://wiki.archlinux.org/title/EFISTUB">EFISTUB - ArchWiki (archlinux.org)</a>
@@ -33,7 +42,7 @@
           are only read by the initramfs generator, while the system is booted.</p>
         <p>the unencrypted ESP should only contain signed verified initrd files.
           (no configs that can be edited externally).</p>
-        <figure class="image image_resized image-style-block-align-left"
+        <figure class="image image-style-block-align-left image_resized"
         style="width:53.18%;">
           <img src="EFI-STUB_image.png">
         </figure>

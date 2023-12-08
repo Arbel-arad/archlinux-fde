@@ -1,0 +1,69 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>hyprland plugins</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>hyprland plugins</h1>
+
+      <div class="ck-content">
+        <p><a href="https://wiki.hyprland.org/Plugins/Using-Plugins/">Using Plugins | Hyprland Wiki</a>
+        </p>
+        <p><a href="https://github.com/hyprwm/hyprland-plugins">hyprwm/hyprland-plugins: Official plugins for Hyprland (github.com)</a>
+        </p>
+        <p><a href="https://github.com/topics/hyprland-plugin">hyprland-plugin · GitHub Topics</a>
+        </p>
+        <ul>
+          <li><a class="reference-link" href="hyprland%20plugins/hyprload.html">hyprload</a>
+          </li>
+          <li><a class="reference-link" href="hyprland%20plugins/hy3.html">hy3</a>
+          </li>
+          <li><a class="reference-link" href="hyprland%20plugins/split-monitor-workspaces.html">split-monitor-workspaces</a>
+          </li>
+          <li><a class="reference-link" href="hyprland%20plugins/hyprgrass.html">hyprgrass</a>
+          </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>install <a href="https://github.com/Duckonaut/hyprload">hyprload</a>:</p>
+        <ul
+        class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>curl -sSL </code><a href="https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh"><code>https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh</code></a></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>cat install.sh | bash</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">add <code>exec-once=$HOME/.local/share/hyprload/hyprload.sh</code> to <code>~/.config/hypr/hyprland.conf</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">make a config list in <code>~/.config/hypr/hyprload.toml</code></span>
+            </label>
+          </li>
+          </ul><pre><code class="language-text-x-toml">plugins = [
+	"Duckonaut/split-monitor-workspaces",
+	"horriblename/hyprgrass",
+	"outfoxxed/hy3",
+	"hyprwm/hyprland-plugins"
+]</code></pre>
+          <p>add hyprland binds to allow reloading and updating of plugins:</p><pre><code class="language-text-x-sh">bind=SUPERSHIFT,R,hyprload,reload
+
+bind=SUPERSHIFT,U,hyprload,update</code></pre>
+      </div>
+    </div>
+  </body>
+
+</html>

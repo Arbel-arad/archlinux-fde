@@ -1,6 +1,6 @@
 {
 	"formatVersion": 2,
-	"appVersion": "0.61.9-beta",
+	"appVersion": "0.62.3",
 	"files": [
 		{
 			"noteId": "5D4uHPE2eFxf",
@@ -43,13 +43,6 @@
 				{
 					"type": "relation",
 					"name": "internalLink",
-					"value": "9w42wQtZXusm",
-					"isInheritable": false,
-					"position": 40
-				},
-				{
-					"type": "relation",
-					"name": "internalLink",
 					"value": "J8KjRDKQ6eNh",
 					"isInheritable": false,
 					"position": 50
@@ -71,13 +64,514 @@
 				{
 					"type": "relation",
 					"name": "internalLink",
-					"value": "TWwaSVE8IWdD",
+					"value": "1e2wZdlibzcR",
 					"isInheritable": false,
-					"position": 80
+					"position": 90
+				},
+				{
+					"type": "relation",
+					"name": "internalLink",
+					"value": "jep1B9GJf9Ev",
+					"isInheritable": false,
+					"position": 100
+				},
+				{
+					"type": "relation",
+					"name": "internalLink",
+					"value": "2pw5w1ldJcj4",
+					"isInheritable": false,
+					"position": 110
 				}
 			],
 			"attachments": [],
 			"children": [
+				{
+					"noteId": "2pw5w1ldJcj4",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"2pw5w1ldJcj4"
+					],
+					"isClone": false,
+					"title": "connect to a network",
+					"notePosition": 10,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dataFileName": "connect to a network.html",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "TWwaSVE8IWdD",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "TWwaSVE8IWdD",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"TWwaSVE8IWdD"
+					],
+					"isClone": false,
+					"title": "partitioning and formatting",
+					"notePosition": 20,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dataFileName": "partitioning and formatting.html",
+					"dirFileName": "partitioning and formatting",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "G48FCktGT9Fq",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "DuXPeYdNNPH1",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "ek3PHMFWuJaK",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "aIcDsQtmDUQE",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "5jewK57HvHlE",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "5jewK57HvHlE",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"TWwaSVE8IWdD",
+								"5jewK57HvHlE"
+							],
+							"isClone": false,
+							"title": "drive mapping",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "mermaid",
+							"mime": "text/plain",
+							"dataFileName": "drive mapping.txt",
+							"dirFileName": "drive mapping",
+							"noImport": false,
+							"attributes": [],
+							"attachments": [],
+							"children": [
+								{
+									"noteId": "DuXPeYdNNPH1",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"TWwaSVE8IWdD",
+										"5jewK57HvHlE",
+										"DuXPeYdNNPH1"
+									],
+									"isClone": false,
+									"title": "btrfs_subvol_create.sh",
+									"notePosition": 0,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/x-sh",
+									"dataFileName": "btrfs_subvol_create.sh",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "aIcDsQtmDUQE",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"TWwaSVE8IWdD",
+										"5jewK57HvHlE",
+										"aIcDsQtmDUQE"
+									],
+									"isClone": false,
+									"title": "folder mounts",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "folder mounts.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "ek3PHMFWuJaK",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"TWwaSVE8IWdD",
+										"5jewK57HvHlE",
+										"ek3PHMFWuJaK"
+									],
+									"isClone": false,
+									"title": "btrfs_subvol_mount.sh",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/x-sh",
+									"dataFileName": "btrfs_subvol_mount.sh",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"noteId": "G48FCktGT9Fq",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"G48FCktGT9Fq"
+					],
+					"isClone": false,
+					"title": "install the base system",
+					"notePosition": 30,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dataFileName": "install the base system.html",
+					"dirFileName": "install the base system",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "jFkoEKSMPbWY",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "mapType",
+							"value": "link",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "IMAt1ENOntQP",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "jaevayxWt6pB",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "upJrHStq0l6n",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "1e2wZdlibzcR",
+							"isInheritable": false,
+							"position": 70
+						}
+					],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "IMAt1ENOntQP",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"G48FCktGT9Fq",
+								"IMAt1ENOntQP"
+							],
+							"isClone": false,
+							"title": "EFI-STUB",
+							"notePosition": 0,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "EFI-STUB.html",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "IMAt1ENOntQP",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": [
+								{
+									"attachmentId": "0mTHmBwjkguw",
+									"title": "image.png",
+									"role": "image",
+									"mime": "image/png",
+									"position": 10,
+									"dataFileName": "EFI-STUB_image.png"
+								}
+							]
+						},
+						{
+							"noteId": "1e2wZdlibzcR",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"G48FCktGT9Fq",
+								"1e2wZdlibzcR"
+							],
+							"isClone": false,
+							"title": "dracut",
+							"notePosition": 40,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "dracut.html",
+							"dirFileName": "dracut",
+							"noImport": false,
+							"attributes": [],
+							"attachments": [],
+							"children": [
+								{
+									"noteId": "jFkoEKSMPbWY",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"G48FCktGT9Fq",
+										"1e2wZdlibzcR",
+										"jFkoEKSMPbWY"
+									],
+									"isClone": false,
+									"title": "dracut auto-generate",
+									"notePosition": 0,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "dracut auto-generate.html",
+									"noImport": false,
+									"attributes": [
+										{
+											"type": "label",
+											"name": "mapType",
+											"value": "link",
+											"isInheritable": false,
+											"position": 10
+										}
+									],
+									"attachments": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"noteId": "upJrHStq0l6n",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"upJrHStq0l6n"
+					],
+					"isClone": false,
+					"title": "add user",
+					"notePosition": 41,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dataFileName": "add user.html",
+					"dirFileName": "add user",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Ljf5qaK3YBO9",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "DMo285CghKcy",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "29X5K8fWJdzl",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "ZipqSkFdlbAQ",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "OIbb7UJXlUMD",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "WrQGlXL3tp9d",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "lqfsP1jD6Cp4",
+							"isInheritable": false,
+							"position": 90
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "5clDl5r2BT90",
+							"isInheritable": false,
+							"position": 100
+						}
+					],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "5clDl5r2BT90",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"upJrHStq0l6n",
+								"5clDl5r2BT90"
+							],
+							"isClone": false,
+							"title": "mount_home.sh",
+							"notePosition": 11,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "code",
+							"mime": "text/x-sh",
+							"dataFileName": "mount_home.sh",
+							"noImport": false,
+							"attributes": [],
+							"attachments": []
+						},
+						{
+							"noteId": "lqfsP1jD6Cp4",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"upJrHStq0l6n",
+								"lqfsP1jD6Cp4"
+							],
+							"isClone": false,
+							"title": "add_user.sh",
+							"notePosition": 21,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "code",
+							"mime": "text/x-sh",
+							"dataFileName": "add_user.sh",
+							"noImport": false,
+							"attributes": [],
+							"attachments": []
+						}
+					]
+				},
+				{
+					"noteId": "ZipqSkFdlbAQ",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"ZipqSkFdlbAQ"
+					],
+					"isClone": false,
+					"title": "setup decryption",
+					"notePosition": 70,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dataFileName": "setup decryption.html",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "w89etuofWYAW",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "vyna4IVnMjbz",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "dn2OdOGkOGm4",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pBNxhM7Dr3AN",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": []
+				},
 				{
 					"noteId": "dn2OdOGkOGm4",
 					"notePath": [
@@ -86,7 +580,7 @@
 					],
 					"isClone": false,
 					"title": "post-install",
-					"notePosition": 50,
+					"notePosition": 80,
 					"prefix": null,
 					"isExpanded": true,
 					"type": "text",
@@ -102,13 +596,6 @@
 							"value": "tree",
 							"isInheritable": false,
 							"position": 10
-						},
-						{
-							"type": "relation",
-							"name": "internalLink",
-							"value": "9w42wQtZXusm",
-							"isInheritable": false,
-							"position": 20
 						},
 						{
 							"type": "relation",
@@ -130,102 +617,52 @@
 							"value": "a0hjz6Zr8Ajk",
 							"isInheritable": false,
 							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "BYZcaoKKxAcV",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Ig43ULLiwMDe",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "jep1B9GJf9Ev",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "gICuymd4rmR3",
+							"isInheritable": false,
+							"position": 90
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "StorTJGtvC9l",
+							"isInheritable": false,
+							"position": 100
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RyklKcG5nB1y",
+							"isInheritable": false,
+							"position": 110
 						}
 					],
 					"attachments": [],
 					"children": [
-						{
-							"noteId": "9w42wQtZXusm",
-							"notePath": [
-								"5D4uHPE2eFxf",
-								"dn2OdOGkOGm4",
-								"9w42wQtZXusm"
-							],
-							"isClone": false,
-							"title": "add user",
-							"notePosition": 10,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"format": "html",
-							"dataFileName": "add user.html",
-							"dirFileName": "add user",
-							"noImport": false,
-							"attributes": [
-								{
-									"type": "relation",
-									"name": "internalLink",
-									"value": "2xPeDXOdkMI4",
-									"isInheritable": false,
-									"position": 10
-								},
-								{
-									"type": "relation",
-									"name": "internalLink",
-									"value": "Ljf5qaK3YBO9",
-									"isInheritable": false,
-									"position": 20
-								},
-								{
-									"type": "relation",
-									"name": "internalLink",
-									"value": "DMo285CghKcy",
-									"isInheritable": false,
-									"position": 30
-								},
-								{
-									"type": "relation",
-									"name": "internalLink",
-									"value": "29X5K8fWJdzl",
-									"isInheritable": false,
-									"position": 40
-								}
-							],
-							"attachments": [],
-							"children": [
-								{
-									"noteId": "0Zf1N9WoJ7v5",
-									"notePath": [
-										"5D4uHPE2eFxf",
-										"dn2OdOGkOGm4",
-										"9w42wQtZXusm",
-										"0Zf1N9WoJ7v5"
-									],
-									"isClone": false,
-									"title": "mount_home.sh",
-									"notePosition": 10,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "code",
-									"mime": "text/x-sh",
-									"dataFileName": "mount_home.sh",
-									"noImport": false,
-									"attributes": [],
-									"attachments": []
-								},
-								{
-									"noteId": "2xPeDXOdkMI4",
-									"notePath": [
-										"5D4uHPE2eFxf",
-										"dn2OdOGkOGm4",
-										"9w42wQtZXusm",
-										"2xPeDXOdkMI4"
-									],
-									"isClone": false,
-									"title": "add_user.sh",
-									"notePosition": 20,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "code",
-									"mime": "text/x-sh",
-									"dataFileName": "add_user.sh",
-									"noImport": false,
-									"attributes": [],
-									"attachments": []
-								}
-							]
-						},
 						{
 							"noteId": "JNHwGg3wrniL",
 							"notePath": [
@@ -235,9 +672,9 @@
 							],
 							"isClone": false,
 							"title": "customization",
-							"notePosition": 50,
+							"notePosition": 60,
 							"prefix": null,
-							"isExpanded": false,
+							"isExpanded": true,
 							"type": "text",
 							"mime": "text/html",
 							"format": "html",
@@ -272,6 +709,13 @@
 									"value": "sYeAMh4klMic",
 									"isInheritable": false,
 									"position": 40
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "7H2NaS59IStJ",
+									"isInheritable": false,
+									"position": 50
 								}
 							],
 							"attachments": [],
@@ -293,27 +737,6 @@
 									"mime": "text/html",
 									"format": "html",
 									"dataFileName": "plymouth.html",
-									"noImport": false,
-									"attributes": [],
-									"attachments": []
-								},
-								{
-									"noteId": "1sqAJzKY66TP",
-									"notePath": [
-										"5D4uHPE2eFxf",
-										"dn2OdOGkOGm4",
-										"JNHwGg3wrniL",
-										"1sqAJzKY66TP"
-									],
-									"isClone": false,
-									"title": "fonts",
-									"notePosition": 30,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"format": "html",
-									"dataFileName": "fonts.html",
 									"noImport": false,
 									"attributes": [],
 									"attachments": []
@@ -350,7 +773,7 @@
 									"title": "desktop",
 									"notePosition": 10,
 									"prefix": null,
-									"isExpanded": false,
+									"isExpanded": true,
 									"type": "text",
 									"mime": "text/html",
 									"format": "html",
@@ -413,6 +836,69 @@
 											"value": "LjgKGzBEuYhK",
 											"isInheritable": false,
 											"position": 80
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "BTGYe94UQmFH",
+											"isInheritable": false,
+											"position": 90
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "TzUIw3dY3W85",
+											"isInheritable": false,
+											"position": 100
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "64tOdC3l1wDq",
+											"isInheritable": false,
+											"position": 110
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "79uOnYcDton3",
+											"isInheritable": false,
+											"position": 120
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "ivas2giXDNdu",
+											"isInheritable": false,
+											"position": 130
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "TPJmmzAnmTPp",
+											"isInheritable": false,
+											"position": 140
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "XUFWKVAcbfZy",
+											"isInheritable": false,
+											"position": 150
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "Ldbk9YV4w22E",
+											"isInheritable": false,
+											"position": 160
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "BrJepHTbwCJS",
+											"isInheritable": false,
+											"position": 170
 										}
 									],
 									"attachments": [],
@@ -430,14 +916,29 @@
 											"title": "hyprland",
 											"notePosition": 10,
 											"prefix": null,
-											"isExpanded": false,
+											"isExpanded": true,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
 											"dataFileName": "hyprland.html",
 											"dirFileName": "hyprland",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "pBNxhM7Dr3AN",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "niMOtliCEjVA",
+													"isInheritable": false,
+													"position": 20
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -482,9 +983,44 @@
 													"mime": "text/html",
 													"format": "html",
 													"dataFileName": "screen sharing.html",
+													"dirFileName": "screen sharing",
 													"noImport": false,
-													"attributes": [],
-													"attachments": []
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "fcfjQpKiOhAY",
+															"isInheritable": false,
+															"position": 10
+														}
+													],
+													"attachments": [],
+													"children": [
+														{
+															"noteId": "fcfjQpKiOhAY",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"ABCOVCcLFYSP",
+																"XUFWKVAcbfZy",
+																"fcfjQpKiOhAY"
+															],
+															"isClone": false,
+															"title": "screenshare indication",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "screenshare indication.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														}
+													]
 												},
 												{
 													"noteId": "ivas2giXDNdu",
@@ -504,9 +1040,32 @@
 													"type": "text",
 													"mime": "text/html",
 													"format": "html",
+													"dataFileName": "themes.html",
 													"dirFileName": "themes",
 													"noImport": false,
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "gHElICNFc8S7",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "WO9uVM5AnQwb",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "FQVxKybjepVj",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
 													"attachments": [],
 													"children": [
 														{
@@ -569,14 +1128,14 @@
 																"gHElICNFc8S7"
 															],
 															"isClone": false,
-															"title": "gtk3",
+															"title": "gtk3/4",
 															"notePosition": 30,
 															"prefix": null,
 															"isExpanded": false,
 															"type": "text",
 															"mime": "text/html",
 															"format": "html",
-															"dataFileName": "gtk3.html",
+															"dataFileName": "gtk34.html",
 															"noImport": false,
 															"attributes": [],
 															"attachments": []
@@ -593,13 +1152,18 @@
 														"ABCOVCcLFYSP",
 														"1sqAJzKY66TP"
 													],
-													"isClone": true,
+													"isClone": false,
 													"title": "fonts",
+													"notePosition": 50,
 													"prefix": null,
+													"isExpanded": false,
 													"type": "text",
+													"mime": "text/html",
 													"format": "html",
-													"dataFileName": "fonts.clone.html",
-													"noImport": false
+													"dataFileName": "fonts.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
 												},
 												{
 													"noteId": "79uOnYcDton3",
@@ -619,9 +1183,39 @@
 													"type": "text",
 													"mime": "text/html",
 													"format": "html",
+													"dataFileName": "audio.html",
 													"dirFileName": "audio",
 													"noImport": false,
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "DMYyRTeaMFbU",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "5Gq6fgaK3etN",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "r2qcAtW9vTjc",
+															"isInheritable": false,
+															"position": 30
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "fKiQXC3bXUsm",
+															"isInheritable": false,
+															"position": 40
+														}
+													],
 													"attachments": [],
 													"children": [
 														{
@@ -725,6 +1319,157 @@
 															"attachments": []
 														}
 													]
+												},
+												{
+													"noteId": "niMOtliCEjVA",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"JNHwGg3wrniL",
+														"J8KjRDKQ6eNh",
+														"ABCOVCcLFYSP",
+														"niMOtliCEjVA"
+													],
+													"isClone": false,
+													"title": "hyprland plugins",
+													"notePosition": 70,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "hyprland plugins.html",
+													"dirFileName": "hyprland plugins",
+													"noImport": false,
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "g5npyMews1qX",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "hjuziQIRmAi5",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "Gs5bAVuIM5qq",
+															"isInheritable": false,
+															"position": 30
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "HZIywhAPD82c",
+															"isInheritable": false,
+															"position": 40
+														}
+													],
+													"attachments": [],
+													"children": [
+														{
+															"noteId": "g5npyMews1qX",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"ABCOVCcLFYSP",
+																"niMOtliCEjVA",
+																"g5npyMews1qX"
+															],
+															"isClone": false,
+															"title": "hyprload",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "hyprload.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "hjuziQIRmAi5",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"ABCOVCcLFYSP",
+																"niMOtliCEjVA",
+																"hjuziQIRmAi5"
+															],
+															"isClone": false,
+															"title": "hy3",
+															"notePosition": 20,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "hy3.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "Gs5bAVuIM5qq",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"ABCOVCcLFYSP",
+																"niMOtliCEjVA",
+																"Gs5bAVuIM5qq"
+															],
+															"isClone": false,
+															"title": "split-monitor-workspaces",
+															"notePosition": 30,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "split-monitor-workspaces.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "HZIywhAPD82c",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"ABCOVCcLFYSP",
+																"niMOtliCEjVA",
+																"HZIywhAPD82c"
+															],
+															"isClone": false,
+															"title": "hyprgrass",
+															"notePosition": 40,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "hyprgrass.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														}
+													]
 												}
 											]
 										},
@@ -748,7 +1493,29 @@
 											"dataFileName": "bar and widgets.html",
 											"dirFileName": "bar and widgets",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "mhGEKiXIa1JP",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "9UGwHMVZ3RZ7",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "cDsUtsXk8T3O",
+													"isInheritable": false,
+													"position": 30
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -818,7 +1585,15 @@
 													"dataFileName": "notifier.html",
 													"dirFileName": "notifier",
 													"noImport": false,
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "oJ66hTiaob1y",
+															"isInheritable": false,
+															"position": 10
+														}
+													],
 													"attachments": [],
 													"children": [
 														{
@@ -869,7 +1644,50 @@
 											"dataFileName": "browsers.html",
 											"dirFileName": "browsers",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "d3SMXZiPveZn",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "FX9wD9JFhizn",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "00AQPrEUfEHI",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "XMz6B9u4a9X9",
+													"isInheritable": false,
+													"position": 40
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "HOuDWjQE6HMi",
+													"isInheritable": false,
+													"position": 50
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "Y9BlugXA6hzE",
+													"isInheritable": false,
+													"position": 60
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -891,9 +1709,106 @@
 													"mime": "text/html",
 													"format": "html",
 													"dataFileName": "chromium-based.html",
+													"dirFileName": "chromium-based",
 													"noImport": false,
-													"attributes": [],
-													"attachments": []
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "yKqwrfy6UJxO",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "OGSW63wfgOqU",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "FX9wD9JFhizn",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"attachments": [],
+													"children": [
+														{
+															"noteId": "yKqwrfy6UJxO",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"OYKeZyW9J3UH",
+																"Y9BlugXA6hzE",
+																"yKqwrfy6UJxO"
+															],
+															"isClone": false,
+															"title": "ungoogled chromium",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "ungoogled chromium.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "FX9wD9JFhizn",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"OYKeZyW9J3UH",
+																"Y9BlugXA6hzE",
+																"FX9wD9JFhizn"
+															],
+															"isClone": false,
+															"title": "thorium",
+															"notePosition": 20,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "thorium.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "OGSW63wfgOqU",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"OYKeZyW9J3UH",
+																"Y9BlugXA6hzE",
+																"OGSW63wfgOqU"
+															],
+															"isClone": false,
+															"title": "brave browser",
+															"notePosition": 30,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "brave browser.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														}
+													]
 												},
 												{
 													"noteId": "HOuDWjQE6HMi",
@@ -914,6 +1829,165 @@
 													"mime": "text/html",
 													"format": "html",
 													"dataFileName": "firefox-based.html",
+													"dirFileName": "firefox-based",
+													"noImport": false,
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "d3SMXZiPveZn",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "7dt03YrIf7K4",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "nXCRxQ30DZ7j",
+															"isInheritable": false,
+															"position": 30
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "00AQPrEUfEHI",
+															"isInheritable": false,
+															"position": 40
+														}
+													],
+													"attachments": [],
+													"children": [
+														{
+															"noteId": "00AQPrEUfEHI",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"OYKeZyW9J3UH",
+																"HOuDWjQE6HMi",
+																"00AQPrEUfEHI"
+															],
+															"isClone": false,
+															"title": "TOR browser",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "TOR browser.html",
+															"noImport": false,
+															"attributes": [
+																{
+																	"type": "relation",
+																	"name": "internalLink",
+																	"value": "ddAUJhgMbvak",
+																	"isInheritable": false,
+																	"position": 10
+																}
+															],
+															"attachments": []
+														},
+														{
+															"noteId": "d3SMXZiPveZn",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"OYKeZyW9J3UH",
+																"HOuDWjQE6HMi",
+																"d3SMXZiPveZn"
+															],
+															"isClone": false,
+															"title": "librewolf",
+															"notePosition": 20,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "librewolf.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "nXCRxQ30DZ7j",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"OYKeZyW9J3UH",
+																"HOuDWjQE6HMi",
+																"nXCRxQ30DZ7j"
+															],
+															"isClone": false,
+															"title": "mercury browser",
+															"notePosition": 30,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "mercury browser.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "7dt03YrIf7K4",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"OYKeZyW9J3UH",
+																"HOuDWjQE6HMi",
+																"7dt03YrIf7K4"
+															],
+															"isClone": false,
+															"title": "firedragon",
+															"notePosition": 40,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "firedragon.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														}
+													]
+												},
+												{
+													"noteId": "XMz6B9u4a9X9",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"JNHwGg3wrniL",
+														"J8KjRDKQ6eNh",
+														"OYKeZyW9J3UH",
+														"XMz6B9u4a9X9"
+													],
+													"isClone": false,
+													"title": "browser sync",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "browser sync.html",
 													"noImport": false,
 													"attributes": [],
 													"attachments": []
@@ -940,7 +2014,22 @@
 											"dataFileName": "login manager.html",
 											"dirFileName": "login manager",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "g0KQNN48RaOR",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "YaY2aLGul4cT",
+													"isInheritable": false,
+													"position": 20
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -964,7 +2053,29 @@
 													"dataFileName": "screen lock.html",
 													"dirFileName": "screen lock",
 													"noImport": false,
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "JGbGliE2hbhd",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "q561L6aV0GLj",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "voc5xJFDbr2L",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
 													"attachments": [],
 													"children": [
 														{
@@ -990,32 +2101,34 @@
 															"noImport": false,
 															"attributes": [],
 															"attachments": []
+														},
+														{
+															"noteId": "q561L6aV0GLj",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"JNHwGg3wrniL",
+																"J8KjRDKQ6eNh",
+																"pBNxhM7Dr3AN",
+																"BTGYe94UQmFH",
+																"q561L6aV0GLj"
+															],
+															"isClone": false,
+															"title": "proximity lock",
+															"notePosition": 20,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "proximity lock.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
 														}
 													]
 												}
 											]
-										},
-										{
-											"noteId": "XKPJyKj34nxn",
-											"notePath": [
-												"5D4uHPE2eFxf",
-												"dn2OdOGkOGm4",
-												"JNHwGg3wrniL",
-												"J8KjRDKQ6eNh",
-												"XKPJyKj34nxn"
-											],
-											"isClone": false,
-											"title": "process managers",
-											"notePosition": 80,
-											"prefix": null,
-											"isExpanded": false,
-											"type": "text",
-											"mime": "text/html",
-											"format": "html",
-											"dataFileName": "process managers.html",
-											"noImport": false,
-											"attributes": [],
-											"attachments": []
 										},
 										{
 											"noteId": "G9oK0bijJqgo",
@@ -1034,9 +2147,32 @@
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
+											"dataFileName": "remote desktop.html",
 											"dirFileName": "remote desktop",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "ujBfCCJcF83q",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "Uavehtc1cqmc",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "WD3MP0aTUjKL",
+													"isInheritable": false,
+													"position": 30
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -1081,6 +2217,29 @@
 													"mime": "text/html",
 													"format": "html",
 													"dataFileName": "wayvnc.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "WD3MP0aTUjKL",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"JNHwGg3wrniL",
+														"J8KjRDKQ6eNh",
+														"G9oK0bijJqgo",
+														"WD3MP0aTUjKL"
+													],
+													"isClone": false,
+													"title": "rustdesk",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "rustdesk.html",
 													"noImport": false,
 													"attributes": [],
 													"attachments": []
@@ -1130,6 +2289,104 @@
 											"noImport": false,
 											"attributes": [],
 											"attachments": []
+										},
+										{
+											"noteId": "Ldbk9YV4w22E",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"J8KjRDKQ6eNh",
+												"Ldbk9YV4w22E"
+											],
+											"isClone": false,
+											"title": "default apps",
+											"notePosition": 110,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "default apps.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										},
+										{
+											"noteId": "BrJepHTbwCJS",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"J8KjRDKQ6eNh",
+												"BrJepHTbwCJS"
+											],
+											"isClone": false,
+											"title": "wayland tools",
+											"notePosition": 120,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "wayland tools.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										}
+									]
+								},
+								{
+									"noteId": "7H2NaS59IStJ",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"JNHwGg3wrniL",
+										"7H2NaS59IStJ"
+									],
+									"isClone": false,
+									"title": "useful tools",
+									"notePosition": 50,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "useful tools.html",
+									"dirFileName": "useful tools",
+									"noImport": false,
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "XKPJyKj34nxn",
+											"isInheritable": false,
+											"position": 10
+										}
+									],
+									"attachments": [],
+									"children": [
+										{
+											"noteId": "XKPJyKj34nxn",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"JNHwGg3wrniL",
+												"7H2NaS59IStJ",
+												"XKPJyKj34nxn"
+											],
+											"isClone": false,
+											"title": "process managers",
+											"notePosition": 0,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "process managers.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
 										}
 									]
 								}
@@ -1144,9 +2401,9 @@
 							],
 							"isClone": false,
 							"title": "security",
-							"notePosition": 20,
+							"notePosition": 30,
 							"prefix": null,
-							"isExpanded": true,
+							"isExpanded": false,
 							"type": "text",
 							"mime": "text/html",
 							"format": "html",
@@ -1234,7 +2491,7 @@
 								{
 									"type": "label",
 									"name": "mapType",
-									"value": "tree",
+									"value": "link",
 									"isInheritable": false,
 									"position": 120
 								},
@@ -1258,6 +2515,69 @@
 									"value": "HuI1jiIhbiZW",
 									"isInheritable": false,
 									"position": 150
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "WrQGlXL3tp9d",
+									"isInheritable": false,
+									"position": 160
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "QnEHTcm8flck",
+									"isInheritable": false,
+									"position": 170
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "OQ8GmfsuINIo",
+									"isInheritable": false,
+									"position": 180
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "wjj654vfvcsp",
+									"isInheritable": false,
+									"position": 190
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "iVUzlxTl9emM",
+									"isInheritable": false,
+									"position": 200
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "WIuxd6OeA9QY",
+									"isInheritable": false,
+									"position": 210
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "wQBxGyczoPgb",
+									"isInheritable": false,
+									"position": 220
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "pikTdCcxWzLi",
+									"isInheritable": false,
+									"position": 230
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "Bo0kvrXBeNRJ",
+									"isInheritable": false,
+									"position": 240
 								}
 							],
 							"attachments": [],
@@ -1302,7 +2622,15 @@
 									"dataFileName": "apparmor.html",
 									"dirFileName": "apparmor",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "gWsDBWtZ7nYm",
+											"isInheritable": false,
+											"position": 10
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -1348,7 +2676,64 @@
 									"dataFileName": "sandboxing and VMs.html",
 									"dirFileName": "sandboxing and VMs",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "tfwRGDgFyofq",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "J9pEzYVnWtz7",
+											"isInheritable": false,
+											"position": 20
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "5UA8aLF6Ismc",
+											"isInheritable": false,
+											"position": 30
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "C2lpcQtkqyOz",
+											"isInheritable": false,
+											"position": 40
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "3Fa4vwjTAxxT",
+											"isInheritable": false,
+											"position": 50
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "edYVjklsk9qI",
+											"isInheritable": false,
+											"position": 60
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "Ix1q7aj68iRG",
+											"isInheritable": false,
+											"position": 70
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "hP3fS7gwdS62",
+											"isInheritable": false,
+											"position": 80
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -1392,6 +2777,13 @@
 													"value": "nVdl5pvvye2N",
 													"isInheritable": false,
 													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "h2rI3LnY3xrz",
+													"isInheritable": false,
+													"position": 40
 												}
 											],
 											"attachments": [],
@@ -1484,9 +2876,35 @@
 											"mime": "text/html",
 											"format": "html",
 											"dataFileName": "qemu.html",
+											"dirFileName": "qemu",
 											"noImport": false,
 											"attributes": [],
-											"attachments": []
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "gICuymd4rmR3",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"VvBk7pOisADn",
+														"3Fa4vwjTAxxT",
+														"gICuymd4rmR3"
+													],
+													"isClone": false,
+													"title": "windows VM with GPU passthrough",
+													"notePosition": 0,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "windows VM with GPU passthroug.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												}
+											]
 										},
 										{
 											"noteId": "5UA8aLF6Ismc",
@@ -1511,28 +2929,6 @@
 											"attachments": []
 										},
 										{
-											"noteId": "jxUK2Pb9QTa1",
-											"notePath": [
-												"5D4uHPE2eFxf",
-												"dn2OdOGkOGm4",
-												"a0hjz6Zr8Ajk",
-												"VvBk7pOisADn",
-												"jxUK2Pb9QTa1"
-											],
-											"isClone": false,
-											"title": "flatseal",
-											"notePosition": 40,
-											"prefix": null,
-											"isExpanded": false,
-											"type": "text",
-											"mime": "text/html",
-											"format": "html",
-											"dataFileName": "flatseal.html",
-											"noImport": false,
-											"attributes": [],
-											"attachments": []
-										},
-										{
 											"noteId": "hP3fS7gwdS62",
 											"notePath": [
 												"5D4uHPE2eFxf",
@@ -1543,15 +2939,52 @@
 											],
 											"isClone": false,
 											"title": "containers",
-											"notePosition": 60,
+											"notePosition": 90,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
+											"dataFileName": "containers.html",
 											"dirFileName": "containers",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "EcEgizhQcegq",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "yTvaAtkIHFlN",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "ZD2OtTdUR0Jt",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "9di38Qg1o7ld",
+													"isInheritable": false,
+													"position": 40
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "vig3M8re88bV",
+													"isInheritable": false,
+													"position": 50
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -1732,7 +3165,7 @@
 											],
 											"isClone": false,
 											"title": "whonix",
-											"notePosition": 50,
+											"notePosition": 70,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
@@ -1754,15 +3187,45 @@
 											],
 											"isClone": false,
 											"title": "emulation",
-											"notePosition": 70,
+											"notePosition": 100,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
+											"dataFileName": "emulation.html",
 											"dirFileName": "emulation",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "x27UySnwo4uZ",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "tFsJiTqJx3Or",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "AtRKEgVIYQDy",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "ZD2OtTdUR0Jt",
+													"isInheritable": false,
+													"position": 40
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -1809,7 +3272,22 @@
 													"dataFileName": "wine.html",
 													"dirFileName": "wine",
 													"noImport": false,
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "sLAwi5hgdV65",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "QUjF4YpQOFae",
+															"isInheritable": false,
+															"position": 20
+														}
+													],
 													"attachments": [],
 													"children": [
 														{
@@ -1832,6 +3310,30 @@
 															"mime": "text/html",
 															"format": "html",
 															"dataFileName": "bottles.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "QUjF4YpQOFae",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"VvBk7pOisADn",
+																"Ix1q7aj68iRG",
+																"x27UySnwo4uZ",
+																"QUjF4YpQOFae"
+															],
+															"isClone": false,
+															"title": "proton",
+															"notePosition": 20,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "proton.html",
 															"noImport": false,
 															"attributes": [],
 															"attachments": []
@@ -1862,29 +3364,107 @@
 													"attachments": []
 												}
 											]
+										},
+										{
+											"noteId": "edYVjklsk9qI",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"VvBk7pOisADn",
+												"edYVjklsk9qI"
+											],
+											"isClone": false,
+											"title": "libvirt",
+											"notePosition": 50,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "libvirt.html",
+											"dirFileName": "libvirt",
+											"noImport": false,
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "3tWhju3rGP6b",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "3Fa4vwjTAxxT",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "ZD2OtTdUR0Jt",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "5A5dfvx6MeaM",
+													"isInheritable": false,
+													"position": 40
+												}
+											],
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "3tWhju3rGP6b",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"VvBk7pOisADn",
+														"edYVjklsk9qI",
+														"3tWhju3rGP6b"
+													],
+													"isClone": false,
+													"title": "virt-manager",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "virt-manager.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												}
+											]
+										},
+										{
+											"noteId": "5A5dfvx6MeaM",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"VvBk7pOisADn",
+												"5A5dfvx6MeaM"
+											],
+											"isClone": false,
+											"title": "xen",
+											"notePosition": 60,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "xen.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
 										}
 									]
-								},
-								{
-									"noteId": "JGbGliE2hbhd",
-									"notePath": [
-										"5D4uHPE2eFxf",
-										"dn2OdOGkOGm4",
-										"a0hjz6Zr8Ajk",
-										"JGbGliE2hbhd"
-									],
-									"isClone": false,
-									"title": "shell timeout",
-									"notePosition": 60,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"format": "html",
-									"dataFileName": "shell timeout.html",
-									"noImport": false,
-									"attributes": [],
-									"attachments": []
 								},
 								{
 									"noteId": "zpqUUvDnLQZE",
@@ -1896,7 +3476,7 @@
 									],
 									"isClone": false,
 									"title": "securing SSH",
-									"notePosition": 70,
+									"notePosition": 80,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
@@ -1911,35 +3491,20 @@
 											"value": "ujBfCCJcF83q",
 											"isInheritable": false,
 											"position": 10
-										}
-									],
-									"attachments": []
-								},
-								{
-									"noteId": "OIbb7UJXlUMD",
-									"notePath": [
-										"5D4uHPE2eFxf",
-										"dn2OdOGkOGm4",
-										"a0hjz6Zr8Ajk",
-										"OIbb7UJXlUMD"
-									],
-									"isClone": false,
-									"title": "PAM-U2F",
-									"notePosition": 80,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"format": "html",
-									"dataFileName": "PAM-U2F.html",
-									"noImport": false,
-									"attributes": [
+										},
 										{
 											"type": "relation",
 											"name": "internalLink",
 											"value": "YaY2aLGul4cT",
 											"isInheritable": false,
-											"position": 10
+											"position": 20
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "fYICI8qo94sn",
+											"isInheritable": false,
+											"position": 30
 										}
 									],
 									"attachments": []
@@ -1954,15 +3519,45 @@
 									],
 									"isClone": false,
 									"title": "AV / file scanning",
-									"notePosition": 120,
+									"notePosition": 130,
 									"prefix": null,
-									"isExpanded": true,
+									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"format": "html",
+									"dataFileName": "AV  file scanning.html",
 									"dirFileName": "AV  file scanning",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "rMbK5Ys7viPg",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "uYxd048HtTJg",
+											"isInheritable": false,
+											"position": 20
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "wjj654vfvcsp",
+											"isInheritable": false,
+											"position": 30
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "TiksUJylePtE",
+											"isInheritable": false,
+											"position": 40
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -2032,76 +3627,6 @@
 											"attachments": []
 										},
 										{
-											"noteId": "KEjfqOyQ5CPv",
-											"notePath": [
-												"5D4uHPE2eFxf",
-												"dn2OdOGkOGm4",
-												"a0hjz6Zr8Ajk",
-												"fdTCiaep9ZaU",
-												"KEjfqOyQ5CPv"
-											],
-											"isClone": false,
-											"title": "warning notification if files change",
-											"notePosition": 30,
-											"prefix": null,
-											"isExpanded": true,
-											"type": "text",
-											"mime": "text/html",
-											"format": "html",
-											"dirFileName": "warning notification if files change",
-											"noImport": false,
-											"attributes": [],
-											"attachments": [],
-											"children": [
-												{
-													"noteId": "psrah3eKdoeM",
-													"notePath": [
-														"5D4uHPE2eFxf",
-														"dn2OdOGkOGm4",
-														"a0hjz6Zr8Ajk",
-														"fdTCiaep9ZaU",
-														"KEjfqOyQ5CPv",
-														"psrah3eKdoeM"
-													],
-													"isClone": false,
-													"title": "autostart",
-													"notePosition": 10,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"format": "html",
-													"dataFileName": "autostart.html",
-													"noImport": false,
-													"attributes": [],
-													"attachments": []
-												},
-												{
-													"noteId": "pfwKddhiVBup",
-													"notePath": [
-														"5D4uHPE2eFxf",
-														"dn2OdOGkOGm4",
-														"a0hjz6Zr8Ajk",
-														"fdTCiaep9ZaU",
-														"KEjfqOyQ5CPv",
-														"pfwKddhiVBup"
-													],
-													"isClone": false,
-													"title": ".desktop files",
-													"notePosition": 20,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"format": "html",
-													"dataFileName": ".desktop files.html",
-													"noImport": false,
-													"attributes": [],
-													"attachments": []
-												}
-											]
-										},
-										{
 											"noteId": "TiksUJylePtE",
 											"notePath": [
 												"5D4uHPE2eFxf",
@@ -2122,6 +3647,242 @@
 											"noImport": false,
 											"attributes": [],
 											"attachments": []
+										},
+										{
+											"noteId": "wjj654vfvcsp",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"fdTCiaep9ZaU",
+												"wjj654vfvcsp"
+											],
+											"isClone": false,
+											"title": "integrity and change monitoring",
+											"notePosition": 50,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "integrity and change monitorin.html",
+											"dirFileName": "integrity and change monitoring",
+											"noImport": false,
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "0pXvqI7jtWiY",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "KEjfqOyQ5CPv",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "x8RWK8AeVR9g",
+													"isInheritable": false,
+													"position": 30
+												}
+											],
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "x8RWK8AeVR9g",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"fdTCiaep9ZaU",
+														"wjj654vfvcsp",
+														"x8RWK8AeVR9g"
+													],
+													"isClone": false,
+													"title": "tripwire",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "tripwire.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "qxLhrNZVeNBp",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"fdTCiaep9ZaU",
+														"wjj654vfvcsp",
+														"qxLhrNZVeNBp"
+													],
+													"isClone": false,
+													"title": "ossec",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "ossec.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "0pXvqI7jtWiY",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"fdTCiaep9ZaU",
+														"wjj654vfvcsp",
+														"0pXvqI7jtWiY"
+													],
+													"isClone": false,
+													"title": "watchman",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "watchman.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "KEjfqOyQ5CPv",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"fdTCiaep9ZaU",
+														"wjj654vfvcsp",
+														"KEjfqOyQ5CPv"
+													],
+													"isClone": false,
+													"title": "warning notification if files change",
+													"notePosition": 40,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "warning notification if files.html",
+													"dirFileName": "warning notification if files change",
+													"noImport": false,
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "psrah3eKdoeM",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "pfwKddhiVBup",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "FvT22XBzqYt3",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"attachments": [],
+													"children": [
+														{
+															"noteId": "psrah3eKdoeM",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"fdTCiaep9ZaU",
+																"wjj654vfvcsp",
+																"KEjfqOyQ5CPv",
+																"psrah3eKdoeM"
+															],
+															"isClone": false,
+															"title": "autostart",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "autostart.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "pfwKddhiVBup",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"fdTCiaep9ZaU",
+																"wjj654vfvcsp",
+																"KEjfqOyQ5CPv",
+																"pfwKddhiVBup"
+															],
+															"isClone": false,
+															"title": ".desktop files",
+															"notePosition": 20,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": ".desktop files.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "FvT22XBzqYt3",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"fdTCiaep9ZaU",
+																"wjj654vfvcsp",
+																"KEjfqOyQ5CPv",
+																"FvT22XBzqYt3"
+															],
+															"isClone": false,
+															"title": "EFI",
+															"notePosition": 30,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "EFI.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														}
+													]
+												}
+											]
 										}
 									]
 								},
@@ -2135,7 +3896,7 @@
 									],
 									"isClone": false,
 									"title": "networking",
-									"notePosition": 130,
+									"notePosition": 140,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
@@ -2144,7 +3905,43 @@
 									"dataFileName": "networking.html",
 									"dirFileName": "networking",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "hx7i2IsxO7cc",
+											"isInheritable": false,
+											"position": 30
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "fYICI8qo94sn",
+											"isInheritable": false,
+											"position": 40
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "ngctnZtXuROR",
+											"isInheritable": false,
+											"position": 50
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "zR2UODwU2AT6",
+											"isInheritable": false,
+											"position": 60
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "9DqKICH0S3iJ",
+											"isInheritable": false,
+											"position": 70
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -2158,7 +3955,7 @@
 											],
 											"isClone": false,
 											"title": "dns",
-											"notePosition": 10,
+											"notePosition": 20,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
@@ -2167,7 +3964,29 @@
 											"dataFileName": "dns.html",
 											"dirFileName": "dns",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "sBxTcDMoK9AI",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "MKftuJTkVtKc",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "dluLAj8hVmkj",
+													"isInheritable": false,
+													"position": 30
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -2223,6 +4042,29 @@
 													"noImport": false,
 													"attributes": [],
 													"attachments": []
+												},
+												{
+													"noteId": "ngctnZtXuROR",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"QnEHTcm8flck",
+														"hx7i2IsxO7cc",
+														"ngctnZtXuROR"
+													],
+													"isClone": false,
+													"title": "split-horizon DNS",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "split-horizon DNS.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
 												}
 											]
 										},
@@ -2237,7 +4079,7 @@
 											],
 											"isClone": false,
 											"title": "ntp",
-											"notePosition": 20,
+											"notePosition": 90,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
@@ -2259,15 +4101,59 @@
 											],
 											"isClone": false,
 											"title": "VPN / proxy",
-											"notePosition": 70,
+											"notePosition": 80,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
+											"dataFileName": "VPN  proxy.html",
 											"dirFileName": "VPN  proxy",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "ddAUJhgMbvak",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "I05jjf5diF6a",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "lkhiqtmDtWn6",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "ujyO1Z4gfQMN",
+													"isInheritable": false,
+													"position": 40
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "zR2UODwU2AT6",
+													"isInheritable": false,
+													"position": 50
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "hV30pAnXDbJL",
+													"isInheritable": false,
+													"position": 60
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -2288,9 +4174,32 @@
 													"type": "text",
 													"mime": "text/html",
 													"format": "html",
+													"dataFileName": "TOR.html",
 													"dirFileName": "TOR",
 													"noImport": false,
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "dluLAj8hVmkj",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "v426QCUi5cqt",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "00AQPrEUfEHI",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
 													"attachments": [],
 													"children": [
 														{
@@ -2316,6 +4225,63 @@
 															"noImport": false,
 															"attributes": [],
 															"attachments": []
+														},
+														{
+															"noteId": "00AQPrEUfEHI",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"QnEHTcm8flck",
+																"OQ8GmfsuINIo",
+																"ddAUJhgMbvak",
+																"00AQPrEUfEHI"
+															],
+															"isClone": true,
+															"title": "TOR browser",
+															"prefix": null,
+															"type": "text",
+															"format": "html",
+															"dataFileName": "TOR browser.clone.html",
+															"noImport": false
+														},
+														{
+															"noteId": "dluLAj8hVmkj",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"QnEHTcm8flck",
+																"OQ8GmfsuINIo",
+																"ddAUJhgMbvak",
+																"dluLAj8hVmkj"
+															],
+															"isClone": true,
+															"title": "DNS over TOR",
+															"prefix": null,
+															"type": "text",
+															"format": "html",
+															"dataFileName": "DNS over TOR.clone.html",
+															"noImport": false
+														},
+														{
+															"noteId": "ssiJTCTNKXUD",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"QnEHTcm8flck",
+																"OQ8GmfsuINIo",
+																"ddAUJhgMbvak",
+																"ssiJTCTNKXUD"
+															],
+															"isClone": true,
+															"title": "whonix",
+															"prefix": null,
+															"type": "text",
+															"format": "html",
+															"dataFileName": "whonix.clone.html",
+															"noImport": false
 														}
 													]
 												},
@@ -2331,7 +4297,7 @@
 													],
 													"isClone": false,
 													"title": "lokinet",
-													"notePosition": 20,
+													"notePosition": 30,
 													"prefix": null,
 													"isExpanded": false,
 													"type": "text",
@@ -2354,7 +4320,7 @@
 													],
 													"isClone": false,
 													"title": "SPN",
-													"notePosition": 30,
+													"notePosition": 40,
 													"prefix": null,
 													"isExpanded": false,
 													"type": "text",
@@ -2377,7 +4343,7 @@
 													],
 													"isClone": false,
 													"title": "proxychains",
-													"notePosition": 40,
+													"notePosition": 50,
 													"prefix": null,
 													"isExpanded": false,
 													"type": "text",
@@ -2385,7 +4351,22 @@
 													"format": "html",
 													"dataFileName": "proxychains.html",
 													"noImport": false,
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "ddAUJhgMbvak",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "lkhiqtmDtWn6",
+															"isInheritable": false,
+															"position": 20
+														}
+													],
 													"attachments": []
 												},
 												{
@@ -2400,7 +4381,7 @@
 													],
 													"isClone": false,
 													"title": "tailscale / headscale",
-													"notePosition": 50,
+													"notePosition": 60,
 													"prefix": null,
 													"isExpanded": false,
 													"type": "text",
@@ -2423,7 +4404,7 @@
 													],
 													"isClone": false,
 													"title": "nebula",
-													"notePosition": 60,
+													"notePosition": 70,
 													"prefix": null,
 													"isExpanded": false,
 													"type": "text",
@@ -2446,7 +4427,7 @@
 													],
 													"isClone": false,
 													"title": "i2p",
-													"notePosition": 70,
+													"notePosition": 90,
 													"prefix": null,
 													"isExpanded": false,
 													"type": "text",
@@ -2456,70 +4437,8 @@
 													"noImport": false,
 													"attributes": [],
 													"attachments": []
-												},
-												{
-													"noteId": "ssiJTCTNKXUD",
-													"notePath": [
-														"5D4uHPE2eFxf",
-														"dn2OdOGkOGm4",
-														"a0hjz6Zr8Ajk",
-														"QnEHTcm8flck",
-														"OQ8GmfsuINIo",
-														"ssiJTCTNKXUD"
-													],
-													"isClone": true,
-													"title": "whonix",
-													"prefix": null,
-													"type": "text",
-													"format": "html",
-													"dataFileName": "whonix.clone.html",
-													"noImport": false
 												}
 											]
-										},
-										{
-											"noteId": "Zo2a45nxlUC1",
-											"notePath": [
-												"5D4uHPE2eFxf",
-												"dn2OdOGkOGm4",
-												"a0hjz6Zr8Ajk",
-												"QnEHTcm8flck",
-												"Zo2a45nxlUC1"
-											],
-											"isClone": false,
-											"title": "mac address randomization / spoofing",
-											"notePosition": 40,
-											"prefix": null,
-											"isExpanded": false,
-											"type": "text",
-											"mime": "text/html",
-											"format": "html",
-											"dataFileName": "mac address randomization  spo.html",
-											"noImport": false,
-											"attributes": [],
-											"attachments": []
-										},
-										{
-											"noteId": "cc463CEnxGn9",
-											"notePath": [
-												"5D4uHPE2eFxf",
-												"dn2OdOGkOGm4",
-												"a0hjz6Zr8Ajk",
-												"QnEHTcm8flck",
-												"cc463CEnxGn9"
-											],
-											"isClone": false,
-											"title": "IPv6 privacy extensions",
-											"notePosition": 50,
-											"prefix": null,
-											"isExpanded": false,
-											"type": "text",
-											"mime": "text/html",
-											"format": "html",
-											"dataFileName": "IPv6 privacy extensions.html",
-											"noImport": false,
-											"attributes": [],
-											"attachments": []
 										},
 										{
 											"noteId": "fYICI8qo94sn",
@@ -2532,15 +4451,38 @@
 											],
 											"isClone": false,
 											"title": "firewall",
-											"notePosition": 60,
+											"notePosition": 70,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
+											"dataFileName": "firewall.html",
 											"dirFileName": "firewall",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "gsZpMawTfPYi",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "MKftuJTkVtKc",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "O9TLw9FTzA0x",
+													"isInheritable": false,
+													"position": 30
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -2563,7 +4505,15 @@
 													"format": "html",
 													"dataFileName": "portmaster.html",
 													"noImport": false,
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "ShbGf1a7PEeW",
+															"isInheritable": false,
+															"position": 10
+														}
+													],
 													"attachments": []
 												},
 												{
@@ -2600,14 +4550,14 @@
 														"gsZpMawTfPYi"
 													],
 													"isClone": false,
-													"title": "ufw",
+													"title": "UFW",
 													"notePosition": 20,
 													"prefix": null,
 													"isExpanded": false,
 													"type": "text",
 													"mime": "text/html",
 													"format": "html",
-													"dataFileName": "ufw.html",
+													"dataFileName": "UFW.html",
 													"noImport": false,
 													"attributes": [
 														{
@@ -2623,23 +4573,184 @@
 											]
 										},
 										{
-											"noteId": "QZasc2hFLqOR",
+											"noteId": "pikTdCcxWzLi",
 											"notePath": [
 												"5D4uHPE2eFxf",
 												"dn2OdOGkOGm4",
 												"a0hjz6Zr8Ajk",
 												"QnEHTcm8flck",
-												"QZasc2hFLqOR"
+												"pikTdCcxWzLi"
 											],
 											"isClone": false,
-											"title": "TLS",
-											"notePosition": 80,
+											"title": "network manager",
+											"notePosition": 10,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
-											"dataFileName": "TLS.html",
+											"dataFileName": "network manager.html",
+											"dirFileName": "network manager",
+											"noImport": false,
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "xm2DYo1EA2o5",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "Zo2a45nxlUC1",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "x3YUsB7CSgUx",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "aaiXmJ1BYtnQ",
+													"isInheritable": false,
+													"position": 40
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "cc463CEnxGn9",
+													"isInheritable": false,
+													"position": 50
+												}
+											],
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "Zo2a45nxlUC1",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"QnEHTcm8flck",
+														"pikTdCcxWzLi",
+														"Zo2a45nxlUC1"
+													],
+													"isClone": false,
+													"title": "mac address randomization / spoofing",
+													"notePosition": 0,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "mac address randomization  spo.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "cc463CEnxGn9",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"QnEHTcm8flck",
+														"pikTdCcxWzLi",
+														"cc463CEnxGn9"
+													],
+													"isClone": false,
+													"title": "IPv6 privacy extensions",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "IPv6 privacy extensions.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "xm2DYo1EA2o5",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"QnEHTcm8flck",
+														"pikTdCcxWzLi",
+														"xm2DYo1EA2o5"
+													],
+													"isClone": false,
+													"title": "wifi password encryption",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "wifi password encryption.html",
+													"noImport": false,
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "TzUIw3dY3W85",
+															"isInheritable": false,
+															"position": 10
+														}
+													],
+													"attachments": []
+												},
+												{
+													"noteId": "x3YUsB7CSgUx",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"QnEHTcm8flck",
+														"pikTdCcxWzLi",
+														"x3YUsB7CSgUx"
+													],
+													"isClone": false,
+													"title": "DHCP",
+													"notePosition": 40,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "DHCP.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												}
+											]
+										},
+										{
+											"noteId": "9DqKICH0S3iJ",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"QnEHTcm8flck",
+												"9DqKICH0S3iJ"
+											],
+											"isClone": false,
+											"title": "certificate authorities",
+											"notePosition": 110,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "certificate authorities.html",
 											"noImport": false,
 											"attributes": [],
 											"attachments": []
@@ -2656,15 +4767,87 @@
 									],
 									"isClone": false,
 									"title": "identity",
-									"notePosition": 140,
+									"notePosition": 160,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"format": "html",
+									"dataFileName": "identity.html",
 									"dirFileName": "identity",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "TzUIw3dY3W85",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "Q1H90fxc6MbW",
+											"isInheritable": false,
+											"position": 20
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "YaY2aLGul4cT",
+											"isInheritable": false,
+											"position": 30
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "ConBselMwg7w",
+											"isInheritable": false,
+											"position": 40
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "XVGEZEuxkwup",
+											"isInheritable": false,
+											"position": 50
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "QJUioGUEYCmC",
+											"isInheritable": false,
+											"position": 60
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "9EXIQJRKaTze",
+											"isInheritable": false,
+											"position": 70
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "aRmuii2CAHdR",
+											"isInheritable": false,
+											"position": 80
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "mHLj7JPB68Eh",
+											"isInheritable": false,
+											"position": 90
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "USwp76IStX9S",
+											"isInheritable": false,
+											"position": 100
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -2691,177 +4874,6 @@
 											"attachments": [],
 											"children": [
 												{
-													"noteId": "ConBselMwg7w",
-													"notePath": [
-														"5D4uHPE2eFxf",
-														"dn2OdOGkOGm4",
-														"a0hjz6Zr8Ajk",
-														"wQBxGyczoPgb",
-														"dEAZdFjDQUCF",
-														"ConBselMwg7w"
-													],
-													"isClone": false,
-													"title": "keepassXC",
-													"notePosition": 10,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"format": "html",
-													"dirFileName": "keepassXC",
-													"noImport": false,
-													"attributes": [],
-													"attachments": [],
-													"children": [
-														{
-															"noteId": "62xgdJt8ZMkF",
-															"notePath": [
-																"5D4uHPE2eFxf",
-																"dn2OdOGkOGm4",
-																"a0hjz6Zr8Ajk",
-																"wQBxGyczoPgb",
-																"dEAZdFjDQUCF",
-																"ConBselMwg7w",
-																"62xgdJt8ZMkF"
-															],
-															"isClone": false,
-															"title": "browser integration",
-															"notePosition": 10,
-															"prefix": null,
-															"isExpanded": false,
-															"type": "text",
-															"mime": "text/html",
-															"format": "html",
-															"dirFileName": "browser integration",
-															"noImport": false,
-															"attributes": [],
-															"attachments": [],
-															"children": [
-																{
-																	"noteId": "ZqRJQt7Dx5K3",
-																	"notePath": [
-																		"5D4uHPE2eFxf",
-																		"dn2OdOGkOGm4",
-																		"a0hjz6Zr8Ajk",
-																		"wQBxGyczoPgb",
-																		"dEAZdFjDQUCF",
-																		"ConBselMwg7w",
-																		"62xgdJt8ZMkF",
-																		"ZqRJQt7Dx5K3"
-																	],
-																	"isClone": false,
-																	"title": "using with firejail",
-																	"notePosition": 10,
-																	"prefix": null,
-																	"isExpanded": false,
-																	"type": "text",
-																	"mime": "text/html",
-																	"format": "html",
-																	"dataFileName": "using with firejail.html",
-																	"noImport": false,
-																	"attributes": [],
-																	"attachments": []
-																}
-															]
-														},
-														{
-															"noteId": "QJUioGUEYCmC",
-															"notePath": [
-																"5D4uHPE2eFxf",
-																"dn2OdOGkOGm4",
-																"a0hjz6Zr8Ajk",
-																"wQBxGyczoPgb",
-																"dEAZdFjDQUCF",
-																"ConBselMwg7w",
-																"QJUioGUEYCmC"
-															],
-															"isClone": false,
-															"title": "SSH-agent",
-															"notePosition": 20,
-															"prefix": null,
-															"isExpanded": false,
-															"type": "text",
-															"mime": "text/html",
-															"format": "html",
-															"dataFileName": "SSH-agent.html",
-															"noImport": false,
-															"attributes": [],
-															"attachments": []
-														},
-														{
-															"noteId": "QCpkPgrp1XCY",
-															"notePath": [
-																"5D4uHPE2eFxf",
-																"dn2OdOGkOGm4",
-																"a0hjz6Zr8Ajk",
-																"wQBxGyczoPgb",
-																"dEAZdFjDQUCF",
-																"ConBselMwg7w",
-																"QCpkPgrp1XCY"
-															],
-															"isClone": false,
-															"title": "PGP",
-															"notePosition": 30,
-															"prefix": null,
-															"isExpanded": false,
-															"type": "text",
-															"mime": "text/html",
-															"format": "html",
-															"dataFileName": "PGP.html",
-															"noImport": false,
-															"attributes": [],
-															"attachments": []
-														},
-														{
-															"noteId": "r9ngxRCciz5Q",
-															"notePath": [
-																"5D4uHPE2eFxf",
-																"dn2OdOGkOGm4",
-																"a0hjz6Zr8Ajk",
-																"wQBxGyczoPgb",
-																"dEAZdFjDQUCF",
-																"ConBselMwg7w",
-																"r9ngxRCciz5Q"
-															],
-															"isClone": false,
-															"title": "secret-service",
-															"notePosition": 40,
-															"prefix": null,
-															"isExpanded": false,
-															"type": "text",
-															"mime": "text/html",
-															"format": "html",
-															"dataFileName": "secret-service.html",
-															"noImport": false,
-															"attributes": [],
-															"attachments": []
-														}
-													]
-												},
-												{
-													"noteId": "LgbNWTpUMpl1",
-													"notePath": [
-														"5D4uHPE2eFxf",
-														"dn2OdOGkOGm4",
-														"a0hjz6Zr8Ajk",
-														"wQBxGyczoPgb",
-														"dEAZdFjDQUCF",
-														"LgbNWTpUMpl1"
-													],
-													"isClone": false,
-													"title": "bitwarden",
-													"notePosition": 20,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"format": "html",
-													"dataFileName": "bitwarden.html",
-													"noImport": false,
-													"attributes": [],
-													"attachments": []
-												},
-												{
 													"noteId": "Q1H90fxc6MbW",
 													"notePath": [
 														"5D4uHPE2eFxf",
@@ -2873,7 +4885,7 @@
 													],
 													"isClone": false,
 													"title": "enforce password quality",
-													"notePosition": 30,
+													"notePosition": 50,
 													"prefix": null,
 													"isExpanded": false,
 													"type": "text",
@@ -2883,6 +4895,189 @@
 													"noImport": false,
 													"attributes": [],
 													"attachments": []
+												},
+												{
+													"noteId": "USwp76IStX9S",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"dEAZdFjDQUCF",
+														"USwp76IStX9S"
+													],
+													"isClone": false,
+													"title": "password managers",
+													"notePosition": 40,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "password managers.html",
+													"dirFileName": "password managers",
+													"noImport": false,
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "LgbNWTpUMpl1",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "ConBselMwg7w",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"attachments": [],
+													"children": [
+														{
+															"noteId": "ConBselMwg7w",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"wQBxGyczoPgb",
+																"dEAZdFjDQUCF",
+																"USwp76IStX9S",
+																"ConBselMwg7w"
+															],
+															"isClone": false,
+															"title": "keepassXC",
+															"notePosition": 0,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "keepassXC.html",
+															"dirFileName": "keepassXC",
+															"noImport": false,
+															"attributes": [
+																{
+																	"type": "relation",
+																	"name": "internalLink",
+																	"value": "62xgdJt8ZMkF",
+																	"isInheritable": false,
+																	"position": 10
+																},
+																{
+																	"type": "relation",
+																	"name": "internalLink",
+																	"value": "D134XBbjtlwY",
+																	"isInheritable": false,
+																	"position": 20
+																},
+																{
+																	"type": "relation",
+																	"name": "internalLink",
+																	"value": "AbqCOUjo8fyV",
+																	"isInheritable": false,
+																	"position": 30
+																},
+																{
+																	"type": "relation",
+																	"name": "internalLink",
+																	"value": "TzUIw3dY3W85",
+																	"isInheritable": false,
+																	"position": 40
+																}
+															],
+															"attachments": [],
+															"children": [
+																{
+																	"noteId": "62xgdJt8ZMkF",
+																	"notePath": [
+																		"5D4uHPE2eFxf",
+																		"dn2OdOGkOGm4",
+																		"a0hjz6Zr8Ajk",
+																		"wQBxGyczoPgb",
+																		"dEAZdFjDQUCF",
+																		"USwp76IStX9S",
+																		"ConBselMwg7w",
+																		"62xgdJt8ZMkF"
+																	],
+																	"isClone": false,
+																	"title": "browser integration",
+																	"notePosition": 10,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "text",
+																	"mime": "text/html",
+																	"format": "html",
+																	"dataFileName": "browser integration.html",
+																	"dirFileName": "browser integration",
+																	"noImport": false,
+																	"attributes": [
+																		{
+																			"type": "relation",
+																			"name": "internalLink",
+																			"value": "ZqRJQt7Dx5K3",
+																			"isInheritable": false,
+																			"position": 10
+																		}
+																	],
+																	"attachments": [],
+																	"children": [
+																		{
+																			"noteId": "ZqRJQt7Dx5K3",
+																			"notePath": [
+																				"5D4uHPE2eFxf",
+																				"dn2OdOGkOGm4",
+																				"a0hjz6Zr8Ajk",
+																				"wQBxGyczoPgb",
+																				"dEAZdFjDQUCF",
+																				"USwp76IStX9S",
+																				"ConBselMwg7w",
+																				"62xgdJt8ZMkF",
+																				"ZqRJQt7Dx5K3"
+																			],
+																			"isClone": false,
+																			"title": "using with firejail",
+																			"notePosition": 10,
+																			"prefix": null,
+																			"isExpanded": false,
+																			"type": "text",
+																			"mime": "text/html",
+																			"format": "html",
+																			"dataFileName": "using with firejail.html",
+																			"noImport": false,
+																			"attributes": [],
+																			"attachments": []
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"noteId": "LgbNWTpUMpl1",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"wQBxGyczoPgb",
+																"dEAZdFjDQUCF",
+																"USwp76IStX9S",
+																"LgbNWTpUMpl1"
+															],
+															"isClone": false,
+															"title": "bitwarden",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "bitwarden.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														}
+													]
 												}
 											]
 										},
@@ -2897,16 +5092,80 @@
 											],
 											"isClone": false,
 											"title": "device certificates",
-											"notePosition": 20,
+											"notePosition": 30,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
 											"dataFileName": "device certificates.html",
+											"dirFileName": "device certificates",
 											"noImport": false,
-											"attributes": [],
-											"attachments": []
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "aaiXmJ1BYtnQ",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "zferMX7lSgqx",
+													"isInheritable": false,
+													"position": 20
+												}
+											],
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "aaiXmJ1BYtnQ",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"mHLj7JPB68Eh",
+														"aaiXmJ1BYtnQ"
+													],
+													"isClone": false,
+													"title": "machine-ID",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "machine-ID.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "zferMX7lSgqx",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"mHLj7JPB68Eh",
+														"zferMX7lSgqx"
+													],
+													"isClone": false,
+													"title": "SSH certificate",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "SSH certificate.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												}
+											]
 										},
 										{
 											"noteId": "aRmuii2CAHdR",
@@ -2919,16 +5178,64 @@
 											],
 											"isClone": false,
 											"title": "user certificates",
-											"notePosition": 30,
+											"notePosition": 40,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
-											"dataFileName": "user certificates.html",
+											"dirFileName": "user certificates",
 											"noImport": false,
 											"attributes": [],
-											"attachments": []
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "QJUioGUEYCmC",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"aRmuii2CAHdR",
+														"QJUioGUEYCmC"
+													],
+													"isClone": false,
+													"title": "SSH-agent",
+													"notePosition": 0,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "SSH-agent.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "9EXIQJRKaTze",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"aRmuii2CAHdR",
+														"9EXIQJRKaTze"
+													],
+													"isClone": false,
+													"title": "GPG-agent",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "GPG-agent.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												}
+											]
 										},
 										{
 											"noteId": "TzUIw3dY3W85",
@@ -2940,17 +5247,126 @@
 												"TzUIw3dY3W85"
 											],
 											"isClone": false,
-											"title": "keyring?",
-											"notePosition": 40,
+											"title": "secret-service",
+											"notePosition": 50,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
-											"dataFileName": "keyring.html",
+											"dataFileName": "secret-service.html",
+											"dirFileName": "secret-service",
 											"noImport": false,
-											"attributes": [],
-											"attachments": []
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "3qWRLKTTWeRu",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "89GwemFTMheN",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "ConBselMwg7w",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "9KhejL0B8Y4j",
+													"isInheritable": false,
+													"position": 40
+												}
+											],
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "3qWRLKTTWeRu",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"TzUIw3dY3W85",
+														"3qWRLKTTWeRu"
+													],
+													"isClone": false,
+													"title": "gnome keyring",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "gnome keyring.html",
+													"noImport": false,
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "XVGEZEuxkwup",
+															"isInheritable": false,
+															"position": 10
+														}
+													],
+													"attachments": []
+												},
+												{
+													"noteId": "89GwemFTMheN",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"TzUIw3dY3W85",
+														"89GwemFTMheN"
+													],
+													"isClone": false,
+													"title": "KDE wallet",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "KDE wallet.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "9KhejL0B8Y4j",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"TzUIw3dY3W85",
+														"9KhejL0B8Y4j"
+													],
+													"isClone": false,
+													"title": "envoy",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "envoy.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												}
+											]
 										},
 										{
 											"noteId": "YaY2aLGul4cT",
@@ -2963,15 +5379,45 @@
 											],
 											"isClone": false,
 											"title": "hardware security modules",
-											"notePosition": 50,
+											"notePosition": 60,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
+											"dataFileName": "hardware security modules.html",
 											"dirFileName": "hardware security modules",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "XMpLIwwc4R94",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "2N4xR0lPqR4S",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "541kIhcQ259H",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "Bku8LQEHkJVW",
+													"isInheritable": false,
+													"position": 40
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -3018,7 +5464,16 @@
 													"dataFileName": "onlykey.html",
 													"noImport": false,
 													"attributes": [],
-													"attachments": []
+													"attachments": [
+														{
+															"attachmentId": "4TFPfChw4nY9",
+															"title": "image.png",
+															"role": "image",
+															"mime": "image/jpg",
+															"position": 10,
+															"dataFileName": "onlykey_image.png"
+														}
+													]
 												},
 												{
 													"noteId": "Bku8LQEHkJVW",
@@ -3067,6 +5522,176 @@
 													"attachments": []
 												}
 											]
+										},
+										{
+											"noteId": "XVGEZEuxkwup",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"wQBxGyczoPgb",
+												"XVGEZEuxkwup"
+											],
+											"isClone": false,
+											"title": "PAM",
+											"notePosition": 80,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "PAM.html",
+											"dirFileName": "PAM",
+											"noImport": false,
+											"attributes": [],
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "OIbb7UJXlUMD",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"XVGEZEuxkwup",
+														"OIbb7UJXlUMD"
+													],
+													"isClone": false,
+													"title": "PAM-U2F",
+													"notePosition": 0,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "PAM-U2F.html",
+													"dirFileName": "PAM-U2F",
+													"noImport": false,
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "YaY2aLGul4cT",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "QPnxwwb66wZ3",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "g0KQNN48RaOR",
+															"isInheritable": false,
+															"position": 30
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "UvVDtxVL75Uo",
+															"isInheritable": false,
+															"position": 40
+														}
+													],
+													"attachments": [],
+													"children": [
+														{
+															"noteId": "QPnxwwb66wZ3",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"wQBxGyczoPgb",
+																"XVGEZEuxkwup",
+																"OIbb7UJXlUMD",
+																"QPnxwwb66wZ3"
+															],
+															"isClone": false,
+															"title": "sudo",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "sudo.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "g0KQNN48RaOR",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"wQBxGyczoPgb",
+																"XVGEZEuxkwup",
+																"OIbb7UJXlUMD",
+																"g0KQNN48RaOR"
+															],
+															"isClone": false,
+															"title": "SDDM",
+															"notePosition": 20,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "SDDM.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														},
+														{
+															"noteId": "UvVDtxVL75Uo",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"wQBxGyczoPgb",
+																"XVGEZEuxkwup",
+																"OIbb7UJXlUMD",
+																"UvVDtxVL75Uo"
+															],
+															"isClone": false,
+															"title": "SU",
+															"notePosition": 30,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "text",
+															"mime": "text/html",
+															"format": "html",
+															"dataFileName": "SU.html",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														}
+													]
+												},
+												{
+													"noteId": "Q1H90fxc6MbW",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"wQBxGyczoPgb",
+														"XVGEZEuxkwup",
+														"Q1H90fxc6MbW"
+													],
+													"isClone": true,
+													"title": "enforce password quality",
+													"prefix": null,
+													"type": "text",
+													"format": "html",
+													"dataFileName": "enforce password quality.clone.html",
+													"noImport": false
+												}
+											]
 										}
 									]
 								},
@@ -3080,15 +5705,31 @@
 									],
 									"isClone": false,
 									"title": "memory",
-									"notePosition": 150,
+									"notePosition": 170,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"format": "html",
+									"dataFileName": "memory.html",
 									"dirFileName": "memory",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "pGLUep1wssro",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "T1NQDL6JV3od",
+											"isInheritable": false,
+											"position": 20
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -3155,16 +5796,31 @@
 									],
 									"isClone": false,
 									"title": "files",
-									"notePosition": 160,
+									"notePosition": 180,
 									"prefix": null,
-									"isExpanded": true,
+									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"format": "html",
 									"dataFileName": "files.html",
 									"dirFileName": "files",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "VCrbfECoB7Af",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "1TXbpbwJqa3b",
+											"isInheritable": false,
+											"position": 20
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -3220,89 +5876,13 @@
 												"HuI1jiIhbiZW",
 												"wjj654vfvcsp"
 											],
-											"isClone": false,
+											"isClone": true,
 											"title": "integrity and change monitoring",
-											"notePosition": 30,
 											"prefix": null,
-											"isExpanded": true,
 											"type": "text",
-											"mime": "text/html",
 											"format": "html",
-											"dirFileName": "integrity and change monitoring",
-											"noImport": false,
-											"attributes": [],
-											"attachments": [],
-											"children": [
-												{
-													"noteId": "x8RWK8AeVR9g",
-													"notePath": [
-														"5D4uHPE2eFxf",
-														"dn2OdOGkOGm4",
-														"a0hjz6Zr8Ajk",
-														"HuI1jiIhbiZW",
-														"wjj654vfvcsp",
-														"x8RWK8AeVR9g"
-													],
-													"isClone": false,
-													"title": "tripwire",
-													"notePosition": 10,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"format": "html",
-													"dataFileName": "tripwire.html",
-													"noImport": false,
-													"attributes": [],
-													"attachments": []
-												},
-												{
-													"noteId": "qxLhrNZVeNBp",
-													"notePath": [
-														"5D4uHPE2eFxf",
-														"dn2OdOGkOGm4",
-														"a0hjz6Zr8Ajk",
-														"HuI1jiIhbiZW",
-														"wjj654vfvcsp",
-														"qxLhrNZVeNBp"
-													],
-													"isClone": false,
-													"title": "ossec",
-													"notePosition": 20,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"format": "html",
-													"dataFileName": "ossec.html",
-													"noImport": false,
-													"attributes": [],
-													"attachments": []
-												},
-												{
-													"noteId": "0pXvqI7jtWiY",
-													"notePath": [
-														"5D4uHPE2eFxf",
-														"dn2OdOGkOGm4",
-														"a0hjz6Zr8Ajk",
-														"HuI1jiIhbiZW",
-														"wjj654vfvcsp",
-														"0pXvqI7jtWiY"
-													],
-													"isClone": false,
-													"title": "watchman",
-													"notePosition": 30,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"format": "html",
-													"dataFileName": "watchman.html",
-													"noImport": false,
-													"attributes": [],
-													"attachments": []
-												}
-											]
+											"dataFileName": "integrity and change monitoring.clone.html",
+											"noImport": false
 										}
 									]
 								},
@@ -3316,7 +5896,7 @@
 									],
 									"isClone": false,
 									"title": "kernel",
-									"notePosition": 170,
+									"notePosition": 190,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
@@ -3325,7 +5905,29 @@
 									"dataFileName": "kernel.html",
 									"dirFileName": "kernel",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "hCi8i1Np9U5O",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "XRWfPn8Txe9J",
+											"isInheritable": false,
+											"position": 20
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "ENOSlA3PbhMZ",
+											"isInheritable": false,
+											"position": 30
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -3371,6 +5973,62 @@
 											"noImport": false,
 											"attributes": [],
 											"attachments": []
+										},
+										{
+											"noteId": "ENOSlA3PbhMZ",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"jaevayxWt6pB",
+												"ENOSlA3PbhMZ"
+											],
+											"isClone": false,
+											"title": "kernel hardening",
+											"notePosition": 40,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "kernel hardening.html",
+											"dirFileName": "kernel hardening",
+											"noImport": false,
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "qelTnZeD2mdb",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "qelTnZeD2mdb",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"jaevayxWt6pB",
+														"ENOSlA3PbhMZ",
+														"qelTnZeD2mdb"
+													],
+													"isClone": false,
+													"title": "LKRG",
+													"notePosition": 0,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "LKRG.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												}
+											]
 										}
 									]
 								},
@@ -3384,15 +6042,38 @@
 									],
 									"isClone": false,
 									"title": "encryption",
-									"notePosition": 180,
+									"notePosition": 200,
 									"prefix": null,
-									"isExpanded": true,
+									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"format": "html",
+									"dataFileName": "encryption.html",
 									"dirFileName": "encryption",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "uE4AiC7ipJvd",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "WrQGlXL3tp9d",
+											"isInheritable": false,
+											"position": 20
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "kfJAtMZHHebS",
+											"isInheritable": false,
+											"position": 30
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -3408,13 +6089,43 @@
 											"title": "LUKS2",
 											"notePosition": 10,
 											"prefix": null,
-											"isExpanded": true,
+											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
+											"dataFileName": "LUKS2.html",
 											"dirFileName": "LUKS2",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "YaY2aLGul4cT",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "w89etuofWYAW",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "vyna4IVnMjbz",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "Njkoml9LcpGM",
+													"isInheritable": false,
+													"position": 40
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -3439,6 +6150,93 @@
 													"noImport": false,
 													"attributes": [],
 													"attachments": []
+												},
+												{
+													"noteId": "vyna4IVnMjbz",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"rLeFN21Z2pbR",
+														"uE4AiC7ipJvd",
+														"vyna4IVnMjbz"
+													],
+													"isClone": false,
+													"title": "FIDO2  unlock LUKS2",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "FIDO2  unlock LUKS2.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "w89etuofWYAW",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"rLeFN21Z2pbR",
+														"uE4AiC7ipJvd",
+														"w89etuofWYAW"
+													],
+													"isClone": false,
+													"title": "TPM2 unlock LUKS2",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "TPM2 unlock LUKS2.html",
+													"dirFileName": "TPM2 unlock LUKS2",
+													"noImport": false,
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "vyna4IVnMjbz",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "IfhXD1jJ9IwJ",
+															"isInheritable": false,
+															"position": 20
+														}
+													],
+													"attachments": [],
+													"children": [
+														{
+															"noteId": "IfhXD1jJ9IwJ",
+															"notePath": [
+																"5D4uHPE2eFxf",
+																"dn2OdOGkOGm4",
+																"a0hjz6Zr8Ajk",
+																"rLeFN21Z2pbR",
+																"uE4AiC7ipJvd",
+																"w89etuofWYAW",
+																"IfhXD1jJ9IwJ"
+															],
+															"isClone": false,
+															"title": "tpm2-reseal.sh",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "code",
+															"mime": "text/x-sh",
+															"dataFileName": "tpm2-reseal.sh",
+															"noImport": false,
+															"attributes": [],
+															"attachments": []
+														}
+													]
 												}
 											]
 										},
@@ -3453,40 +6251,274 @@
 											],
 											"isClone": false,
 											"title": "gocryptfs",
-											"notePosition": 20,
+											"notePosition": 40,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
 											"dataFileName": "gocryptfs.html",
+											"dirFileName": "gocryptfs",
+											"noImport": false,
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "29X5K8fWJdzl",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "DMo285CghKcy",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "Ljf5qaK3YBO9",
+													"isInheritable": false,
+													"position": 30
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "AbqCOUjo8fyV",
+													"isInheritable": false,
+													"position": 40
+												}
+											],
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "AbqCOUjo8fyV",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"a0hjz6Zr8Ajk",
+														"rLeFN21Z2pbR",
+														"WrQGlXL3tp9d",
+														"AbqCOUjo8fyV"
+													],
+													"isClone": false,
+													"title": "reverse mode",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "reverse mode.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												}
+											]
+										},
+										{
+											"noteId": "kfJAtMZHHebS",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"rLeFN21Z2pbR",
+												"kfJAtMZHHebS"
+											],
+											"isClone": false,
+											"title": "systemd-homed",
+											"notePosition": 50,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "systemd-homed.html",
 											"noImport": false,
 											"attributes": [],
 											"attachments": []
 										}
 									]
+								},
+								{
+									"noteId": "WIuxd6OeA9QY",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"a0hjz6Zr8Ajk",
+										"WIuxd6OeA9QY"
+									],
+									"isClone": false,
+									"title": "tamper detection",
+									"notePosition": 210,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "tamper detection.html",
+									"dirFileName": "tamper detection",
+									"noImport": false,
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "iVUzlxTl9emM",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "V8WkDVn8Bisl",
+											"isInheritable": false,
+											"position": 20
+										}
+									],
+									"attachments": [],
+									"children": [
+										{
+											"noteId": "iVUzlxTl9emM",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"WIuxd6OeA9QY",
+												"iVUzlxTl9emM"
+											],
+											"isClone": false,
+											"title": "tpm2-totp",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "tpm2-totp.html",
+											"noImport": false,
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "xg27fqCONOKT",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"attachments": []
+										},
+										{
+											"noteId": "V8WkDVn8Bisl",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"WIuxd6OeA9QY",
+												"V8WkDVn8Bisl"
+											],
+											"isClone": false,
+											"title": " cryptographic ID",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "cryptographic ID.html",
+											"noImport": false,
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "iVUzlxTl9emM",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"attachments": []
+										}
+									]
+								},
+								{
+									"noteId": "Bo0kvrXBeNRJ",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"a0hjz6Zr8Ajk",
+										"Bo0kvrXBeNRJ"
+									],
+									"isClone": false,
+									"title": "automatic locking",
+									"notePosition": 40,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "automatic locking.html",
+									"dirFileName": "automatic locking",
+									"noImport": false,
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "JGbGliE2hbhd",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "BTGYe94UQmFH",
+											"isInheritable": false,
+											"position": 20
+										}
+									],
+									"attachments": [],
+									"children": [
+										{
+											"noteId": "JGbGliE2hbhd",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"Bo0kvrXBeNRJ",
+												"JGbGliE2hbhd"
+											],
+											"isClone": false,
+											"title": "shell timeout",
+											"notePosition": 0,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "shell timeout.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										},
+										{
+											"noteId": "BTGYe94UQmFH",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"a0hjz6Zr8Ajk",
+												"Bo0kvrXBeNRJ",
+												"BTGYe94UQmFH"
+											],
+											"isClone": true,
+											"title": "screen lock",
+											"prefix": null,
+											"type": "text",
+											"format": "html",
+											"dataFileName": "screen lock.clone.html",
+											"noImport": false
+										}
+									]
 								}
 							]
-						},
-						{
-							"noteId": "GJ4WV5JTecSv",
-							"notePath": [
-								"5D4uHPE2eFxf",
-								"dn2OdOGkOGm4",
-								"GJ4WV5JTecSv"
-							],
-							"isClone": false,
-							"title": "sleep / hibernate",
-							"notePosition": 0,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"format": "html",
-							"dataFileName": "sleep  hibernate.html",
-							"noImport": false,
-							"attributes": [],
-							"attachments": []
 						},
 						{
 							"noteId": "64tOdC3l1wDq",
@@ -3497,7 +6529,7 @@
 							],
 							"isClone": false,
 							"title": "data safety",
-							"notePosition": 60,
+							"notePosition": 70,
 							"prefix": null,
 							"isExpanded": false,
 							"type": "text",
@@ -3524,33 +6556,41 @@
 									"type": "text",
 									"mime": "text/html",
 									"format": "html",
+									"dataFileName": "remote backup.html",
 									"dirFileName": "remote backup",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "XJe099xN9jl8",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "D134XBbjtlwY",
+											"isInheritable": false,
+											"position": 20
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "nKCzNRVS6v5k",
+											"isInheritable": false,
+											"position": 30
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "c7E8dS1kvRdK",
+											"isInheritable": false,
+											"position": 40
+										}
+									],
 									"attachments": [],
 									"children": [
-										{
-											"noteId": "Xy86mU7xyBUz",
-											"notePath": [
-												"5D4uHPE2eFxf",
-												"dn2OdOGkOGm4",
-												"64tOdC3l1wDq",
-												"Ig43ULLiwMDe",
-												"Xy86mU7xyBUz"
-											],
-											"isClone": false,
-											"title": "nextcloud",
-											"notePosition": 10,
-											"prefix": null,
-											"isExpanded": false,
-											"type": "text",
-											"mime": "text/html",
-											"format": "html",
-											"dataFileName": "nextcloud.html",
-											"noImport": false,
-											"attributes": [],
-											"attachments": []
-										},
 										{
 											"noteId": "XJe099xN9jl8",
 											"notePath": [
@@ -3616,6 +6656,76 @@
 											"noImport": false,
 											"attributes": [],
 											"attachments": []
+										},
+										{
+											"noteId": "D134XBbjtlwY",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"64tOdC3l1wDq",
+												"Ig43ULLiwMDe",
+												"D134XBbjtlwY"
+											],
+											"isClone": false,
+											"title": "nextcloud",
+											"notePosition": 50,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dirFileName": "nextcloud",
+											"noImport": false,
+											"attributes": [],
+											"attachments": [],
+											"children": [
+												{
+													"noteId": "Y5igPu0uO0Bg",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"64tOdC3l1wDq",
+														"Ig43ULLiwMDe",
+														"D134XBbjtlwY",
+														"Y5igPu0uO0Bg"
+													],
+													"isClone": false,
+													"title": "sync once",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "sync once.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												},
+												{
+													"noteId": "jfuP6OO0FRAB",
+													"notePath": [
+														"5D4uHPE2eFxf",
+														"dn2OdOGkOGm4",
+														"64tOdC3l1wDq",
+														"Ig43ULLiwMDe",
+														"D134XBbjtlwY",
+														"jfuP6OO0FRAB"
+													],
+													"isClone": false,
+													"title": "force upgrade",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"format": "html",
+													"dataFileName": "force upgrade.html",
+													"noImport": false,
+													"attributes": [],
+													"attachments": []
+												}
+											]
 										}
 									]
 								},
@@ -3684,7 +6794,7 @@
 							],
 							"isClone": false,
 							"title": "package managers",
-							"notePosition": 70,
+							"notePosition": 80,
 							"prefix": null,
 							"isExpanded": false,
 							"type": "text",
@@ -3693,7 +6803,78 @@
 							"dataFileName": "package managers.html",
 							"dirFileName": "package managers",
 							"noImport": false,
-							"attributes": [],
+							"attributes": [
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "ZuTvclZ1W4zF",
+									"isInheritable": false,
+									"position": 10
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "29X5K8fWJdzl",
+									"isInheritable": false,
+									"position": 20
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "Ljf5qaK3YBO9",
+									"isInheritable": false,
+									"position": 30
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "ovWV1jDCYGlK",
+									"isInheritable": false,
+									"position": 40
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "C2lpcQtkqyOz",
+									"isInheritable": false,
+									"position": 50
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "qdvIAFI8bye7",
+									"isInheritable": false,
+									"position": 60
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "GZOr1a624oNB",
+									"isInheritable": false,
+									"position": 70
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "hEGb3u14UmxW",
+									"isInheritable": false,
+									"position": 80
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "k2O5ypXmTFlL",
+									"isInheritable": false,
+									"position": 90
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "FhNBQ3qD14Mz",
+									"isInheritable": false,
+									"position": 100
+								}
+							],
 							"attachments": [],
 							"children": [
 								{
@@ -3706,7 +6887,7 @@
 									],
 									"isClone": false,
 									"title": "nix",
-									"notePosition": 0,
+									"notePosition": 50,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
@@ -3733,9 +6914,25 @@
 									"type": "text",
 									"mime": "text/html",
 									"format": "html",
+									"dataFileName": "flatpak.html",
 									"dirFileName": "flatpak",
 									"noImport": false,
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "5UA8aLF6Ismc",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "jxUK2Pb9QTa1",
+											"isInheritable": false,
+											"position": 20
+										}
+									],
 									"attachments": [],
 									"children": [
 										{
@@ -3747,13 +6944,18 @@
 												"C2lpcQtkqyOz",
 												"jxUK2Pb9QTa1"
 											],
-											"isClone": true,
+											"isClone": false,
 											"title": "flatseal",
+											"notePosition": 10,
 											"prefix": null,
+											"isExpanded": false,
 											"type": "text",
+											"mime": "text/html",
 											"format": "html",
-											"dataFileName": "flatseal.clone.html",
-											"noImport": false
+											"dataFileName": "flatseal.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
 										}
 									]
 								},
@@ -3767,7 +6969,7 @@
 									],
 									"isClone": false,
 									"title": "snap",
-									"notePosition": 20,
+									"notePosition": 80,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
@@ -3838,9 +7040,25 @@
 											"type": "text",
 											"mime": "text/html",
 											"format": "html",
+											"dataFileName": "yay.html",
 											"dirFileName": "yay",
 											"noImport": false,
-											"attributes": [],
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "WrQGlXL3tp9d",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "DMo285CghKcy",
+													"isInheritable": false,
+													"position": 20
+												}
+											],
 											"attachments": [],
 											"children": [
 												{
@@ -3927,350 +7145,164 @@
 											"noImport": false
 										}
 									]
+								},
+								{
+									"noteId": "GZOr1a624oNB",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"sYeAMh4klMic",
+										"GZOr1a624oNB"
+									],
+									"isClone": false,
+									"title": "home arch install",
+									"notePosition": 60,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "home arch install.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "hEGb3u14UmxW",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"sYeAMh4klMic",
+										"hEGb3u14UmxW"
+									],
+									"isClone": false,
+									"title": "debtap",
+									"notePosition": 70,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "debtap.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "FhNBQ3qD14Mz",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"sYeAMh4klMic",
+										"FhNBQ3qD14Mz"
+									],
+									"isClone": false,
+									"title": "language specific",
+									"notePosition": 90,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "language specific.html",
+									"dirFileName": "language specific",
+									"noImport": false,
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "afHtaZ9qFODD",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "5cTWxY0Fu72W",
+											"isInheritable": false,
+											"position": 20
+										}
+									],
+									"attachments": [],
+									"children": [
+										{
+											"noteId": "afHtaZ9qFODD",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"sYeAMh4klMic",
+												"FhNBQ3qD14Mz",
+												"afHtaZ9qFODD"
+											],
+											"isClone": false,
+											"title": "python",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "python.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										},
+										{
+											"noteId": "5cTWxY0Fu72W",
+											"notePath": [
+												"5D4uHPE2eFxf",
+												"dn2OdOGkOGm4",
+												"sYeAMh4klMic",
+												"FhNBQ3qD14Mz",
+												"5cTWxY0Fu72W"
+											],
+											"isClone": false,
+											"title": "rust",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"format": "html",
+											"dataFileName": "rust.html",
+											"noImport": false,
+											"attributes": [],
+											"attachments": []
+										}
+									]
 								}
 							]
-						}
-					]
-				},
-				{
-					"noteId": "G48FCktGT9Fq",
-					"notePath": [
-						"5D4uHPE2eFxf",
-						"G48FCktGT9Fq"
-					],
-					"isClone": false,
-					"title": "install the base system",
-					"notePosition": 20,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"format": "html",
-					"dataFileName": "install the base system.html",
-					"dirFileName": "install the base system",
-					"noImport": false,
-					"attributes": [
-						{
-							"type": "relation",
-							"name": "internalLink",
-							"value": "jFkoEKSMPbWY",
-							"isInheritable": false,
-							"position": 10
 						},
 						{
-							"type": "label",
-							"name": "mapType",
-							"value": "link",
-							"isInheritable": false,
-							"position": 20
-						},
-						{
-							"type": "relation",
-							"name": "internalLink",
-							"value": "IMAt1ENOntQP",
-							"isInheritable": false,
-							"position": 30
-						},
-						{
-							"type": "relation",
-							"name": "internalLink",
-							"value": "ZipqSkFdlbAQ",
-							"isInheritable": false,
-							"position": 40
-						}
-					],
-					"attachments": [],
-					"children": [
-						{
-							"noteId": "IMAt1ENOntQP",
+							"noteId": "jep1B9GJf9Ev",
 							"notePath": [
 								"5D4uHPE2eFxf",
-								"G48FCktGT9Fq",
-								"IMAt1ENOntQP"
+								"dn2OdOGkOGm4",
+								"jep1B9GJf9Ev"
 							],
 							"isClone": false,
-							"title": "EFI-STUB",
+							"title": "power management",
 							"notePosition": 0,
 							"prefix": null,
 							"isExpanded": false,
 							"type": "text",
 							"mime": "text/html",
 							"format": "html",
-							"dataFileName": "EFI-STUB.html",
-							"noImport": false,
-							"attributes": [],
-							"attachments": [
-								{
-									"attachmentId": "0mTHmBwjkguw",
-									"title": "image.png",
-									"role": "image",
-									"mime": "image/png",
-									"position": 10,
-									"dataFileName": "EFI-STUB_image.png"
-								}
-							]
-						},
-						{
-							"noteId": "jFkoEKSMPbWY",
-							"notePath": [
-								"5D4uHPE2eFxf",
-								"G48FCktGT9Fq",
-								"jFkoEKSMPbWY"
-							],
-							"isClone": false,
-							"title": "dracut auto-generate",
-							"notePosition": 20,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"format": "html",
-							"dataFileName": "dracut auto-generate.html",
-							"noImport": false,
-							"attributes": [
-								{
-									"type": "label",
-									"name": "mapType",
-									"value": "link",
-									"isInheritable": false,
-									"position": 10
-								}
-							],
-							"attachments": []
-						},
-						{
-							"noteId": "z11pzsnSimm3",
-							"notePath": [
-								"5D4uHPE2eFxf",
-								"G48FCktGT9Fq",
-								"z11pzsnSimm3"
-							],
-							"isClone": false,
-							"title": "install list",
-							"notePosition": 30,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"format": "html",
-							"dataFileName": "install list.html",
-							"noImport": false,
-							"attributes": [],
-							"attachments": []
-						}
-					]
-				},
-				{
-					"noteId": "TWwaSVE8IWdD",
-					"notePath": [
-						"5D4uHPE2eFxf",
-						"TWwaSVE8IWdD"
-					],
-					"isClone": false,
-					"title": "partitioning and formatting",
-					"notePosition": 10,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"format": "html",
-					"dataFileName": "partitioning and formatting.html",
-					"dirFileName": "partitioning and formatting",
-					"noImport": false,
-					"attributes": [
-						{
-							"type": "relation",
-							"name": "internalLink",
-							"value": "G48FCktGT9Fq",
-							"isInheritable": false,
-							"position": 10
-						},
-						{
-							"type": "relation",
-							"name": "internalLink",
-							"value": "DuXPeYdNNPH1",
-							"isInheritable": false,
-							"position": 20
-						},
-						{
-							"type": "relation",
-							"name": "internalLink",
-							"value": "ek3PHMFWuJaK",
-							"isInheritable": false,
-							"position": 30
-						},
-						{
-							"type": "relation",
-							"name": "internalLink",
-							"value": "aIcDsQtmDUQE",
-							"isInheritable": false,
-							"position": 40
-						},
-						{
-							"type": "relation",
-							"name": "internalLink",
-							"value": "5jewK57HvHlE",
-							"isInheritable": false,
-							"position": 50
-						}
-					],
-					"attachments": [],
-					"children": [
-						{
-							"noteId": "5jewK57HvHlE",
-							"notePath": [
-								"5D4uHPE2eFxf",
-								"TWwaSVE8IWdD",
-								"5jewK57HvHlE"
-							],
-							"isClone": false,
-							"title": "drive mapping",
-							"notePosition": 10,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "mermaid",
-							"mime": "text/plain",
-							"dataFileName": "drive mapping.txt",
-							"dirFileName": "drive mapping",
-							"noImport": false,
-							"attributes": [],
-							"attachments": [],
-							"children": [
-								{
-									"noteId": "DuXPeYdNNPH1",
-									"notePath": [
-										"5D4uHPE2eFxf",
-										"TWwaSVE8IWdD",
-										"5jewK57HvHlE",
-										"DuXPeYdNNPH1"
-									],
-									"isClone": false,
-									"title": "btrfs_subvol_create.sh",
-									"notePosition": 0,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "code",
-									"mime": "text/x-sh",
-									"dataFileName": "btrfs_subvol_create.sh",
-									"noImport": false,
-									"attributes": [],
-									"attachments": []
-								},
-								{
-									"noteId": "aIcDsQtmDUQE",
-									"notePath": [
-										"5D4uHPE2eFxf",
-										"TWwaSVE8IWdD",
-										"5jewK57HvHlE",
-										"aIcDsQtmDUQE"
-									],
-									"isClone": false,
-									"title": "folder mounts",
-									"notePosition": 20,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"format": "html",
-									"dataFileName": "folder mounts.html",
-									"noImport": false,
-									"attributes": [],
-									"attachments": []
-								},
-								{
-									"noteId": "ek3PHMFWuJaK",
-									"notePath": [
-										"5D4uHPE2eFxf",
-										"TWwaSVE8IWdD",
-										"5jewK57HvHlE",
-										"ek3PHMFWuJaK"
-									],
-									"isClone": false,
-									"title": "btrfs_subvol_mount.sh",
-									"notePosition": 10,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "code",
-									"mime": "text/x-sh",
-									"dataFileName": "btrfs_subvol_mount.sh",
-									"noImport": false,
-									"attributes": [],
-									"attachments": []
-								}
-							]
-						}
-					]
-				},
-				{
-					"noteId": "ZipqSkFdlbAQ",
-					"notePath": [
-						"5D4uHPE2eFxf",
-						"ZipqSkFdlbAQ"
-					],
-					"isClone": false,
-					"title": "setup decryption",
-					"notePosition": 40,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"format": "html",
-					"dataFileName": "setup decryption.html",
-					"dirFileName": "setup decryption",
-					"noImport": false,
-					"attributes": [],
-					"attachments": [],
-					"children": [
-						{
-							"noteId": "vyna4IVnMjbz",
-							"notePath": [
-								"5D4uHPE2eFxf",
-								"ZipqSkFdlbAQ",
-								"vyna4IVnMjbz"
-							],
-							"isClone": false,
-							"title": "FIDO2  unlock LUKS2",
-							"notePosition": 10,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"format": "html",
-							"dataFileName": "FIDO2  unlock LUKS2.html",
-							"noImport": false,
-							"attributes": [],
-							"attachments": []
-						},
-						{
-							"noteId": "w89etuofWYAW",
-							"notePath": [
-								"5D4uHPE2eFxf",
-								"ZipqSkFdlbAQ",
-								"w89etuofWYAW"
-							],
-							"isClone": false,
-							"title": "TPM2 unlock LUKS2",
-							"notePosition": 20,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"format": "html",
-							"dataFileName": "TPM2 unlock LUKS2.html",
-							"dirFileName": "TPM2 unlock LUKS2",
+							"dataFileName": "power management.html",
+							"dirFileName": "power management",
 							"noImport": false,
 							"attributes": [
 								{
 									"type": "relation",
 									"name": "internalLink",
-									"value": "vyna4IVnMjbz",
+									"value": "GJ4WV5JTecSv",
 									"isInheritable": false,
 									"position": 10
 								},
 								{
 									"type": "relation",
 									"name": "internalLink",
-									"value": "IfhXD1jJ9IwJ",
+									"value": "ULIvKC9eSzbs",
 									"isInheritable": false,
 									"position": 20
 								}
@@ -4278,24 +7310,246 @@
 							"attachments": [],
 							"children": [
 								{
-									"noteId": "IfhXD1jJ9IwJ",
+									"noteId": "GJ4WV5JTecSv",
 									"notePath": [
 										"5D4uHPE2eFxf",
-										"ZipqSkFdlbAQ",
-										"w89etuofWYAW",
-										"IfhXD1jJ9IwJ"
+										"dn2OdOGkOGm4",
+										"jep1B9GJf9Ev",
+										"GJ4WV5JTecSv"
 									],
 									"isClone": false,
-									"title": "tpm2-reseal.sh",
+									"title": "sleep / hibernate",
+									"notePosition": 0,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "sleep  hibernate.html",
+									"noImport": false,
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "pBNxhM7Dr3AN",
+											"isInheritable": false,
+											"position": 10
+										}
+									],
+									"attachments": []
+								},
+								{
+									"noteId": "ULIvKC9eSzbs",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"jep1B9GJf9Ev",
+										"ULIvKC9eSzbs"
+									],
+									"isClone": false,
+									"title": "CPU power state selection",
 									"notePosition": 10,
 									"prefix": null,
 									"isExpanded": false,
-									"type": "code",
-									"mime": "text/x-sh",
-									"dataFileName": "tpm2-reseal.sh",
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "CPU power state selection.html",
 									"noImport": false,
 									"attributes": [],
 									"attachments": []
+								}
+							]
+						},
+						{
+							"noteId": "gICuymd4rmR3",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"dn2OdOGkOGm4",
+								"gICuymd4rmR3"
+							],
+							"isClone": true,
+							"title": "windows VM with GPU passthrough",
+							"prefix": null,
+							"type": "text",
+							"format": "html",
+							"dataFileName": "windows VM with GPU passthrough.clone.html",
+							"noImport": false
+						},
+						{
+							"noteId": "StorTJGtvC9l",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"dn2OdOGkOGm4",
+								"StorTJGtvC9l"
+							],
+							"isClone": false,
+							"title": "drivers",
+							"notePosition": 90,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "drivers.html",
+							"dirFileName": "drivers",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "XmLq8O0FVUTB",
+									"isInheritable": false,
+									"position": 10
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "b4J15Py67yeC",
+									"isInheritable": false,
+									"position": 20
+								},
+								{
+									"type": "relation",
+									"name": "internalLink",
+									"value": "giGVjW0ykdXU",
+									"isInheritable": false,
+									"position": 30
+								}
+							],
+							"attachments": [],
+							"children": [
+								{
+									"noteId": "XmLq8O0FVUTB",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"StorTJGtvC9l",
+										"XmLq8O0FVUTB"
+									],
+									"isClone": false,
+									"title": "AMD",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "AMD.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "b4J15Py67yeC",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"StorTJGtvC9l",
+										"b4J15Py67yeC"
+									],
+									"isClone": false,
+									"title": "intel",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "intel.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								},
+								{
+									"noteId": "giGVjW0ykdXU",
+									"notePath": [
+										"5D4uHPE2eFxf",
+										"dn2OdOGkOGm4",
+										"StorTJGtvC9l",
+										"giGVjW0ykdXU"
+									],
+									"isClone": false,
+									"title": "nvidia",
+									"notePosition": 30,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"format": "html",
+									"dataFileName": "nvidia.html",
+									"noImport": false,
+									"attributes": [],
+									"attachments": []
+								}
+							]
+						},
+						{
+							"noteId": "RyklKcG5nB1y",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"dn2OdOGkOGm4",
+								"RyklKcG5nB1y"
+							],
+							"isClone": false,
+							"title": "gaming",
+							"notePosition": 110,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"format": "html",
+							"dataFileName": "gaming.html",
+							"noImport": false,
+							"attributes": [],
+							"attachments": []
+						}
+					]
+				},
+				{
+					"noteId": "GATT5RHPAIBh",
+					"notePath": [
+						"5D4uHPE2eFxf",
+						"GATT5RHPAIBh"
+					],
+					"isClone": false,
+					"title": "concepts",
+					"notePosition": 90,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "html",
+					"dirFileName": "concepts",
+					"noImport": false,
+					"attributes": [],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "qD3rFWjI2Dhi",
+							"notePath": [
+								"5D4uHPE2eFxf",
+								"GATT5RHPAIBh",
+								"qD3rFWjI2Dhi"
+							],
+							"isClone": false,
+							"title": "boot chain",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "canvas",
+							"mime": "application/json",
+							"dataFileName": "boot chain.json",
+							"noImport": false,
+							"attributes": [],
+							"attachments": [
+								{
+									"attachmentId": "MywHKA2ArkdU",
+									"title": "canvas-export.svg",
+									"role": "image",
+									"mime": "image/svg+xml",
+									"position": 0,
+									"dataFileName": "boot chain_canvas-export.svg"
 								}
 							]
 						}

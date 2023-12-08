@@ -1,0 +1,27 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>kernel hardening</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>kernel hardening</h1>
+
+      <div class="ck-content">
+        <p><a href="https://wiki.archlinux.org/title/Security#Kernel_hardening">Security - ArchWiki (archlinux.org)</a>
+        </p>
+        <p>disable kexec:</p>
+        <p><code>/etc/sysctl.d/51-kexec-restrict.conf</code>
+        </p><pre><code class="language-text-plain">kernel.kexec_load_disabled = 1</code></pre>
+        <p><a class="reference-link" href="kernel%20hardening/LKRG.html">LKRG</a>&nbsp;can
+          provide integrity checking for kernel modules.</p>
+      </div>
+    </div>
+  </body>
+
+</html>

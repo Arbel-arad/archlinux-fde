@@ -6,6 +6,7 @@ Operation = Remove
 Target = usr/lib/modules/*/pkgbase
 Target = usr/src/*/dkms.conf
 
+
 [Trigger]
 Type = Package
 Operation = Install
@@ -18,6 +19,8 @@ Target = intel-ucode
 Target = plymouth
 Target = cryptsetup
 Target = device-mapper
+Target = nvidia
+Target = linux
 
 
 [Action]

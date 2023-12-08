@@ -17,10 +17,11 @@
         <ul class="todo-list">
           <li>
             <label class="todo-list__label">
-              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>pacstrap -K /mnt base base-devel linux linux-firmware</code></span>
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>pacstrap -K /mnt base base-devel linux linux-firmware linux-headers dkms</code></span>
             </label>
           </li>
         </ul>
+        <p>you can also use other&nbsp;<a class="reference-link" href="post-install/security/kernel.html">kernel</a>&nbsp;versions.</p>
         <p>i will also install extra software:</p>
         <ul class="todo-list">
           <li>
@@ -98,7 +99,7 @@
           <ul class="todo-list">
             <li>
               <label class="todo-list__label">
-                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>pacman -S dracut plymouth tpm2-tools tpm2-totp libfido2 pam-u2f sbctl sbsigntools efitools efibootmgr</code></span>
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>pacman -S dracut plymouth tpm2-tools tpm2-totp libfido2 gocryptfs pam-u2f sbctl sbsigntools efitools efibootmgr</code></span>
               </label>
             </li>
             <li>
@@ -157,19 +158,16 @@ add_dracutmodules+=" plymouth resume tpm2-tss fido2 tpm2-totp "
 do_strip="yes"
 use_fstab="yes"
 aggressive_strip="yes"
+enhanced_cpio="yes"
 kernel_cmdline="YOUR-CMDLINE"
 show_modules="yes"
 uefi="yes"
 uefi_splash_image=""
 uefi_secureboot_cert="/usr/share/secureboot/keys/db/db.pem"
 uefi_secureboot_key="/usr/share/secureboot/keys/db/db.key"</code></pre>
-            <p><a href="https://man.archlinux.org/man/dracut.conf.5.en">dracut.conf(5) — Arch manual pages (archlinux.org)</a>
-            </p>
-            <p><a href="https://man.archlinux.org/man/dracut.8#OPTIONS">dracut(8) — Arch manual pages (archlinux.org)</a>
-            </p>
-            <p><a href="https://gist.github.com/Neurognostic/259f1ba1e568b31f0732a4a18f399f9e">Dracut UEFI Unified Kernel Image with Secure Boot Signing (github.com)</a>
-            </p>
-            <ul class="todo-list">
+            <p><a href="install%20the%20base%20system/dracut.html">dracut config manual</a>.</p>
+            <ul
+            class="todo-list">
               <li>
                 <label class="todo-list__label">
                   <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>mkdir -p /efi/EFI/BOOT</code></span>
@@ -182,125 +180,125 @@ uefi_secureboot_key="/usr/share/secureboot/keys/db/db.key"</code></pre>
               </li>
               <li>
                 <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">&nbsp;also consider&nbsp;<a class="reference-link" href="install%20the%20base%20system/dracut%20auto-generate.html">dracut auto-generate</a>&nbsp;for updates.</span>
-                </label>
-              </li>
-            </ul>
-            <p>inspecting the image:</p>
-            <ul class="todo-list">
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>lsinitrd | less</code></span>
-                </label>
-              </li>
-            </ul>
-            <p>add UEFI entries:</p>
-            <p>the default UEFI boot paths are:</p><pre><code class="language-text-plain">esp/EFI/BOOT/BOOTx64.EFI
-esp/EFI/BOOT/BOOTIA.EFI</code></pre>
-            <p>the files on those paths should be automatically detected and listed in
-              the UEFI menu.</p>
-            <p>if your images are missing, or you want custom names in the menu, it is
-              possible to add them manually as described:</p>
-            <p><code>/dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span> is
-              the path to the drive containing the <span style="color:hsl(30,75%,60%);"><code><strong>EFI</strong></code></span> partition.
-              the partition is specified separately with <code>--part </code><span style="color:hsl(30,75%,60%);"><code><strong>X</strong></code></span>
-            </p>
-            <ul class="todo-list">
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr --create --disk /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span><code> --part 1 --label "ArchLinux" --loader /efi/EFI/BOOT/BOOTx64.EFI</code>
-                  </span>
-                </label>
-              </li>
-            </ul>
-            <p><a href="install%20the%20base%20system/EFI-STUB.html">more information about the EFI-stub</a>.</p>
-            <p>show and set boot order:</p>
-            <ul class="todo-list">
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr</code></span>
-                </label>
-              </li>
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr --bootorder 0003,0004,0005</code></span>
-                </label>
-              </li>
-            </ul>
-            <p>reboot into the new install.</p>
-            <ul class="todo-list">
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">go into BIOS and enable “setup mode” for secure boot.</span>
-                </label>
-              </li>
-            </ul>
-            <p>check secure-boot status (setup mode should be enabled now):</p>
-            <ul class="todo-list">
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl status</code></span>
-                </label>
-              </li>
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl enroll-keys</code> (add <code>-m</code> to include microsoft keys)</span>
-                </label>
-              </li>
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl verify</code> (all files should be green and say “signed”)</span>
-                </label>
-              </li>
-            </ul>
-            <p>reboot and enable secure boot.</p>
-            <ul class="todo-list">
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl status</code> should now be fully green.</span>
-                </label>
-              </li>
-            </ul>
-            <p>enable <code>networkmanager</code>:</p>
-            <ul class="todo-list">
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemctl enable --now NetworkManager</code></span>
-                </label>
-              </li>
-            </ul>
-            <p><a href="https://wiki.archlinux.org/title/NetworkManager#Usage">connect to a network</a>:</p>
-            <ul
-            class="todo-list">
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>nmcli device wifi list</code></span>
-                </label>
-              </li>
-              <li>
-                <label class="todo-list__label">
-                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>nmcli device wifi connect </code><span style="color:hsl(30,75%,60%);"><code><i><strong>SSID_or_BSSID</strong></i></code></span><code> password </code>
-                  <span
-                  style="color:hsl(30,75%,60%);"><code><i><strong>password</strong></i></code>
-                    </span>
-                    </span>
+                  <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">&nbsp;also consider&nbsp;<a class="reference-link" href="install%20the%20base%20system/dracut/dracut%20auto-generate.html">dracut auto-generate</a>&nbsp;for updates.</span>
                 </label>
               </li>
               </ul>
-              <p>set timezone:</p>
+              <p>inspecting the image:</p>
               <ul class="todo-list">
                 <li>
                   <label class="todo-list__label">
-                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>timedatectl set-timezone $(curl </code><a href="https://ipapi.co/timezone"><code>https://ipapi.co/timezone</code></a><code>)</code></span>
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>lsinitrd | less dracut /efi/EFI/BOOT/BOOTx64.EFI</code></span>
+                  </label>
+                </li>
+              </ul>
+              <p>add UEFI entries:</p>
+              <p>the default UEFI boot paths are:</p><pre><code class="language-text-plain">esp/EFI/BOOT/BOOTx64.EFI
+esp/EFI/BOOT/BOOTIA.EFI</code></pre>
+              <p>the files on those paths should be automatically detected and listed in
+                the UEFI menu.</p>
+              <p>if your images are missing, or you want custom names in the menu, it is
+                possible to add them manually as described:</p>
+              <p><code>/dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span> is
+                the path to the drive containing the <span style="color:hsl(30,75%,60%);"><code><strong>EFI</strong></code></span> partition.
+                the partition is specified separately with <code>--part </code><span style="color:hsl(30,75%,60%);"><code><strong>X</strong></code></span>
+              </p>
+              <ul class="todo-list">
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr --create --disk /dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>EFI-DRIVE</strong></code></span><code> --part 1 --label "ArchLinux" --loader /efi/EFI/BOOT/BOOTx64.EFI</code>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+              <p><a href="install%20the%20base%20system/EFI-STUB.html">more information about the EFI-stub</a>.</p>
+              <p>show and set boot order:</p>
+              <ul class="todo-list">
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr</code></span>
                   </label>
                 </li>
                 <li>
                   <label class="todo-list__label">
-                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>timedatectl set-ntp 1</code></span>
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>efibootmgr --bootorder 0003,0004,0005</code></span>
                   </label>
                 </li>
               </ul>
-              <p>proceed to <a href="setup%20decryption.html">setup decryption</a>.</p>
+              <p>reboot into the new install.</p>
+              <ul class="todo-list">
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">go into BIOS and enable “setup mode” for secure boot.</span>
+                  </label>
+                </li>
+              </ul>
+              <p>check secure-boot status (setup mode should be enabled now):</p>
+              <ul class="todo-list">
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl status</code></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl enroll-keys</code> (add <code>-m</code> to include microsoft keys)</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl verify</code> (all files should be green and say “signed”)</span>
+                  </label>
+                </li>
+              </ul>
+              <p>reboot and enable secure boot.</p>
+              <ul class="todo-list">
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sbctl status</code> should now be fully green.</span>
+                  </label>
+                </li>
+              </ul>
+              <p>enable <code>networkmanager</code>:</p>
+              <ul class="todo-list">
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemctl enable --now NetworkManager</code></span>
+                  </label>
+                </li>
+              </ul>
+              <p><a href="https://wiki.archlinux.org/title/NetworkManager#Usage">connect to a network</a>:</p>
+              <ul
+              class="todo-list">
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>nmcli device wifi list</code></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="todo-list__label">
+                    <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>nmcli device wifi connect </code><span style="color:hsl(30,75%,60%);"><code><i><strong>SSID_or_BSSID</strong></i></code></span><code> password </code>
+                    <span
+                    style="color:hsl(30,75%,60%);"><code><i><strong>password</strong></i></code>
+                      </span>
+                      </span>
+                  </label>
+                </li>
+                </ul>
+                <p>set timezone:</p>
+                <ul class="todo-list">
+                  <li>
+                    <label class="todo-list__label">
+                      <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>timedatectl set-timezone $(curl </code><a href="https://ipapi.co/timezone"><code>https://ipapi.co/timezone</code></a><code>)</code></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="todo-list__label">
+                      <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>timedatectl set-ntp 1</code></span>
+                    </label>
+                  </li>
+                </ul>
+                <p>proceed to <a href="add%20user.html">add a user</a>.</p>
       </div>
     </div>
   </body>

@@ -13,7 +13,8 @@
        <h1 data-trilium-h1>securing SSH</h1>
 
       <div class="ck-content">
-        <p>block root login</p>
+        <p><a href="https://goteleport.com/blog/ssh-certificates/">SSH Certificates Security Hardening (goteleport.com)</a>
+        </p>
         <p>&nbsp;</p>
         <p><a href="https://cryptsus.com/blog/how-to-configure-openssh-with-yubikey-security-keys-u2f-otp-authentication-ed25519-sk-ecdsa-sk-on-ubuntu-18.04.html">How to configure OpenSSH with YubiKey Security Keys U2F OTP Authentication on Ubuntu 18.04 — Cryptsus Blog</a>
         </p>
@@ -29,7 +30,8 @@
           </li>
         </ul>
         <p>adding <code>-resident</code> to the command will write the handle to the
-          hardware, allowing for easier use on multiple computers</p>
+          hardware, allowing for easier use on multiple computers without the need
+          to share key files.</p>
         <p>&nbsp;</p>
         <p><a href="https://man.freebsd.org/cgi/man.cgi?sshd_config(5)">sshd_config(5) (freebsd.org)</a>
         </p>
@@ -38,7 +40,7 @@
         <ul class="todo-list">
           <li>
             <label class="todo-list__label">
-              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>Port 22</code> select a port for SSH (remember to set this in the firewall as well)</span>
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>Port 22</code> select a port for SSH (remember to open this port in the&nbsp;<a class="reference-link" href="networking/firewall.html">firewall</a>&nbsp;as well)</span>
             </label>
           </li>
           <li>
@@ -53,12 +55,32 @@
           </li>
           <li>
             <label class="todo-list__label">
-              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>PubkeyAcceptedKeyTypes </code><a href="mailto:sk-ssh-ed25519@openssh.com"><code>sk-ssh-ed25519@openssh.com</code></a> append <code>, ssh-ed25519</code> to also allow non-HSM keys.</span>
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>PubkeyAcceptedKeyTypes </code><a href="mailto:sk-ssh-ed25519@openssh.com"><code>sk-ssh-ed25519@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com</code></a> authentication is restricted to ed25519 keys stored on a <a href="identity/hardware%20security%20modules.html">security key</a>. appending <code>, ssh-ed25519</code> allows non-HSM keys.</span>
             </label>
           </li>
           <li>
             <label class="todo-list__label">
-              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>CASignatureAlgorithms </code><a href="mailto:sk-ssh-ed25519@openssh.com"><code>sk-ssh-ed25519@openssh.com</code></a> same as above.</span>
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>CASignatureAlgorithms </code><a href="mailto:sk-ssh-ed25519@openssh.com"><code>sk-ssh-ed25519@openssh.com</code></a><code>,ssh-ed25519</code> same as above.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>cipher </code><a href="mailto:chacha20-poly1305@openssh.com"><code>chacha20-poly1305@openssh.com</code></a><code>,</code><a href="mailto:aes256-gcm@openssh.com"><code>aes256-gcm@openssh.com</code></a><code>,aes256-ctr</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>HostKeyAlgorithms </code><a href="mailto:sk-ssh-ed25519-cert-v01@openssh.com"><code>sk-ssh-ed25519-cert-v01@openssh.com</code></a><code>,</code><a href="mailto:ssh-ed25519-cert-v01@openssh.com"><code>ssh-ed25519-cert-v01@openssh.com</code></a><code>,</code><a href="mailto:sk-ssh-ed25519@openssh.com"><code>sk-ssh-ed25519@openssh.com</code></a><code>,ssh-ed25519</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>KexAlgorithms </code><a href="mailto:sntrup761x25519-sha512@openssh.com"><code>sntrup761x25519-sha512@openssh.com</code></a><code>,curve25519-sha256,</code><a href="mailto:curve25519-sha256@libssh.org"><code>curve25519-sha256@libssh.org</code></a><code>,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>RequiredRSASize 4096</code></span>
             </label>
           </li>
           <li>
@@ -69,6 +91,11 @@
           <li>
             <label class="todo-list__label">
               <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>PubkeyAuthentication yes</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>PubkeyAuthOptions verify-required</code>&nbsp;</span>
             </label>
           </li>
           <li>

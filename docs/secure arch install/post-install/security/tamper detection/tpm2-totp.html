@@ -1,0 +1,77 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>tpm2-totp</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>tpm2-totp</h1>
+
+      <div class="ck-content">
+        <p>you can use <a href="https://github.com/tpm2-software/tpm2-totp">tpm2-totp</a> to
+          validate the system state when booting, to avoid inputting sensitive data
+          to a compromised system.</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S tpm2-totp-git</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2-totp init -p 0,1,2,3,4,5,7,9,11,12,13 -P </code><span style="color:hsl(30,75%,60%);"><code><strong>PASSWORD</strong></code></span></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">enroll the provided token in your TOTP app.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2_pcrread</code> save these values for reference</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">add <code>tpm2-tss</code> and <code>tpm2-totp</code> to the dracut module list.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>dracut /efi/EFI/BOOT/BOOTx64.EFI --force</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>reboot</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2_pcrread</code> compare to previous results</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2-totp show</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>tpm2-totp reseal</code> a reseal may be required after booting a new UKI.</span>
+            </label>
+          </li>
+        </ul>
+        <p>some&nbsp;<a class="reference-link" href="../../customization/plymouth.html">plymouth</a>&nbsp;themes
+          may not support displaying the TOTP codes.</p>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,59 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>sleep / hibernate</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>sleep / hibernate</h1>
+
+      <div class="ck-content">
+        <p><a href="https://man7.org/linux/man-pages/man5/logind.conf.5.html">logind.conf(5) - Linux manual page (man7.org)</a>
+        </p>
+        <p><code>/etc/systemd/logind.conf</code>
+        </p>
+        <p>see section:</p>
+        <blockquote>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp;KillUserProcesses=
+            <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Takes a boolean argument. Configures
+            whether the processes of
+            <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a user should be killed when the user
+            logs out. If true, the
+            <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scope unit corresponding to the session
+            and all processes
+            <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inside that scope will be terminated.
+            If false, the scope is
+            <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "abandoned", see systemd.scope(5),
+            and processes are not
+            <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; killed. Defaults to "yes", but see
+            the options KillOnlyUsers=
+            <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and KillExcludeUsers= below.</p>
+        </blockquote>
+        <p>also:</p>
+        <ul>
+          <li><i>IdleAction=</i>
+          </li>
+          <li><i>InhibitDelayMaxSec=</i>
+          </li>
+        </ul>
+        <p>also see:</p>
+        <p><code>/etc/systemd/sleep.conf</code>
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>configure <code>swayidle</code>
+        </p>
+        <p>configure <code>swaylock</code>
+        </p>
+        <p><a class="reference-link" href="../customization/desktop/login%20manager.html">login manager</a>
+        </p>
+      </div>
+    </div>
+  </body>
+
+</html>

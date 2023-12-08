@@ -12,7 +12,27 @@
     <div class="content">
        <h1 data-trilium-h1>gocryptfs</h1>
 
-      <div class="ck-content"></div>
+      <div class="ck-content">
+        <p><a href="https://github.com/rfjakob/gocryptfs">https://github.com/rfjakob/gocryptfs</a>
+        </p>
+        <p><span class="text-big" style="color:hsl(0,75%,60%);"><strong>warning!</strong></span> &nbsp;using
+          gocryptfs blocks other users <strong>(including root)</strong> from accessing
+          the directory, even while it's unlocked.</p>
+        <p>this may cause issues with some programs like&nbsp;<a class="reference-link"
+          href="../../package%20managers/pacman/yay.html">yay</a>&nbsp;which attempt
+          to read data from the user's home with the root account.</p>
+        <p>consider <a href="../../package%20managers/pacman/yay/change%20yay%20build%20directory.html">making a separate folder</a> for
+          building&nbsp;<a class="reference-link" href="../../package%20managers/AUR.html">AUR</a>&nbsp;packages.</p>
+        <p>&nbsp;</p>
+        <p><a class="reference-link" href="gocryptfs/reverse%20mode.html">reverse mode</a>&nbsp;can
+          be used to encrypt an existing folder, mounting it to another location.
+          this is useful for cloud backups to an untrusted remote.</p>
+        <p>&nbsp;</p>
+        <p><a href="https://nuetzlich.net/gocryptfs/comparison/">Comparison with Other Projects - gocryptfs (nuetzlich.net)</a>
+        </p>
+        <p><a href="https://nuetzlich.net/gocryptfs/forward_mode_crypto/">Cryptography - gocryptfs (nuetzlich.net)</a>
+        </p>
+      </div>
     </div>
   </body>
 

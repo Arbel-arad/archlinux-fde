@@ -18,8 +18,26 @@
         <p>&nbsp;</p>
         <p><a href="https://wiki.archlinux.org/title/NTPsec">NTPsec - ArchWiki (archlinux.org)</a>
         </p>
-        <p><a href="https://gist.github.com/jauderho/2ad0d441760fc5ed69d8d4e2d6b35f8d">A curated list of NTP time servers that support NTS (github.com)</a>
+        <p><a href="https://github.com/jauderho/nts-servers">jauderho/nts-servers: Time servers with NTS support (github.com)</a>
         </p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S ntpsec</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemctl enable ntpd --now</code></span>
+            </label>
+          </li>
+        </ul>
+        <p><code>/etc/ntp.d/use-pool</code>
+        </p><pre><code class="language-text-x-sh">server time.cloudflare.com         nts iburst
+ohio.time.system76.com			   nts iburst
+oregon.time.system76.com		   nts iburst
+virginia.time.system76.com		   nts iburst
+nts.netnod.se					   nts iburst</code></pre>
       </div>
     </div>
   </body>

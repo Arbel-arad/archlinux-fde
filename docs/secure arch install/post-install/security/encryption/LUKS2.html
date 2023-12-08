@@ -1,0 +1,33 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>LUKS2</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>LUKS2</h1>
+
+      <div class="ck-content">
+        <p>LUKS2 encrypted volumes can be opened using multiple methods, i recommend
+          using a TPM for convenience and either a <a href="../identity/hardware%20security%20modules.html">FIDO2 key</a> or
+          recovery key as backups.</p>
+        <p><a class="reference-link" href="LUKS2/TPM2%20unlock%20LUKS2.html">TPM2 unlock LUKS2</a>
+        </p>
+        <p><a class="reference-link" href="LUKS2/FIDO2%20%20unlock%20LUKS2.html">FIDO2 &nbsp;unlock LUKS2</a>
+        </p>
+        <p><a href="https://wiki.archlinux.org/title/Clevis">clevis</a> allows for
+          more advanced options like network bindings.</p>
+        <p>&nbsp;</p>
+        <p><a class="reference-link" href="LUKS2/detached%20LUKS%20headers.html">detached LUKS headers</a>&nbsp;allow
+          you to keep the encryption header on another device, requiring that device
+          to also be connected to perform decryption.</p>
+      </div>
+    </div>
+  </body>
+
+</html>

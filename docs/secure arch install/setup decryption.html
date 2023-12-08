@@ -14,9 +14,9 @@
 
       <div class="ck-content">
         <p>select an unlock method:</p>
-        <p><a class="reference-link" href="setup%20decryption/TPM2%20unlock%20LUKS2.html">TPM2 unlock LUKS2</a>
+        <p><a class="reference-link" href="post-install/security/encryption/LUKS2/TPM2%20unlock%20LUKS2.html">TPM2 unlock LUKS2</a>
         </p>
-        <p><a class="reference-link" href="setup%20decryption/FIDO2%20%20unlock%20LUKS2.html">FIDO2 &nbsp;unlock LUKS2</a>
+        <p><a class="reference-link" href="post-install/security/encryption/LUKS2/FIDO2%20%20unlock%20LUKS2.html">FIDO2 &nbsp;unlock LUKS2</a>
         </p>
         <p><a href="https://wiki.archlinux.org/title/Clevis">Clevis</a>
         </p>
@@ -81,26 +81,32 @@
             </label>
           </li>
         </ul>
-        <p>if you intend to use <code>gocryptfs</code> home encryption:</p>
-        <ul class="todo-list">
-          <li>
-            <label class="todo-list__label">
-              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S gocryptfs sddm</code></span>
-            </label>
-          </li>
-        </ul>
-        <p>edit the <code>/usr/share/sddm/scripts/wayland-session</code> file.</p>
+        <p>install <a href="post-install/customization/desktop/login%20manager.html">SDDM</a>:</p>
         <ul
         class="todo-list">
           <li>
             <label class="todo-list__label">
-              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">add the following lines after the <code>case | esac</code> statement.</span>
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S sddm-git</code></span>
             </label>
           </li>
-          </ul><pre><code class="language-text-x-sh">gocryptfs --fido2=$(systemd-cryptenroll --fido2-device=list | grep ‘^/dev/hidraw[0-9]\+’ -o) /home/$(whoami).crypt /home/$(whoami) -i=1h -nonempty -q
+          </ul>
+          <p>edit the <code>/usr/share/sddm/scripts/wayland-session</code> file.</p>
+          <ul
+          class="todo-list">
+            <li>
+              <label class="todo-list__label">
+                <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">add the following lines after the <code>case | esac</code> statement.</span>
+              </label>
+            </li>
+            </ul><pre><code class="language-text-x-sh">gocryptfs --fido2=$(systemd-cryptenroll --fido2-device=list | grep ‘^/dev/hidraw[0-9]\+’ -o) /home/$(whoami).crypt /home/$(whoami) -i=1h -nonempty -q
 cd ~</code></pre>
-          <p>after verifying your selected decryption methods, proceed to&nbsp;<a class="reference-link"
-            href="post-install.html">post-install</a>.</p>
+            <p>this will automatically prompt the user to unlock their home if they have
+              the key plugged in.</p>
+            <p>note that login will function regardless of the decryption, so it is also
+              possible to use the normal unencrypted home as a secondary “profile”</p>
+            <p>&nbsp;</p>
+            <p>after verifying your selected decryption methods, proceed to&nbsp;<a class="reference-link"
+              href="post-install.html">post-install</a>.</p>
       </div>
     </div>
   </body>

@@ -1,0 +1,105 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <base target="_parent">
+    <title data-trilium-title>add user</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>add user</h1>
+
+      <div class="ck-content">
+        <p>enable SUDO for users:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">&nbsp;<code>visudo</code> and edit the config to your liking (to save in VI press :wp)</span>
+            </label>
+          </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>use the <code>add_user.sh</code>  <a href="add%20user/add_user.sh">script</a> or
+          manually:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>useradd -m -G wheel -g users -s /bin/zsh </code><span style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code></span></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>passwd </code><span style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code></span></span>
+            </label>
+          </li>
+        </ul>
+        <p>enabling&nbsp;<a class="reference-link" href="post-install/security/encryption/gocryptfs.html">gocryptfs</a>:</p>
+        <p><span class="text-big" style="color:hsl(0,75%,60%);"><strong>warning!</strong></span> &nbsp;using
+          gocryptfs blocks other users <strong>(including root)</strong> from accessing
+          the directory, even while it's unlocked.</p>
+        <p>this may cause issues with some programs like&nbsp;<a class="reference-link"
+          href="post-install/package%20managers/pacman/yay.html">yay</a>&nbsp;which
+          attempt to read data from the user's home with the root account.</p>
+        <p>consider <a href="post-install/package%20managers/pacman/yay/change%20yay%20build%20directory.html">making a separate folder</a> for
+          building&nbsp;<a class="reference-link" href="post-install/package%20managers/AUR.html">AUR</a>&nbsp;packages.</p>
+        <p>manual method:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">switch to the user.</span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>sudo mkdir -p /home/</code><span style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code></span><code>.crypt</code>
+              </span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemd-cryptenroll --fido2-device=list</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>gocryptfs -speed</code></span>
+            </label>
+          </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>gocryptfs -init --fido2=/dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>FIDOKEY</strong></code></span><code> /home/</code>
+              <span
+              style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code>
+                </span><code>.crypt</code>
+                </span>
+            </label>
+          </li>
+        </ul>
+        <p>to unlock the encrypted home, as the user:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>gocryptfs --fido2=/dev/</code><span style="color:hsl(30,75%,60%);"><code><strong>FIDOKEY</strong></code></span><code> /home/</code>
+              <span
+              style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code>
+                </span><code>.crypt /home/</code><span style="color:hsl(30,75%,60%);"><code><strong>USERNAME</strong></code></span><code> -nonempty</code>
+                </span>
+            </label>
+          </li>
+        </ul>
+        <p>script to temporarily mount a gocryptfs home directory:&nbsp;<a class="reference-link"
+          href="add%20user/mount_home.sh">mount_home.sh</a>
+        </p>
+        <p>&nbsp;</p>
+        <p><a href="post-install/security/identity/PAM/PAM-U2F.html">enroll a FIDO2 key for PAM authentication</a>
+        </p>
+        <p>&nbsp;</p>
+        <p>proceed to <a href="setup%20decryption.html">setup decryption</a>.</p>
+      </div>
+    </div>
+  </body>
+
+</html>

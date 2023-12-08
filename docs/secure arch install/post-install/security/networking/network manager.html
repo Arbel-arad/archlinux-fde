@@ -1,0 +1,46 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>network manager</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>network manager</h1>
+
+      <div class="ck-content">
+        <p><a href="https://wiki.archlinux.org/title/NetworkManager">NetworkManager - ArchWiki (archlinux.org)</a>
+        </p>
+        <p>&nbsp;</p>
+        <p><a href="https://nixsanctuary.com/linux-networkmanager-and-anti-privacy-default-settings-call-for-action/">Linux NetworkManager And Anti-Privacy default settings: Call For Action (nixsanctuary.com)</a>
+        </p>
+        <p><a href="https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/issues/584">No way to set dhcp-send-hostname globally (#584) · Issues · NetworkManager / NetworkManager · GitLab</a>
+        </p>
+        <p><a href="https://wiki.archlinux.org/title/NetworkManager#Turn_off_hostname_sending">8.16Turn off hostname sending (archlinux.org)</a>
+        </p>
+        <p>&nbsp;</p>
+        <p>network manager has some privacy issues by default.</p>
+        <ul>
+          <li>WIFI passwords are stored in plaintext. enable&nbsp;<a class="reference-link"
+            href="network%20manager/wifi%20password%20encryption.html">wifi password encryption</a>
+          </li>
+          <li>MAC address leaks. enable&nbsp;<a class="reference-link" href="network%20manager/mac%20address%20randomization%20%20spo.html">mac address randomization / spoofing</a>
+          </li>
+          <li>hostname leaks to&nbsp;<a class="reference-link" href="network%20manager/DHCP.html">DHCP</a>&nbsp;servers</li>
+          <li><a href="../identity/device%20certificates/machine-ID.html">machine-ID</a> leaks</li>
+          <li>connectivity checks - system fingerprinting</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>the following config shows how to mitigate some of these issues:</p>
+        <p><a href="https://github.com/NetworkManager/NetworkManager/blob/main/examples/nm-conf.d/30-anon.conf">NetworkManager/examples/nm-conf.d/30-anon.conf at main · NetworkManager/NetworkManager (github.com)</a>
+        </p>
+        <p>it will also enable the&nbsp;<a class="reference-link" href="network%20manager/IPv6%20privacy%20extensions.html">IPv6 privacy extensions</a>.</p>
+      </div>
+    </div>
+  </body>
+
+</html>

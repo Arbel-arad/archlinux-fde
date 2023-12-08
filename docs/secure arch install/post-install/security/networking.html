@@ -13,11 +13,15 @@
        <h1 data-trilium-h1>networking</h1>
 
       <div class="ck-content">
-        <p><a href="https://wiki.archlinux.org/title/NetworkManager">NetworkManager - ArchWiki (archlinux.org)</a>
-        </p>
-        <p>&nbsp;</p>
-        <p><a href="https://wiki.archlinux.org/title/NetworkManager#Turn_off_hostname_sending">8.16Turn off hostname sending (archlinux.org)</a>
-        </p>
+        <p>set up a good&nbsp;<a class="reference-link" href="networking/firewall.html">firewall</a>&nbsp;solution
+          to block external access and misbehaving apps.</p>
+        <p>always use&nbsp;<a class="reference-link" href="networking/dns.html">dns</a>&nbsp;servers
+          with encryption support.</p>
+        <p><a class="reference-link" href="networking/dns/split-horizon%20DNS.html">split-horizon DNS</a>&nbsp;can
+          be used with overlay networks like <a href="networking/VPN%20%20proxy/tailscale%20%20headscale.html">tailscale</a> to
+          access local addresses directly, while tunneling external traffic.</p>
+        <p>limit the trusted&nbsp;<a class="reference-link" href="networking/certificate%20authorities.html">certificate authorities</a>&nbsp;or
+          make your own.</p>
       </div>
     </div>
   </body>

@@ -13,20 +13,41 @@
        <h1 data-trilium-h1>login manager</h1>
 
       <div class="ck-content">
+        <p><a href="https://wiki.archlinux.org/title/SDDM">SDDM - ArchWiki (archlinux.org)</a>
+        </p>
         <ul class="todo-list">
           <li>
             <label class="todo-list__label">
               <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>systemctl enable sddm</code></span>
             </label>
           </li>
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">configure SDDM to use the wayland backend:</span>
+            </label>
+          </li>
         </ul>
-        <p>sddm-git</p>
-        <p><a href="https://wiki.archlinux.org/title/SDDM">SDDM - ArchWiki (archlinux.org)</a>
-        </p>
+        <p><code>/etc/sddm.conf.d/10-wayland.conf</code>
+        </p><pre><code class="language-text-x-sh">[General]
+DisplayServer=wayland</code></pre>
+        <p>&nbsp;</p>
+        <p>on multi-monitor setups you may want to disable some of them:</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>xrandr | grep -w connected</code></span>
+            </label>
+          </li>
+        </ul>
+        <p><code>/usr/share/sddm/scripts/wayland</code> (wayland setup) <span style="color:hsl(0, 75%, 60%);">#needs corrections</span>
+        </p><pre><code class="language-text-x-sh">xrandr --output DP-3 --off</code></pre>
+        <p>&nbsp;</p>
         <p>themes:</p>
         <p><a href="https://store.kde.org/p/2091569">Uzuri Dark - KDE Store</a>
         </p>
         <p>edit <code>/usr/lib/sddm.conf.d/default.conf</code> and set your theme</p>
+        <p>configure <a href="../../security/identity/PAM/PAM-U2F/SDDM.html">SDDM with PAM_U2F</a> if
+          you are using <a href="../../security/identity/hardware%20security%20modules.html">security keys</a>.</p>
       </div>
     </div>
   </body>

@@ -13,6 +13,13 @@
        <h1 data-trilium-h1>USB-guard</h1>
 
       <div class="ck-content">
+        <p><a href="https://www.mankier.com/1/usbguard-notifier">usbguard-notifier: provides user-friendly notifications for USBGuard | usbguard-notifier Commands | Man Pages | ManKier</a>
+        </p>
+        <p><a href="https://usbguard.github.io/documentation/rule-language">Rule Language | USBGuard</a>
+        </p>
+        <p>there is also a <a href="https://github.com/pinotree/usbguard-applet-qt">fork of the USBGuard applet</a> but
+          the state of that is not clear.</p>
+        <p>&nbsp;</p>
         <p>install <a href="https://wiki.archlinux.org/title/USBGuard">USBGuard</a> and
           <a
           href="https://aur.archlinux.org/packages/usbguard-notifier/">usbguard-notifier</a>
@@ -24,11 +31,24 @@
             </label>
           </li>
         </ul>
-        <p><span class="text-big" style="color:hsl(0, 75%, 60%);"><strong>Warning</strong></span>
+        <p><span class="text-big" style="color:hsl(0,75%,60%);"><strong>Warning</strong></span>
           <span
           class="text-big">:</span>Make sure to actually configure the daemon before starting/enabling
             it or all USB devices, including keyboard and mouse, will immediately be
             blocked!</p>
+        <p>&nbsp;</p>
+        <p>create and install a ruleset based on currently connected devices:</p>
+        <p><span class="text-big" style="color:hsl(0,75%,60%);"><strong>Warning</strong></span>
+          <span
+          class="text-big">:</span>connect any required devices (keyboard, mouse, security keys,
+            network adapter) before running this command, or they will not connect
+            anymore.</p><pre><code class="language-text-x-sh">usbguard generate-policy &gt; rules.conf
+nano rules.conf
+ #(review/modify the rule set)
+sudo install -m 0600 -o root -g root rules.conf /etc/usbguard/rules.conf
+sudo systemctl restart usbguard</code></pre>
+        <p>allow the “<span style="color:hsl(30,75%,60%);"><strong>users</strong></span>”
+          group to get notifications:</p><pre><code class="language-text-x-sh">sudo usbguard add-user -g users -d listen</code></pre>
         <p>&nbsp;</p>
       </div>
     </div>

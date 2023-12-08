@@ -13,8 +13,13 @@
        <h1 data-trilium-h1>screen lock</h1>
 
       <div class="ck-content">
-        <p>swayidle</p>
-        <p>swaylock-effects</p>
+        <ul class="todo-list">
+          <li>
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description"><code>yay -S swayidle swaylock-effects</code></span>
+            </label>
+          </li>
+        </ul>
         <p>&nbsp;</p>
         <p><a href="https://geoff.greer.fm/2018/01/02/linux-laptop-locking/">Geoff Greer's site: Linux Laptop Locking</a>
         </p>
@@ -49,9 +54,14 @@
           <li><i>InhibitDelayMaxSec=</i>
           </li>
         </ul>
-        <p>also see:</p>
+        <p>see:</p>
         <p><code>/etc/systemd/sleep.conf</code>
         </p>
+        <p>and enable&nbsp;<a class="reference-link" href="../../../security/automatic%20locking/shell%20timeout.html">shell timeout</a>&nbsp;and&nbsp;
+          <a
+          class="reference-link" href="screen%20lock/proximity%20lock.html">proximity lock</a>.</p>
+        <p>my swaylock config automatically disables&nbsp;<a class="reference-link"
+          href="screen%20lock/notifications%20on%20lock%20screen.html">notifications on lock screen</a>.</p>
       </div>
     </div>
   </body>
